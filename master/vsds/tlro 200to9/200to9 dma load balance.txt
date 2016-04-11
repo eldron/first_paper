@@ -1,0 +1,2331 @@
+200 to 9, dma load balance:
+1 flow:
+client fd 4: 2000000 bytes received, 14555 usec used
+^C
+10.99%
+
+2 flows:
+client fd 5: 2000000 bytes received, 15059 usec used
+client fd 4: 2000000 bytes received, 15042 usec used
+^C
+21.27%
+
+3 flows:
+client fd 4: 2000000 bytes received, 14960 usec used
+client fd 6: 2000000 bytes received, 15305 usec used
+client fd 5: 2000000 bytes received, 15355 usec used
+^C
+31.26%
+
+4 flows:
+client fd 4: 2000000 bytes received, 15543 usec used
+client fd 7: 2000000 bytes received, 15717 usec used
+client fd 6: 2000000 bytes received, 15667 usec used
+client fd 5: 2000000 bytes received, 15897 usec used
+^C
+40.25%
+
+5 flows:
+client fd 5: 2000000 bytes received, 15533 usec used
+client fd 6: 2000000 bytes received, 15586 usec used
+client fd 4: 2000000 bytes received, 15775 usec used
+client fd 7: 2000000 bytes received, 17991 usec used
+client fd 8: 2000000 bytes received, 26615 usec used
+^C
+30.05%
+
+6 flows:
+client fd 5: 2000000 bytes received, 16670 usec used
+client fd 4: 2000000 bytes received, 17281 usec used
+client fd 7: 2000000 bytes received, 18870 usec used
+client fd 6: 2000000 bytes received, 21338 usec used
+client fd 9: 2000000 bytes received, 26134 usec used
+client fd 8: 2000000 bytes received, 27411 usec used
+^C
+35.02%
+
+7 flows:
+client fd 4: 2000000 bytes received, 19042 usec used
+client fd 8: 2000000 bytes received, 20972 usec used
+client fd 5: 2000000 bytes received, 23078 usec used
+client fd 6: 2000000 bytes received, 23306 usec used
+client fd 10: 2000000 bytes received, 26701 usec used
+client fd 9: 2000000 bytes received, 27828 usec used
+client fd 7: 2000000 bytes received, 28356 usec used
+^C
+39.50%
+
+8 flows:
+client fd 6: 2000000 bytes received, 20997 usec used
+client fd 8: 2000000 bytes received, 22732 usec used
+client fd 4: 2000000 bytes received, 26329 usec used
+client fd 5: 2000000 bytes received, 26582 usec used
+client fd 11: 2000000 bytes received, 26684 usec used
+client fd 7: 2000000 bytes received, 27039 usec used
+client fd 10: 2000000 bytes received, 27941 usec used
+client fd 9: 2000000 bytes received, 28497 usec used
+^C
+44.92%
+
+9 flows:
+client fd 7: 2000000 bytes received, 22326 usec used
+client fd 5: 2000000 bytes received, 23431 usec used
+client fd 10: 2000000 bytes received, 24465 usec used
+client fd 9: 2000000 bytes received, 25084 usec used
+client fd 11: 2000000 bytes received, 26215 usec used
+client fd 6: 2000000 bytes received, 27742 usec used
+client fd 8: 2000000 bytes received, 29648 usec used
+client fd 12: 2000000 bytes received, 38597 usec used
+client fd 4: 2000000 bytes received, 40131 usec used
+^C
+35.88%
+
+10 flows:
+client fd 8: 2000000 bytes received, 26531 usec used
+client fd 6: 2000000 bytes received, 26791 usec used
+client fd 11: 2000000 bytes received, 30658 usec used
+client fd 7: 2000000 bytes received, 31872 usec used
+client fd 10: 2000000 bytes received, 32042 usec used
+client fd 9: 2000000 bytes received, 34408 usec used
+client fd 5: 2000000 bytes received, 37469 usec used
+client fd 4: 2000000 bytes received, 41864 usec used
+client fd 12: 2000000 bytes received, 46468 usec used
+client fd 13: 2000000 bytes received, 46681 usec used
+^C
+34.27%
+
+11 flows:
+client fd 5: 2000000 bytes received, 26239 usec used
+client fd 7: 2000000 bytes received, 28349 usec used
+client fd 8: 2000000 bytes received, 30886 usec used
+client fd 10: 2000000 bytes received, 32919 usec used
+client fd 9: 2000000 bytes received, 33088 usec used
+client fd 6: 2000000 bytes received, 35619 usec used
+client fd 12: 2000000 bytes received, 36664 usec used
+client fd 11: 2000000 bytes received, 37824 usec used
+client fd 14: 2000000 bytes received, 38338 usec used
+client fd 4: 2000000 bytes received, 39085 usec used
+client fd 13: 2000000 bytes received, 43855 usec used
+^C
+40.13%
+
+12 flows:
+client fd 10: 2000000 bytes received, 26105 usec used
+client fd 8: 2000000 bytes received, 27174 usec used
+client fd 4: 2000000 bytes received, 29929 usec used
+client fd 9: 2000000 bytes received, 33042 usec used
+client fd 6: 2000000 bytes received, 34837 usec used
+client fd 11: 2000000 bytes received, 35311 usec used
+client fd 5: 2000000 bytes received, 36161 usec used
+client fd 7: 2000000 bytes received, 38788 usec used
+client fd 15: 2000000 bytes received, 43543 usec used
+client fd 12: 2000000 bytes received, 43693 usec used
+client fd 13: 2000000 bytes received, 45301 usec used
+client fd 14: 2000000 bytes received, 45441 usec used
+^C
+42.25%
+
+13 flows:
+client fd 10: 2000000 bytes received, 26926 usec used
+client fd 11: 2000000 bytes received, 30141 usec used
+client fd 16: 2000000 bytes received, 32955 usec used
+client fd 9: 2000000 bytes received, 35042 usec used
+client fd 7: 2000000 bytes received, 38443 usec used
+client fd 15: 2000000 bytes received, 38864 usec used
+client fd 6: 2000000 bytes received, 39894 usec used
+client fd 4: 2000000 bytes received, 41421 usec used
+client fd 14: 2000000 bytes received, 43087 usec used
+client fd 8: 2000000 bytes received, 43593 usec used
+client fd 5: 2000000 bytes received, 45471 usec used
+client fd 13: 2000000 bytes received, 53238 usec used
+client fd 12: 2000000 bytes received, 59748 usec used
+^C
+34.81%
+
+14 flows:
+client fd 4: 2000000 bytes received, 24579 usec used
+client fd 8: 2000000 bytes received, 26944 usec used
+client fd 5: 2000000 bytes received, 29024 usec used
+client fd 6: 2000000 bytes received, 31120 usec used
+client fd 10: 2000000 bytes received, 37784 usec used
+client fd 12: 2000000 bytes received, 42930 usec used
+client fd 14: 2000000 bytes received, 44134 usec used
+client fd 11: 2000000 bytes received, 47254 usec used
+client fd 7: 2000000 bytes received, 47425 usec used
+client fd 13: 2000000 bytes received, 47472 usec used
+client fd 9: 2000000 bytes received, 52794 usec used
+client fd 15: 2000000 bytes received, 54418 usec used
+client fd 16: 2000000 bytes received, 55262 usec used
+client fd 17: 2000000 bytes received, 56651 usec used
+^C
+39.54%
+
+15 flows:
+client fd 10: 2000000 bytes received, 28799 usec used
+client fd 11: 2000000 bytes received, 32032 usec used
+client fd 7: 2000000 bytes received, 32774 usec used
+client fd 6: 2000000 bytes received, 39937 usec used
+client fd 8: 2000000 bytes received, 41646 usec used
+client fd 5: 2000000 bytes received, 41927 usec used
+client fd 9: 2000000 bytes received, 46468 usec used
+client fd 12: 2000000 bytes received, 47936 usec used
+client fd 16: 2000000 bytes received, 48978 usec used
+client fd 4: 2000000 bytes received, 50872 usec used
+client fd 14: 2000000 bytes received, 56179 usec used
+client fd 17: 2000000 bytes received, 56701 usec used
+client fd 18: 2000000 bytes received, 57079 usec used
+client fd 13: 2000000 bytes received, 57390 usec used
+client fd 15: 2000000 bytes received, 57409 usec used
+^C
+41.81%
+
+16 flows:
+client fd 7: 2000000 bytes received, 39379 usec used
+client fd 8: 2000000 bytes received, 40339 usec used
+client fd 4: 2000000 bytes received, 40955 usec used
+client fd 11: 2000000 bytes received, 43066 usec used
+client fd 10: 2000000 bytes received, 44028 usec used
+client fd 6: 2000000 bytes received, 45266 usec used
+client fd 9: 2000000 bytes received, 46673 usec used
+client fd 5: 2000000 bytes received, 48686 usec used
+client fd 18: 2000000 bytes received, 52078 usec used
+client fd 19: 2000000 bytes received, 58268 usec used
+client fd 14: 2000000 bytes received, 62607 usec used
+client fd 13: 2000000 bytes received, 63312 usec used
+client fd 15: 2000000 bytes received, 63632 usec used
+client fd 12: 2000000 bytes received, 64477 usec used
+client fd 16: 2000000 bytes received, 64593 usec used
+client fd 17: 2000000 bytes received, 65363 usec used
+^C
+39.17%
+
+17 flows:
+client fd 5: 2000000 bytes received, 33257 usec used
+client fd 7: 2000000 bytes received, 34025 usec used
+client fd 8: 2000000 bytes received, 41659 usec used
+client fd 4: 2000000 bytes received, 42749 usec used
+client fd 6: 2000000 bytes received, 43013 usec used
+client fd 10: 2000000 bytes received, 45807 usec used
+client fd 9: 2000000 bytes received, 47771 usec used
+client fd 19: 2000000 bytes received, 54550 usec used
+client fd 16: 2000000 bytes received, 55728 usec used
+client fd 13: 2000000 bytes received, 56558 usec used
+client fd 15: 2000000 bytes received, 58728 usec used
+client fd 11: 2000000 bytes received, 58853 usec used
+client fd 12: 2000000 bytes received, 60171 usec used
+client fd 14: 2000000 bytes received, 60612 usec used
+client fd 18: 2000000 bytes received, 62617 usec used
+client fd 17: 2000000 bytes received, 71985 usec used
+client fd 20: 2000000 bytes received, 73275 usec used
+^C
+37.12%
+
+18 flows:
+client fd 8: 2000000 bytes received, 27883 usec used
+client fd 9: 2000000 bytes received, 36050 usec used
+client fd 10: 2000000 bytes received, 38628 usec used
+client fd 11: 2000000 bytes received, 40231 usec used
+client fd 14: 2000000 bytes received, 46482 usec used
+client fd 6: 2000000 bytes received, 49578 usec used
+client fd 7: 2000000 bytes received, 50722 usec used
+client fd 16: 2000000 bytes received, 56205 usec used
+client fd 12: 2000000 bytes received, 57500 usec used
+client fd 19: 2000000 bytes received, 57653 usec used
+client fd 15: 2000000 bytes received, 58528 usec used
+client fd 5: 2000000 bytes received, 59176 usec used
+client fd 17: 2000000 bytes received, 59446 usec used
+client fd 18: 2000000 bytes received, 59583 usec used
+client fd 4: 2000000 bytes received, 66592 usec used
+client fd 13: 2000000 bytes received, 68520 usec used
+client fd 20: 2000000 bytes received, 68814 usec used
+client fd 21: 2000000 bytes received, 72629 usec used
+^C
+39.65%
+
+19 flows:
+client fd 9: 2000000 bytes received, 37174 usec used
+client fd 11: 2000000 bytes received, 37630 usec used
+client fd 8: 2000000 bytes received, 42019 usec used
+client fd 13: 2000000 bytes received, 42287 usec used
+client fd 7: 2000000 bytes received, 43111 usec used
+client fd 4: 2000000 bytes received, 43303 usec used
+client fd 5: 2000000 bytes received, 54608 usec used
+client fd 14: 2000000 bytes received, 57441 usec used
+client fd 15: 2000000 bytes received, 59626 usec used
+client fd 6: 2000000 bytes received, 62731 usec used
+client fd 16: 2000000 bytes received, 62972 usec used
+client fd 10: 2000000 bytes received, 63695 usec used
+client fd 18: 2000000 bytes received, 64184 usec used
+client fd 12: 2000000 bytes received, 64602 usec used
+client fd 22: 2000000 bytes received, 66528 usec used
+client fd 17: 2000000 bytes received, 68851 usec used
+client fd 21: 2000000 bytes received, 70243 usec used
+client fd 19: 2000000 bytes received, 71552 usec used
+client fd 20: 2000000 bytes received, 73275 usec used
+^C
+41.49%
+
+20 flows:
+client fd 9: 2000000 bytes received, 35133 usec used
+client fd 11: 2000000 bytes received, 38465 usec used
+client fd 16: 2000000 bytes received, 47009 usec used
+client fd 8: 2000000 bytes received, 48302 usec used
+client fd 10: 2000000 bytes received, 48454 usec used
+client fd 7: 2000000 bytes received, 48993 usec used
+client fd 15: 2000000 bytes received, 49410 usec used
+client fd 6: 2000000 bytes received, 50201 usec used
+client fd 5: 2000000 bytes received, 53775 usec used
+client fd 4: 2000000 bytes received, 55127 usec used
+client fd 14: 2000000 bytes received, 56787 usec used
+client fd 17: 2000000 bytes received, 57807 usec used
+client fd 18: 2000000 bytes received, 62530 usec used
+client fd 19: 2000000 bytes received, 69249 usec used
+client fd 23: 2000000 bytes received, 69506 usec used
+client fd 12: 2000000 bytes received, 70343 usec used
+client fd 22: 2000000 bytes received, 73288 usec used
+client fd 20: 2000000 bytes received, 75891 usec used
+client fd 13: 2000000 bytes received, 78884 usec used
+client fd 21: 2000000 bytes received, 79796 usec used
+^C
+40.10%
+
+21 flows:
+client fd 9: 2000000 bytes received, 21447 usec used
+client fd 6: 2000000 bytes received, 23328 usec used
+client fd 5: 2000000 bytes received, 42379 usec used
+client fd 7: 2000000 bytes received, 46761 usec used
+client fd 4: 2000000 bytes received, 47398 usec used
+client fd 8: 2000000 bytes received, 55485 usec used
+client fd 15: 2000000 bytes received, 56449 usec used
+client fd 10: 2000000 bytes received, 56919 usec used
+client fd 12: 2000000 bytes received, 57024 usec used
+client fd 11: 2000000 bytes received, 57761 usec used
+client fd 23: 2000000 bytes received, 58303 usec used
+client fd 24: 2000000 bytes received, 64542 usec used
+client fd 16: 2000000 bytes received, 64935 usec used
+client fd 19: 2000000 bytes received, 64963 usec used
+client fd 18: 2000000 bytes received, 67212 usec used
+client fd 22: 2000000 bytes received, 69171 usec used
+client fd 17: 2000000 bytes received, 69358 usec used
+client fd 14: 2000000 bytes received, 70111 usec used
+client fd 20: 2000000 bytes received, 78979 usec used
+client fd 21: 2000000 bytes received, 79820 usec used
+client fd 13: 2000000 bytes received, 81489 usec used
+^C
+41.23%
+
+22 flows:
+client fd 8: 2000000 bytes received, 29242 usec used
+client fd 9: 2000000 bytes received, 30813 usec used
+client fd 4: 2000000 bytes received, 34710 usec used
+client fd 5: 2000000 bytes received, 35053 usec used
+client fd 10: 2000000 bytes received, 35803 usec used
+client fd 11: 2000000 bytes received, 38495 usec used
+client fd 7: 2000000 bytes received, 44480 usec used
+client fd 12: 2000000 bytes received, 58795 usec used
+client fd 19: 2000000 bytes received, 60635 usec used
+client fd 6: 2000000 bytes received, 62840 usec used
+client fd 13: 2000000 bytes received, 65041 usec used
+client fd 17: 2000000 bytes received, 68374 usec used
+client fd 16: 2000000 bytes received, 69698 usec used
+client fd 18: 2000000 bytes received, 70936 usec used
+client fd 24: 2000000 bytes received, 71113 usec used
+client fd 21: 2000000 bytes received, 72737 usec used
+client fd 25: 2000000 bytes received, 72885 usec used
+client fd 15: 2000000 bytes received, 73799 usec used
+client fd 14: 2000000 bytes received, 74361 usec used
+client fd 20: 2000000 bytes received, 77005 usec used
+client fd 22: 2000000 bytes received, 79334 usec used
+client fd 23: 2000000 bytes received, 79751 usec used
+^C
+44.14%
+
+23 flows:
+client fd 10: 2000000 bytes received, 23994 usec used
+client fd 7: 2000000 bytes received, 30637 usec used
+client fd 9: 2000000 bytes received, 33204 usec used
+client fd 4: 2000000 bytes received, 34469 usec used
+client fd 8: 2000000 bytes received, 35566 usec used
+client fd 5: 2000000 bytes received, 46065 usec used
+client fd 11: 2000000 bytes received, 47166 usec used
+client fd 6: 2000000 bytes received, 50162 usec used
+client fd 13: 2000000 bytes received, 54665 usec used
+client fd 18: 2000000 bytes received, 66081 usec used
+client fd 12: 2000000 bytes received, 67231 usec used
+client fd 19: 2000000 bytes received, 67387 usec used
+client fd 26: 2000000 bytes received, 70782 usec used
+client fd 16: 2000000 bytes received, 71252 usec used
+client fd 17: 2000000 bytes received, 72410 usec used
+client fd 14: 2000000 bytes received, 72414 usec used
+client fd 15: 2000000 bytes received, 74247 usec used
+client fd 20: 2000000 bytes received, 78011 usec used
+client fd 24: 2000000 bytes received, 78322 usec used
+client fd 25: 2000000 bytes received, 79048 usec used
+client fd 21: 2000000 bytes received, 80148 usec used
+client fd 23: 2000000 bytes received, 81756 usec used
+client fd 22: 2000000 bytes received, 83699 usec used
+^C
+43.97%
+
+24 flows:
+client fd 5: 2000000 bytes received, 21917 usec used
+client fd 9: 2000000 bytes received, 22264 usec used
+client fd 7: 2000000 bytes received, 23144 usec used
+client fd 11: 2000000 bytes received, 26691 usec used
+client fd 8: 2000000 bytes received, 32192 usec used
+client fd 4: 2000000 bytes received, 38244 usec used
+client fd 6: 2000000 bytes received, 43154 usec used
+client fd 10: 2000000 bytes received, 47341 usec used
+client fd 15: 2000000 bytes received, 48232 usec used
+client fd 22: 2000000 bytes received, 48689 usec used
+client fd 19: 2000000 bytes received, 50243 usec used
+client fd 13: 2000000 bytes received, 52674 usec used
+client fd 17: 2000000 bytes received, 56878 usec used
+client fd 12: 2000000 bytes received, 65052 usec used
+client fd 26: 2000000 bytes received, 68193 usec used
+client fd 18: 2000000 bytes received, 70867 usec used
+client fd 14: 2000000 bytes received, 72826 usec used
+client fd 21: 2000000 bytes received, 75207 usec used
+client fd 24: 2000000 bytes received, 75831 usec used
+client fd 27: 2000000 bytes received, 76339 usec used
+client fd 20: 2000000 bytes received, 79527 usec used
+client fd 25: 2000000 bytes received, 79963 usec used
+client fd 23: 2000000 bytes received, 80385 usec used
+client fd 16: 2000000 bytes received, 81664 usec used
+^C
+47.02%
+
+25 flows:
+client fd 7: 2000000 bytes received, 18043 usec used
+client fd 20: 2000000 bytes received, 32878 usec used
+client fd 5: 2000000 bytes received, 33085 usec used
+client fd 10: 2000000 bytes received, 43157 usec used
+client fd 9: 2000000 bytes received, 44687 usec used
+client fd 8: 2000000 bytes received, 46666 usec used
+client fd 22: 2000000 bytes received, 51006 usec used
+client fd 6: 2000000 bytes received, 51536 usec used
+client fd 12: 2000000 bytes received, 53476 usec used
+client fd 17: 2000000 bytes received, 55187 usec used
+client fd 4: 2000000 bytes received, 55514 usec used
+client fd 11: 2000000 bytes received, 55866 usec used
+client fd 18: 2000000 bytes received, 57629 usec used
+client fd 24: 2000000 bytes received, 59099 usec used
+client fd 13: 2000000 bytes received, 60758 usec used
+client fd 23: 2000000 bytes received, 62916 usec used
+client fd 21: 2000000 bytes received, 69313 usec used
+client fd 15: 2000000 bytes received, 72874 usec used
+client fd 25: 2000000 bytes received, 78113 usec used
+client fd 28: 2000000 bytes received, 78180 usec used
+client fd 14: 2000000 bytes received, 79929 usec used
+client fd 26: 2000000 bytes received, 80465 usec used
+client fd 16: 2000000 bytes received, 80587 usec used
+client fd 27: 2000000 bytes received, 84302 usec used
+client fd 19: 2000000 bytes received, 93023 usec used
+^C
+43.00%
+
+26 flows:
+client fd 9: 2000000 bytes received, 23177 usec used
+client fd 11: 2000000 bytes received, 25633 usec used
+client fd 7: 2000000 bytes received, 33376 usec used
+client fd 5: 2000000 bytes received, 40702 usec used
+client fd 18: 2000000 bytes received, 57472 usec used
+client fd 13: 2000000 bytes received, 59486 usec used
+client fd 6: 2000000 bytes received, 61668 usec used
+client fd 14: 2000000 bytes received, 64067 usec used
+client fd 4: 2000000 bytes received, 66352 usec used
+client fd 10: 2000000 bytes received, 66556 usec used
+client fd 22: 2000000 bytes received, 70163 usec used
+client fd 23: 2000000 bytes received, 72863 usec used
+client fd 12: 2000000 bytes received, 73017 usec used
+client fd 16: 2000000 bytes received, 73599 usec used
+client fd 8: 2000000 bytes received, 74601 usec used
+client fd 15: 2000000 bytes received, 75114 usec used
+client fd 26: 2000000 bytes received, 76734 usec used
+client fd 24: 2000000 bytes received, 78113 usec used
+client fd 17: 2000000 bytes received, 78514 usec used
+client fd 25: 2000000 bytes received, 79304 usec used
+client fd 21: 2000000 bytes received, 83002 usec used
+client fd 29: 2000000 bytes received, 85156 usec used
+client fd 20: 2000000 bytes received, 86248 usec used
+client fd 19: 2000000 bytes received, 87490 usec used
+client fd 28: 2000000 bytes received, 87906 usec used
+client fd 27: 2000000 bytes received, 92035 usec used
+^C
+45.20%
+
+27 flows:
+client fd 10: 2000000 bytes received, 22405 usec used
+client fd 8: 2000000 bytes received, 30441 usec used
+client fd 4: 2000000 bytes received, 39655 usec used
+client fd 7: 2000000 bytes received, 52253 usec used
+client fd 11: 2000000 bytes received, 54058 usec used
+client fd 5: 2000000 bytes received, 60294 usec used
+client fd 6: 2000000 bytes received, 64650 usec used
+client fd 14: 2000000 bytes received, 71689 usec used
+client fd 26: 2000000 bytes received, 72078 usec used
+client fd 19: 2000000 bytes received, 73735 usec used
+client fd 13: 2000000 bytes received, 73940 usec used
+client fd 9: 2000000 bytes received, 74569 usec used
+client fd 27: 2000000 bytes received, 75650 usec used
+client fd 18: 2000000 bytes received, 75760 usec used
+client fd 15: 2000000 bytes received, 78059 usec used
+client fd 17: 2000000 bytes received, 78211 usec used
+client fd 24: 2000000 bytes received, 78714 usec used
+client fd 20: 2000000 bytes received, 79811 usec used
+client fd 16: 2000000 bytes received, 82876 usec used
+client fd 30: 2000000 bytes received, 85021 usec used
+client fd 12: 2000000 bytes received, 88201 usec used
+client fd 28: 2000000 bytes received, 88534 usec used
+client fd 25: 2000000 bytes received, 89326 usec used
+client fd 29: 2000000 bytes received, 89536 usec used
+client fd 23: 2000000 bytes received, 90306 usec used
+client fd 22: 2000000 bytes received, 91052 usec used
+client fd 21: 2000000 bytes received, 91550 usec used
+^C
+47.19%
+
+28 flows:
+client fd 12: 2000000 bytes received, 27819 usec used
+client fd 18: 2000000 bytes received, 31487 usec used
+client fd 11: 2000000 bytes received, 45949 usec used
+client fd 5: 2000000 bytes received, 47826 usec used
+client fd 7: 2000000 bytes received, 49584 usec used
+client fd 8: 2000000 bytes received, 51372 usec used
+client fd 4: 2000000 bytes received, 53261 usec used
+client fd 29: 2000000 bytes received, 61858 usec used
+client fd 19: 2000000 bytes received, 63505 usec used
+client fd 6: 2000000 bytes received, 65136 usec used
+client fd 13: 2000000 bytes received, 66062 usec used
+client fd 27: 2000000 bytes received, 69298 usec used
+client fd 10: 2000000 bytes received, 74702 usec used
+client fd 26: 2000000 bytes received, 77893 usec used
+client fd 17: 2000000 bytes received, 81664 usec used
+client fd 22: 2000000 bytes received, 84057 usec used
+client fd 28: 2000000 bytes received, 84262 usec used
+client fd 16: 2000000 bytes received, 85542 usec used
+client fd 25: 2000000 bytes received, 87183 usec used
+client fd 20: 2000000 bytes received, 87187 usec used
+client fd 24: 2000000 bytes received, 87663 usec used
+client fd 15: 2000000 bytes received, 87815 usec used
+client fd 21: 2000000 bytes received, 88073 usec used
+client fd 9: 2000000 bytes received, 90738 usec used
+client fd 14: 2000000 bytes received, 91765 usec used
+client fd 31: 2000000 bytes received, 95552 usec used
+client fd 23: 2000000 bytes received, 97337 usec used
+client fd 30: 2000000 bytes received, 100878 usec used
+^C
+44.41%
+
+29 flows:
+client fd 8: 2000000 bytes received, 26208 usec used
+client fd 10: 2000000 bytes received, 36327 usec used
+client fd 9: 2000000 bytes received, 39921 usec used
+client fd 5: 2000000 bytes received, 41034 usec used
+client fd 7: 2000000 bytes received, 45067 usec used
+client fd 6: 2000000 bytes received, 47097 usec used
+client fd 4: 2000000 bytes received, 58866 usec used
+client fd 18: 2000000 bytes received, 68274 usec used
+client fd 29: 2000000 bytes received, 71768 usec used
+client fd 11: 2000000 bytes received, 73211 usec used
+client fd 31: 2000000 bytes received, 73667 usec used
+client fd 26: 2000000 bytes received, 75437 usec used
+client fd 19: 2000000 bytes received, 75722 usec used
+client fd 17: 2000000 bytes received, 79528 usec used
+client fd 25: 2000000 bytes received, 80209 usec used
+client fd 24: 2000000 bytes received, 84078 usec used
+client fd 30: 2000000 bytes received, 85486 usec used
+client fd 27: 2000000 bytes received, 89493 usec used
+client fd 16: 2000000 bytes received, 90114 usec used
+client fd 14: 2000000 bytes received, 91839 usec used
+client fd 32: 2000000 bytes received, 92440 usec used
+client fd 20: 2000000 bytes received, 93888 usec used
+client fd 21: 2000000 bytes received, 95014 usec used
+client fd 13: 2000000 bytes received, 97970 usec used
+client fd 22: 2000000 bytes received, 100113 usec used
+client fd 12: 2000000 bytes received, 100299 usec used
+client fd 28: 2000000 bytes received, 103553 usec used
+client fd 15: 2000000 bytes received, 103999 usec used
+client fd 23: 2000000 bytes received, 106035 usec used
+^C
+43.76%
+
+30 flows:
+client fd 8: 2000000 bytes received, 20960 usec used
+client fd 7: 2000000 bytes received, 29045 usec used
+client fd 6: 2000000 bytes received, 29922 usec used
+client fd 5: 2000000 bytes received, 36016 usec used
+client fd 4: 2000000 bytes received, 51911 usec used
+client fd 11: 2000000 bytes received, 53742 usec used
+client fd 15: 2000000 bytes received, 56403 usec used
+client fd 10: 2000000 bytes received, 62413 usec used
+client fd 9: 2000000 bytes received, 78786 usec used
+client fd 18: 2000000 bytes received, 79481 usec used
+client fd 26: 2000000 bytes received, 82938 usec used
+client fd 27: 2000000 bytes received, 86569 usec used
+client fd 23: 2000000 bytes received, 87279 usec used
+client fd 33: 2000000 bytes received, 87416 usec used
+client fd 24: 2000000 bytes received, 88594 usec used
+client fd 31: 2000000 bytes received, 88744 usec used
+client fd 20: 2000000 bytes received, 89052 usec used
+client fd 29: 2000000 bytes received, 90400 usec used
+client fd 19: 2000000 bytes received, 91336 usec used
+client fd 22: 2000000 bytes received, 91569 usec used
+client fd 16: 2000000 bytes received, 92242 usec used
+client fd 14: 2000000 bytes received, 92733 usec used
+client fd 30: 2000000 bytes received, 93580 usec used
+client fd 12: 2000000 bytes received, 95441 usec used
+client fd 28: 2000000 bytes received, 100851 usec used
+client fd 25: 2000000 bytes received, 102900 usec used
+client fd 13: 2000000 bytes received, 103053 usec used
+client fd 32: 2000000 bytes received, 103217 usec used
+client fd 17: 2000000 bytes received, 103305 usec used
+client fd 21: 2000000 bytes received, 104233 usec used
+^C
+46.05%
+
+31 flows:
+client fd 7: 2000000 bytes received, 36596 usec used
+client fd 10: 2000000 bytes received, 41431 usec used
+client fd 6: 2000000 bytes received, 42947 usec used
+client fd 4: 2000000 bytes received, 45219 usec used
+client fd 8: 2000000 bytes received, 45953 usec used
+client fd 5: 2000000 bytes received, 46817 usec used
+client fd 20: 2000000 bytes received, 59997 usec used
+client fd 9: 2000000 bytes received, 64181 usec used
+client fd 34: 2000000 bytes received, 71168 usec used
+client fd 26: 2000000 bytes received, 71921 usec used
+client fd 11: 2000000 bytes received, 73215 usec used
+client fd 15: 2000000 bytes received, 78984 usec used
+client fd 19: 2000000 bytes received, 79049 usec used
+client fd 18: 2000000 bytes received, 86393 usec used
+client fd 12: 2000000 bytes received, 87012 usec used
+client fd 17: 2000000 bytes received, 90296 usec used
+client fd 13: 2000000 bytes received, 90878 usec used
+client fd 27: 2000000 bytes received, 91261 usec used
+client fd 22: 2000000 bytes received, 91853 usec used
+client fd 32: 2000000 bytes received, 92431 usec used
+client fd 21: 2000000 bytes received, 94033 usec used
+client fd 30: 2000000 bytes received, 94290 usec used
+client fd 33: 2000000 bytes received, 96339 usec used
+client fd 28: 2000000 bytes received, 97713 usec used
+client fd 24: 2000000 bytes received, 98261 usec used
+client fd 14: 2000000 bytes received, 100175 usec used
+client fd 25: 2000000 bytes received, 100846 usec used
+client fd 23: 2000000 bytes received, 101481 usec used
+client fd 31: 2000000 bytes received, 102263 usec used
+client fd 29: 2000000 bytes received, 103809 usec used
+client fd 16: 2000000 bytes received, 103821 usec used
+^C
+47.77%
+
+32 flows:
+client fd 6: 2000000 bytes received, 29059 usec used
+client fd 5: 2000000 bytes received, 32762 usec used
+client fd 11: 2000000 bytes received, 49647 usec used
+client fd 4: 2000000 bytes received, 50894 usec used
+client fd 18: 2000000 bytes received, 50907 usec used
+client fd 23: 2000000 bytes received, 52382 usec used
+client fd 16: 2000000 bytes received, 59008 usec used
+client fd 14: 2000000 bytes received, 61293 usec used
+client fd 15: 2000000 bytes received, 62943 usec used
+client fd 19: 2000000 bytes received, 63636 usec used
+client fd 9: 2000000 bytes received, 64074 usec used
+client fd 21: 2000000 bytes received, 68963 usec used
+client fd 12: 2000000 bytes received, 76807 usec used
+client fd 10: 2000000 bytes received, 80787 usec used
+client fd 24: 2000000 bytes received, 85453 usec used
+client fd 7: 2000000 bytes received, 85932 usec used
+client fd 20: 2000000 bytes received, 95860 usec used
+client fd 8: 2000000 bytes received, 96167 usec used
+client fd 13: 2000000 bytes received, 96754 usec used
+client fd 31: 2000000 bytes received, 98932 usec used
+client fd 28: 2000000 bytes received, 99468 usec used
+client fd 35: 2000000 bytes received, 99874 usec used
+client fd 30: 2000000 bytes received, 100421 usec used
+client fd 33: 2000000 bytes received, 101872 usec used
+client fd 25: 2000000 bytes received, 102166 usec used
+client fd 26: 2000000 bytes received, 102817 usec used
+client fd 22: 2000000 bytes received, 104003 usec used
+client fd 32: 2000000 bytes received, 104422 usec used
+client fd 29: 2000000 bytes received, 105044 usec used
+client fd 27: 2000000 bytes received, 105660 usec used
+client fd 17: 2000000 bytes received, 106181 usec used
+client fd 34: 2000000 bytes received, 106393 usec used
+^C
+48.12%
+
+33 flows:
+client fd 5: 2000000 bytes received, 27209 usec used
+client fd 7: 2000000 bytes received, 31674 usec used
+client fd 9: 2000000 bytes received, 39542 usec used
+client fd 8: 2000000 bytes received, 45936 usec used
+client fd 6: 2000000 bytes received, 48649 usec used
+client fd 10: 2000000 bytes received, 75776 usec used
+client fd 13: 2000000 bytes received, 82448 usec used
+client fd 11: 2000000 bytes received, 86214 usec used
+client fd 16: 2000000 bytes received, 88626 usec used
+client fd 12: 2000000 bytes received, 89039 usec used
+client fd 30: 2000000 bytes received, 89276 usec used
+client fd 34: 2000000 bytes received, 91624 usec used
+client fd 24: 2000000 bytes received, 93526 usec used
+client fd 15: 2000000 bytes received, 94264 usec used
+client fd 25: 2000000 bytes received, 94480 usec used
+client fd 20: 2000000 bytes received, 94582 usec used
+client fd 4: 2000000 bytes received, 95292 usec used
+client fd 21: 2000000 bytes received, 96888 usec used
+client fd 23: 2000000 bytes received, 97733 usec used
+client fd 18: 2000000 bytes received, 98057 usec used
+client fd 19: 2000000 bytes received, 99416 usec used
+client fd 26: 2000000 bytes received, 100588 usec used
+client fd 27: 2000000 bytes received, 100732 usec used
+client fd 29: 2000000 bytes received, 104367 usec used
+client fd 32: 2000000 bytes received, 104758 usec used
+client fd 31: 2000000 bytes received, 105754 usec used
+client fd 17: 2000000 bytes received, 105977 usec used
+client fd 14: 2000000 bytes received, 107188 usec used
+client fd 22: 2000000 bytes received, 107909 usec used
+client fd 33: 2000000 bytes received, 109266 usec used
+client fd 28: 2000000 bytes received, 109500 usec used
+client fd 35: 2000000 bytes received, 111038 usec used
+client fd 36: 2000000 bytes received, 112153 usec used
+^C
+47.08%
+
+34 flows:
+client fd 11: 2000000 bytes received, 19548 usec used
+client fd 4: 2000000 bytes received, 30339 usec used
+client fd 5: 2000000 bytes received, 33779 usec used
+client fd 6: 2000000 bytes received, 38228 usec used
+client fd 13: 2000000 bytes received, 39033 usec used
+client fd 7: 2000000 bytes received, 48438 usec used
+client fd 9: 2000000 bytes received, 54983 usec used
+client fd 18: 2000000 bytes received, 69858 usec used
+client fd 15: 2000000 bytes received, 73452 usec used
+client fd 30: 2000000 bytes received, 83222 usec used
+client fd 16: 2000000 bytes received, 86685 usec used
+client fd 14: 2000000 bytes received, 86706 usec used
+client fd 19: 2000000 bytes received, 86891 usec used
+client fd 31: 2000000 bytes received, 92165 usec used
+client fd 27: 2000000 bytes received, 94425 usec used
+client fd 20: 2000000 bytes received, 95684 usec used
+client fd 23: 2000000 bytes received, 96646 usec used
+client fd 26: 2000000 bytes received, 97152 usec used
+client fd 35: 2000000 bytes received, 97252 usec used
+client fd 12: 2000000 bytes received, 97259 usec used
+client fd 8: 2000000 bytes received, 97572 usec used
+client fd 17: 2000000 bytes received, 98452 usec used
+client fd 22: 2000000 bytes received, 98908 usec used
+client fd 10: 2000000 bytes received, 101468 usec used
+client fd 28: 2000000 bytes received, 101534 usec used
+client fd 21: 2000000 bytes received, 103829 usec used
+client fd 34: 2000000 bytes received, 104091 usec used
+client fd 32: 2000000 bytes received, 108533 usec used
+client fd 29: 2000000 bytes received, 108870 usec used
+client fd 33: 2000000 bytes received, 109610 usec used
+client fd 24: 2000000 bytes received, 109987 usec used
+client fd 36: 2000000 bytes received, 110407 usec used
+client fd 37: 2000000 bytes received, 110787 usec used
+client fd 25: 2000000 bytes received, 114297 usec used
+^C
+47.60%
+
+35 flows:
+client fd 8: 2000000 bytes received, 29040 usec used
+client fd 7: 2000000 bytes received, 30251 usec used
+client fd 11: 2000000 bytes received, 35857 usec used
+client fd 9: 2000000 bytes received, 36614 usec used
+client fd 10: 2000000 bytes received, 52000 usec used
+client fd 6: 2000000 bytes received, 60490 usec used
+client fd 5: 2000000 bytes received, 67319 usec used
+client fd 15: 2000000 bytes received, 71748 usec used
+client fd 19: 2000000 bytes received, 79363 usec used
+client fd 35: 2000000 bytes received, 81362 usec used
+client fd 32: 2000000 bytes received, 85424 usec used
+client fd 14: 2000000 bytes received, 87111 usec used
+client fd 27: 2000000 bytes received, 87390 usec used
+client fd 12: 2000000 bytes received, 89795 usec used
+client fd 18: 2000000 bytes received, 90203 usec used
+client fd 20: 2000000 bytes received, 91270 usec used
+client fd 33: 2000000 bytes received, 92551 usec used
+client fd 26: 2000000 bytes received, 93366 usec used
+client fd 16: 2000000 bytes received, 93896 usec used
+client fd 24: 2000000 bytes received, 95415 usec used
+client fd 13: 2000000 bytes received, 96931 usec used
+client fd 25: 2000000 bytes received, 98347 usec used
+client fd 21: 2000000 bytes received, 104680 usec used
+client fd 17: 2000000 bytes received, 105526 usec used
+client fd 34: 2000000 bytes received, 106970 usec used
+client fd 4: 2000000 bytes received, 107083 usec used
+client fd 36: 2000000 bytes received, 111546 usec used
+client fd 23: 2000000 bytes received, 113247 usec used
+client fd 28: 2000000 bytes received, 115114 usec used
+client fd 31: 2000000 bytes received, 116380 usec used
+client fd 22: 2000000 bytes received, 117171 usec used
+client fd 37: 2000000 bytes received, 117966 usec used
+client fd 29: 2000000 bytes received, 118865 usec used
+client fd 38: 2000000 bytes received, 119620 usec used
+client fd 30: 2000000 bytes received, 121678 usec used
+^C
+46.02%
+
+36 flows:
+client fd 4: 2000000 bytes received, 36480 usec used
+client fd 5: 2000000 bytes received, 41110 usec used
+client fd 10: 2000000 bytes received, 42080 usec used
+client fd 6: 2000000 bytes received, 42109 usec used
+client fd 18: 2000000 bytes received, 47721 usec used
+client fd 12: 2000000 bytes received, 53226 usec used
+client fd 7: 2000000 bytes received, 59473 usec used
+client fd 8: 2000000 bytes received, 59607 usec used
+client fd 34: 2000000 bytes received, 87568 usec used
+client fd 19: 2000000 bytes received, 89221 usec used
+client fd 25: 2000000 bytes received, 93696 usec used
+client fd 38: 2000000 bytes received, 94582 usec used
+client fd 13: 2000000 bytes received, 94882 usec used
+client fd 11: 2000000 bytes received, 95485 usec used
+client fd 24: 2000000 bytes received, 98296 usec used
+client fd 9: 2000000 bytes received, 99179 usec used
+client fd 35: 2000000 bytes received, 101668 usec used
+client fd 27: 2000000 bytes received, 102980 usec used
+client fd 26: 2000000 bytes received, 103262 usec used
+client fd 37: 2000000 bytes received, 108135 usec used
+client fd 16: 2000000 bytes received, 108751 usec used
+client fd 21: 2000000 bytes received, 110461 usec used
+client fd 32: 2000000 bytes received, 111410 usec used
+client fd 31: 2000000 bytes received, 112414 usec used
+client fd 17: 2000000 bytes received, 113288 usec used
+client fd 15: 2000000 bytes received, 113603 usec used
+client fd 20: 2000000 bytes received, 113610 usec used
+client fd 29: 2000000 bytes received, 113669 usec used
+client fd 14: 2000000 bytes received, 116907 usec used
+client fd 23: 2000000 bytes received, 117283 usec used
+client fd 33: 2000000 bytes received, 118173 usec used
+client fd 36: 2000000 bytes received, 119549 usec used
+client fd 39: 2000000 bytes received, 120551 usec used
+client fd 28: 2000000 bytes received, 121076 usec used
+client fd 22: 2000000 bytes received, 123895 usec used
+client fd 30: 2000000 bytes received, 125114 usec used
+^C
+46.04%
+
+37 flows:
+client fd 4: 2000000 bytes received, 17432 usec used
+client fd 11: 2000000 bytes received, 19827 usec used
+client fd 6: 2000000 bytes received, 30052 usec used
+client fd 8: 2000000 bytes received, 31812 usec used
+client fd 7: 2000000 bytes received, 39499 usec used
+client fd 5: 2000000 bytes received, 45306 usec used
+client fd 10: 2000000 bytes received, 68380 usec used
+client fd 12: 2000000 bytes received, 73372 usec used
+client fd 18: 2000000 bytes received, 75180 usec used
+client fd 20: 2000000 bytes received, 78082 usec used
+client fd 19: 2000000 bytes received, 80906 usec used
+client fd 25: 2000000 bytes received, 85605 usec used
+client fd 15: 2000000 bytes received, 86301 usec used
+client fd 35: 2000000 bytes received, 87841 usec used
+client fd 26: 2000000 bytes received, 88108 usec used
+client fd 39: 2000000 bytes received, 88368 usec used
+client fd 9: 2000000 bytes received, 92216 usec used
+client fd 27: 2000000 bytes received, 95133 usec used
+client fd 37: 2000000 bytes received, 96309 usec used
+client fd 36: 2000000 bytes received, 97122 usec used
+client fd 17: 2000000 bytes received, 98089 usec used
+client fd 34: 2000000 bytes received, 99344 usec used
+client fd 40: 2000000 bytes received, 99461 usec used
+client fd 28: 2000000 bytes received, 105271 usec used
+client fd 33: 2000000 bytes received, 106552 usec used
+client fd 38: 2000000 bytes received, 106965 usec used
+client fd 29: 2000000 bytes received, 110577 usec used
+client fd 31: 2000000 bytes received, 111212 usec used
+client fd 24: 2000000 bytes received, 111635 usec used
+client fd 13: 2000000 bytes received, 113656 usec used
+client fd 14: 2000000 bytes received, 114988 usec used
+client fd 30: 2000000 bytes received, 116365 usec used
+client fd 22: 2000000 bytes received, 116816 usec used
+client fd 23: 2000000 bytes received, 118190 usec used
+client fd 21: 2000000 bytes received, 123339 usec used
+client fd 16: 2000000 bytes received, 124168 usec used
+client fd 32: 2000000 bytes received, 124894 usec used
+^C
+47.40%
+
+38 flows:
+client fd 7: 2000000 bytes received, 30146 usec used
+client fd 9: 2000000 bytes received, 30124 usec used
+client fd 8: 2000000 bytes received, 36740 usec used
+client fd 17: 2000000 bytes received, 55321 usec used
+client fd 5: 2000000 bytes received, 56837 usec used
+client fd 6: 2000000 bytes received, 63117 usec used
+client fd 19: 2000000 bytes received, 70874 usec used
+client fd 4: 2000000 bytes received, 74080 usec used
+client fd 24: 2000000 bytes received, 77115 usec used
+client fd 16: 2000000 bytes received, 80741 usec used
+client fd 36: 2000000 bytes received, 84064 usec used
+client fd 14: 2000000 bytes received, 86093 usec used
+client fd 10: 2000000 bytes received, 93120 usec used
+client fd 41: 2000000 bytes received, 94146 usec used
+client fd 18: 2000000 bytes received, 95957 usec used
+client fd 27: 2000000 bytes received, 98453 usec used
+client fd 15: 2000000 bytes received, 99682 usec used
+client fd 29: 2000000 bytes received, 100794 usec used
+client fd 35: 2000000 bytes received, 107431 usec used
+client fd 33: 2000000 bytes received, 108942 usec used
+client fd 13: 2000000 bytes received, 110235 usec used
+client fd 40: 2000000 bytes received, 112188 usec used
+client fd 32: 2000000 bytes received, 112554 usec used
+client fd 25: 2000000 bytes received, 113732 usec used
+client fd 11: 2000000 bytes received, 114963 usec used
+client fd 21: 2000000 bytes received, 116889 usec used
+client fd 28: 2000000 bytes received, 117106 usec used
+client fd 31: 2000000 bytes received, 119022 usec used
+client fd 39: 2000000 bytes received, 119339 usec used
+client fd 20: 2000000 bytes received, 119796 usec used
+client fd 12: 2000000 bytes received, 120243 usec used
+client fd 34: 2000000 bytes received, 120246 usec used
+client fd 38: 2000000 bytes received, 121229 usec used
+client fd 23: 2000000 bytes received, 121687 usec used
+client fd 26: 2000000 bytes received, 121691 usec used
+client fd 30: 2000000 bytes received, 125765 usec used
+client fd 37: 2000000 bytes received, 126508 usec used
+client fd 22: 2000000 bytes received, 126996 usec used
+^C
+47.88%
+
+39 flows:
+client fd 5: 2000000 bytes received, 26630 usec used
+client fd 4: 2000000 bytes received, 27729 usec used
+client fd 6: 2000000 bytes received, 40523 usec used
+client fd 7: 2000000 bytes received, 45086 usec used
+client fd 8: 2000000 bytes received, 50359 usec used
+client fd 9: 2000000 bytes received, 56016 usec used
+client fd 35: 2000000 bytes received, 77077 usec used
+client fd 11: 2000000 bytes received, 84764 usec used
+client fd 34: 2000000 bytes received, 96741 usec used
+client fd 28: 2000000 bytes received, 101915 usec used
+client fd 20: 2000000 bytes received, 102354 usec used
+client fd 40: 2000000 bytes received, 105550 usec used
+client fd 22: 2000000 bytes received, 111422 usec used
+client fd 19: 2000000 bytes received, 111428 usec used
+client fd 14: 2000000 bytes received, 112618 usec used
+client fd 37: 2000000 bytes received, 112811 usec used
+client fd 41: 2000000 bytes received, 113819 usec used
+client fd 23: 2000000 bytes received, 114464 usec used
+client fd 12: 2000000 bytes received, 114674 usec used
+client fd 27: 2000000 bytes received, 115109 usec used
+client fd 36: 2000000 bytes received, 115912 usec used
+client fd 39: 2000000 bytes received, 116444 usec used
+client fd 10: 2000000 bytes received, 117117 usec used
+client fd 24: 2000000 bytes received, 117250 usec used
+client fd 17: 2000000 bytes received, 117480 usec used
+client fd 16: 2000000 bytes received, 118580 usec used
+client fd 18: 2000000 bytes received, 119315 usec used
+client fd 32: 2000000 bytes received, 119792 usec used
+client fd 13: 2000000 bytes received, 121129 usec used
+client fd 30: 2000000 bytes received, 122147 usec used
+client fd 15: 2000000 bytes received, 123904 usec used
+client fd 21: 2000000 bytes received, 124388 usec used
+client fd 31: 2000000 bytes received, 125336 usec used
+client fd 42: 2000000 bytes received, 126882 usec used
+client fd 38: 2000000 bytes received, 127690 usec used
+client fd 26: 2000000 bytes received, 128033 usec used
+client fd 25: 2000000 bytes received, 128344 usec used
+client fd 33: 2000000 bytes received, 128722 usec used
+client fd 29: 2000000 bytes received, 131469 usec used
+^C
+47.46%
+
+40 flows:
+client fd 8: 2000000 bytes received, 23651 usec used
+client fd 7: 2000000 bytes received, 23890 usec used
+client fd 5: 2000000 bytes received, 36431 usec used
+client fd 4: 2000000 bytes received, 40879 usec used
+client fd 17: 2000000 bytes received, 60616 usec used
+client fd 15: 2000000 bytes received, 71687 usec used
+client fd 6: 2000000 bytes received, 78772 usec used
+client fd 42: 2000000 bytes received, 80742 usec used
+client fd 14: 2000000 bytes received, 83341 usec used
+client fd 41: 2000000 bytes received, 85755 usec used
+client fd 19: 2000000 bytes received, 90052 usec used
+client fd 32: 2000000 bytes received, 94519 usec used
+client fd 40: 2000000 bytes received, 100971 usec used
+client fd 21: 2000000 bytes received, 101050 usec used
+client fd 25: 2000000 bytes received, 108820 usec used
+client fd 43: 2000000 bytes received, 109034 usec used
+client fd 11: 2000000 bytes received, 111293 usec used
+client fd 9: 2000000 bytes received, 112870 usec used
+client fd 29: 2000000 bytes received, 114492 usec used
+client fd 10: 2000000 bytes received, 116497 usec used
+client fd 12: 2000000 bytes received, 117636 usec used
+client fd 38: 2000000 bytes received, 120785 usec used
+client fd 23: 2000000 bytes received, 122022 usec used
+client fd 33: 2000000 bytes received, 122774 usec used
+client fd 26: 2000000 bytes received, 122987 usec used
+client fd 30: 2000000 bytes received, 123441 usec used
+client fd 28: 2000000 bytes received, 123852 usec used
+client fd 22: 2000000 bytes received, 123989 usec used
+client fd 24: 2000000 bytes received, 124924 usec used
+client fd 16: 2000000 bytes received, 125662 usec used
+client fd 20: 2000000 bytes received, 125798 usec used
+client fd 31: 2000000 bytes received, 125863 usec used
+client fd 13: 2000000 bytes received, 126413 usec used
+client fd 36: 2000000 bytes received, 128213 usec used
+client fd 18: 2000000 bytes received, 128913 usec used
+client fd 27: 2000000 bytes received, 129108 usec used
+client fd 39: 2000000 bytes received, 129759 usec used
+client fd 34: 2000000 bytes received, 130117 usec used
+client fd 37: 2000000 bytes received, 130348 usec used
+client fd 35: 2000000 bytes received, 131302 usec used
+^C
+48.74%
+
+41 flows:
+client fd 6: 2000000 bytes received, 30252 usec used
+client fd 5: 2000000 bytes received, 32244 usec used
+client fd 8: 2000000 bytes received, 35474 usec used
+client fd 7: 2000000 bytes received, 46537 usec used
+client fd 9: 2000000 bytes received, 48778 usec used
+client fd 10: 2000000 bytes received, 70361 usec used
+client fd 11: 2000000 bytes received, 79289 usec used
+client fd 4: 2000000 bytes received, 86331 usec used
+client fd 27: 2000000 bytes received, 91346 usec used
+client fd 40: 2000000 bytes received, 93434 usec used
+client fd 36: 2000000 bytes received, 95712 usec used
+client fd 35: 2000000 bytes received, 97893 usec used
+client fd 31: 2000000 bytes received, 103260 usec used
+client fd 41: 2000000 bytes received, 103695 usec used
+client fd 39: 2000000 bytes received, 107106 usec used
+client fd 21: 2000000 bytes received, 111783 usec used
+client fd 18: 2000000 bytes received, 112746 usec used
+client fd 19: 2000000 bytes received, 117172 usec used
+client fd 43: 2000000 bytes received, 118170 usec used
+client fd 44: 2000000 bytes received, 120346 usec used
+client fd 17: 2000000 bytes received, 121647 usec used
+client fd 37: 2000000 bytes received, 122026 usec used
+client fd 14: 2000000 bytes received, 124448 usec used
+client fd 24: 2000000 bytes received, 125420 usec used
+client fd 16: 2000000 bytes received, 126464 usec used
+client fd 32: 2000000 bytes received, 126615 usec used
+client fd 23: 2000000 bytes received, 126859 usec used
+client fd 25: 2000000 bytes received, 128186 usec used
+client fd 42: 2000000 bytes received, 130768 usec used
+client fd 33: 2000000 bytes received, 131156 usec used
+client fd 22: 2000000 bytes received, 131696 usec used
+client fd 38: 2000000 bytes received, 133105 usec used
+client fd 15: 2000000 bytes received, 133293 usec used
+client fd 30: 2000000 bytes received, 134120 usec used
+client fd 13: 2000000 bytes received, 135088 usec used
+client fd 34: 2000000 bytes received, 135704 usec used
+client fd 26: 2000000 bytes received, 138562 usec used
+client fd 12: 2000000 bytes received, 141360 usec used
+client fd 20: 2000000 bytes received, 143629 usec used
+client fd 29: 2000000 bytes received, 144992 usec used
+client fd 28: 2000000 bytes received, 146493 usec used
+^C
+44.80%
+
+42 flows:
+client fd 8: 2000000 bytes received, 32813 usec used
+client fd 14: 2000000 bytes received, 50927 usec used
+client fd 6: 2000000 bytes received, 66571 usec used
+client fd 7: 2000000 bytes received, 72603 usec used
+client fd 5: 2000000 bytes received, 74917 usec used
+client fd 20: 2000000 bytes received, 79192 usec used
+client fd 13: 2000000 bytes received, 79958 usec used
+client fd 4: 2000000 bytes received, 84550 usec used
+client fd 41: 2000000 bytes received, 99780 usec used
+client fd 33: 2000000 bytes received, 100970 usec used
+client fd 12: 2000000 bytes received, 103620 usec used
+client fd 10: 2000000 bytes received, 104985 usec used
+client fd 35: 2000000 bytes received, 109921 usec used
+client fd 18: 2000000 bytes received, 112755 usec used
+client fd 23: 2000000 bytes received, 115485 usec used
+client fd 40: 2000000 bytes received, 115832 usec used
+client fd 31: 2000000 bytes received, 117853 usec used
+client fd 36: 2000000 bytes received, 118204 usec used
+client fd 9: 2000000 bytes received, 118292 usec used
+client fd 24: 2000000 bytes received, 118384 usec used
+client fd 17: 2000000 bytes received, 120636 usec used
+client fd 42: 2000000 bytes received, 123264 usec used
+client fd 15: 2000000 bytes received, 126640 usec used
+client fd 45: 2000000 bytes received, 128073 usec used
+client fd 22: 2000000 bytes received, 128312 usec used
+client fd 21: 2000000 bytes received, 128682 usec used
+client fd 19: 2000000 bytes received, 132242 usec used
+client fd 16: 2000000 bytes received, 132403 usec used
+client fd 38: 2000000 bytes received, 132845 usec used
+client fd 30: 2000000 bytes received, 133725 usec used
+client fd 27: 2000000 bytes received, 134496 usec used
+client fd 25: 2000000 bytes received, 136712 usec used
+client fd 29: 2000000 bytes received, 138146 usec used
+client fd 32: 2000000 bytes received, 138660 usec used
+client fd 39: 2000000 bytes received, 142936 usec used
+client fd 26: 2000000 bytes received, 143566 usec used
+client fd 37: 2000000 bytes received, 144715 usec used
+client fd 34: 2000000 bytes received, 146596 usec used
+client fd 44: 2000000 bytes received, 148769 usec used
+client fd 43: 2000000 bytes received, 149694 usec used
+client fd 11: 2000000 bytes received, 151207 usec used
+client fd 28: 2000000 bytes received, 151534 usec used
+^C
+44.35%
+
+43 flows:
+client fd 10: 2000000 bytes received, 25807 usec used
+client fd 5: 2000000 bytes received, 28716 usec used
+client fd 4: 2000000 bytes received, 30340 usec used
+client fd 7: 2000000 bytes received, 42187 usec used
+client fd 28: 2000000 bytes received, 71606 usec used
+client fd 41: 2000000 bytes received, 72547 usec used
+client fd 8: 2000000 bytes received, 74004 usec used
+client fd 31: 2000000 bytes received, 77294 usec used
+client fd 30: 2000000 bytes received, 81226 usec used
+client fd 32: 2000000 bytes received, 83163 usec used
+client fd 11: 2000000 bytes received, 88827 usec used
+client fd 35: 2000000 bytes received, 101226 usec used
+client fd 42: 2000000 bytes received, 102762 usec used
+client fd 6: 2000000 bytes received, 104917 usec used
+client fd 19: 2000000 bytes received, 106046 usec used
+client fd 9: 2000000 bytes received, 107070 usec used
+client fd 43: 2000000 bytes received, 109806 usec used
+client fd 21: 2000000 bytes received, 115442 usec used
+client fd 39: 2000000 bytes received, 116257 usec used
+client fd 16: 2000000 bytes received, 118130 usec used
+client fd 46: 2000000 bytes received, 118618 usec used
+client fd 18: 2000000 bytes received, 120697 usec used
+client fd 27: 2000000 bytes received, 122616 usec used
+client fd 23: 2000000 bytes received, 124397 usec used
+client fd 17: 2000000 bytes received, 125704 usec used
+client fd 26: 2000000 bytes received, 126067 usec used
+client fd 34: 2000000 bytes received, 126867 usec used
+client fd 40: 2000000 bytes received, 127087 usec used
+client fd 37: 2000000 bytes received, 131299 usec used
+client fd 14: 2000000 bytes received, 131714 usec used
+client fd 13: 2000000 bytes received, 133888 usec used
+client fd 25: 2000000 bytes received, 135507 usec used
+client fd 44: 2000000 bytes received, 137608 usec used
+client fd 12: 2000000 bytes received, 138402 usec used
+client fd 45: 2000000 bytes received, 139803 usec used
+client fd 29: 2000000 bytes received, 140219 usec used
+client fd 24: 2000000 bytes received, 141499 usec used
+client fd 38: 2000000 bytes received, 142045 usec used
+client fd 22: 2000000 bytes received, 143869 usec used
+client fd 20: 2000000 bytes received, 144171 usec used
+client fd 15: 2000000 bytes received, 144747 usec used
+client fd 33: 2000000 bytes received, 146867 usec used
+client fd 36: 2000000 bytes received, 148087 usec used
+^C
+46.46%
+
+44 flows:
+client fd 12: 2000000 bytes received, 33687 usec used
+client fd 6: 2000000 bytes received, 34164 usec used
+client fd 7: 2000000 bytes received, 38750 usec used
+client fd 18: 2000000 bytes received, 42985 usec used
+client fd 9: 2000000 bytes received, 62926 usec used
+client fd 8: 2000000 bytes received, 64166 usec used
+client fd 5: 2000000 bytes received, 67586 usec used
+client fd 21: 2000000 bytes received, 91996 usec used
+client fd 17: 2000000 bytes received, 95737 usec used
+client fd 4: 2000000 bytes received, 95986 usec used
+client fd 25: 2000000 bytes received, 102959 usec used
+client fd 39: 2000000 bytes received, 106589 usec used
+client fd 31: 2000000 bytes received, 107791 usec used
+client fd 41: 2000000 bytes received, 111256 usec used
+client fd 29: 2000000 bytes received, 113884 usec used
+client fd 15: 2000000 bytes received, 116778 usec used
+client fd 27: 2000000 bytes received, 117437 usec used
+client fd 34: 2000000 bytes received, 124130 usec used
+client fd 40: 2000000 bytes received, 124647 usec used
+client fd 38: 2000000 bytes received, 125480 usec used
+client fd 33: 2000000 bytes received, 125890 usec used
+client fd 23: 2000000 bytes received, 126374 usec used
+client fd 24: 2000000 bytes received, 127985 usec used
+client fd 13: 2000000 bytes received, 129838 usec used
+client fd 19: 2000000 bytes received, 131165 usec used
+client fd 11: 2000000 bytes received, 131230 usec used
+client fd 37: 2000000 bytes received, 131773 usec used
+client fd 26: 2000000 bytes received, 132599 usec used
+client fd 28: 2000000 bytes received, 133742 usec used
+client fd 47: 2000000 bytes received, 134448 usec used
+client fd 32: 2000000 bytes received, 135669 usec used
+client fd 20: 2000000 bytes received, 136967 usec used
+client fd 14: 2000000 bytes received, 137236 usec used
+client fd 46: 2000000 bytes received, 137638 usec used
+client fd 16: 2000000 bytes received, 137665 usec used
+client fd 30: 2000000 bytes received, 138110 usec used
+client fd 42: 2000000 bytes received, 138507 usec used
+client fd 22: 2000000 bytes received, 140038 usec used
+client fd 10: 2000000 bytes received, 141544 usec used
+client fd 36: 2000000 bytes received, 142142 usec used
+client fd 45: 2000000 bytes received, 142691 usec used
+client fd 43: 2000000 bytes received, 143132 usec used
+client fd 35: 2000000 bytes received, 143506 usec used
+client fd 44: 2000000 bytes received, 145615 usec used
+^C
+48.35%
+
+45 flows:
+client fd 6: 2000000 bytes received, 34930 usec used
+client fd 4: 2000000 bytes received, 37930 usec used
+client fd 8: 2000000 bytes received, 38148 usec used
+client fd 38: 2000000 bytes received, 61393 usec used
+client fd 34: 2000000 bytes received, 67469 usec used
+client fd 7: 2000000 bytes received, 69902 usec used
+client fd 11: 2000000 bytes received, 87641 usec used
+client fd 5: 2000000 bytes received, 87898 usec used
+client fd 10: 2000000 bytes received, 89544 usec used
+client fd 37: 2000000 bytes received, 99595 usec used
+client fd 26: 2000000 bytes received, 109799 usec used
+client fd 41: 2000000 bytes received, 112729 usec used
+client fd 42: 2000000 bytes received, 113587 usec used
+client fd 46: 2000000 bytes received, 114228 usec used
+client fd 43: 2000000 bytes received, 114361 usec used
+client fd 36: 2000000 bytes received, 116249 usec used
+client fd 12: 2000000 bytes received, 119166 usec used
+client fd 19: 2000000 bytes received, 119791 usec used
+client fd 20: 2000000 bytes received, 120132 usec used
+client fd 47: 2000000 bytes received, 122192 usec used
+client fd 33: 2000000 bytes received, 122285 usec used
+client fd 44: 2000000 bytes received, 122859 usec used
+client fd 22: 2000000 bytes received, 125248 usec used
+client fd 13: 2000000 bytes received, 127853 usec used
+client fd 39: 2000000 bytes received, 128912 usec used
+client fd 14: 2000000 bytes received, 130042 usec used
+client fd 35: 2000000 bytes received, 133049 usec used
+client fd 30: 2000000 bytes received, 135091 usec used
+client fd 31: 2000000 bytes received, 135763 usec used
+client fd 21: 2000000 bytes received, 137055 usec used
+client fd 25: 2000000 bytes received, 137177 usec used
+client fd 48: 2000000 bytes received, 137764 usec used
+client fd 9: 2000000 bytes received, 138297 usec used
+client fd 45: 2000000 bytes received, 139949 usec used
+client fd 17: 2000000 bytes received, 141297 usec used
+client fd 24: 2000000 bytes received, 141638 usec used
+client fd 29: 2000000 bytes received, 142547 usec used
+client fd 18: 2000000 bytes received, 143847 usec used
+client fd 28: 2000000 bytes received, 144472 usec used
+client fd 27: 2000000 bytes received, 145359 usec used
+client fd 15: 2000000 bytes received, 148467 usec used
+client fd 40: 2000000 bytes received, 149719 usec used
+client fd 32: 2000000 bytes received, 150532 usec used
+client fd 16: 2000000 bytes received, 153901 usec used
+client fd 23: 2000000 bytes received, 155920 usec used
+^C
+46.18%
+
+46 flows:
+client fd 5: 2000000 bytes received, 27600 usec used
+client fd 6: 2000000 bytes received, 31224 usec used
+client fd 10: 2000000 bytes received, 32254 usec used
+client fd 4: 2000000 bytes received, 33836 usec used
+client fd 46: 2000000 bytes received, 60308 usec used
+client fd 33: 2000000 bytes received, 64549 usec used
+client fd 26: 2000000 bytes received, 67007 usec used
+client fd 7: 2000000 bytes received, 68464 usec used
+client fd 8: 2000000 bytes received, 69082 usec used
+client fd 9: 2000000 bytes received, 70120 usec used
+client fd 45: 2000000 bytes received, 77087 usec used
+client fd 18: 2000000 bytes received, 95316 usec used
+client fd 27: 2000000 bytes received, 101066 usec used
+client fd 19: 2000000 bytes received, 106618 usec used
+client fd 34: 2000000 bytes received, 111683 usec used
+client fd 14: 2000000 bytes received, 115980 usec used
+client fd 22: 2000000 bytes received, 116551 usec used
+client fd 37: 2000000 bytes received, 117262 usec used
+client fd 35: 2000000 bytes received, 122137 usec used
+client fd 42: 2000000 bytes received, 126511 usec used
+client fd 43: 2000000 bytes received, 127297 usec used
+client fd 16: 2000000 bytes received, 127620 usec used
+client fd 15: 2000000 bytes received, 128016 usec used
+client fd 11: 2000000 bytes received, 128659 usec used
+client fd 17: 2000000 bytes received, 131907 usec used
+client fd 25: 2000000 bytes received, 133693 usec used
+client fd 21: 2000000 bytes received, 136975 usec used
+client fd 44: 2000000 bytes received, 138326 usec used
+client fd 13: 2000000 bytes received, 138636 usec used
+client fd 23: 2000000 bytes received, 140074 usec used
+client fd 30: 2000000 bytes received, 140596 usec used
+client fd 32: 2000000 bytes received, 142947 usec used
+client fd 39: 2000000 bytes received, 144336 usec used
+client fd 24: 2000000 bytes received, 144631 usec used
+client fd 47: 2000000 bytes received, 145172 usec used
+client fd 31: 2000000 bytes received, 145537 usec used
+client fd 38: 2000000 bytes received, 146277 usec used
+client fd 28: 2000000 bytes received, 146755 usec used
+client fd 29: 2000000 bytes received, 147721 usec used
+client fd 48: 2000000 bytes received, 148072 usec used
+client fd 40: 2000000 bytes received, 149545 usec used
+client fd 12: 2000000 bytes received, 150352 usec used
+client fd 20: 2000000 bytes received, 153235 usec used
+client fd 41: 2000000 bytes received, 154229 usec used
+client fd 36: 2000000 bytes received, 158394 usec used
+client fd 49: 2000000 bytes received, 158684 usec used
+^C
+46.38%
+
+47 flows:
+client fd 6: 2000000 bytes received, 26198 usec used
+client fd 16: 2000000 bytes received, 57091 usec used
+client fd 8: 2000000 bytes received, 67711 usec used
+client fd 46: 2000000 bytes received, 74077 usec used
+client fd 15: 2000000 bytes received, 74343 usec used
+client fd 7: 2000000 bytes received, 78815 usec used
+client fd 43: 2000000 bytes received, 81298 usec used
+client fd 4: 2000000 bytes received, 81641 usec used
+client fd 50: 2000000 bytes received, 93020 usec used
+client fd 5: 2000000 bytes received, 94810 usec used
+client fd 18: 2000000 bytes received, 97582 usec used
+client fd 13: 2000000 bytes received, 98889 usec used
+client fd 24: 2000000 bytes received, 106873 usec used
+client fd 17: 2000000 bytes received, 110083 usec used
+client fd 12: 2000000 bytes received, 110266 usec used
+client fd 14: 2000000 bytes received, 112680 usec used
+client fd 47: 2000000 bytes received, 113435 usec used
+client fd 10: 2000000 bytes received, 119308 usec used
+client fd 9: 2000000 bytes received, 119653 usec used
+client fd 20: 2000000 bytes received, 120561 usec used
+client fd 33: 2000000 bytes received, 124583 usec used
+client fd 25: 2000000 bytes received, 126560 usec used
+client fd 27: 2000000 bytes received, 127503 usec used
+client fd 23: 2000000 bytes received, 128421 usec used
+client fd 11: 2000000 bytes received, 134442 usec used
+client fd 34: 2000000 bytes received, 139585 usec used
+client fd 44: 2000000 bytes received, 140345 usec used
+client fd 22: 2000000 bytes received, 140516 usec used
+client fd 40: 2000000 bytes received, 141603 usec used
+client fd 21: 2000000 bytes received, 141893 usec used
+client fd 41: 2000000 bytes received, 147167 usec used
+client fd 32: 2000000 bytes received, 151206 usec used
+client fd 49: 2000000 bytes received, 151376 usec used
+client fd 36: 2000000 bytes received, 151724 usec used
+client fd 38: 2000000 bytes received, 152924 usec used
+client fd 48: 2000000 bytes received, 153219 usec used
+client fd 30: 2000000 bytes received, 153356 usec used
+client fd 35: 2000000 bytes received, 153497 usec used
+client fd 29: 2000000 bytes received, 153693 usec used
+client fd 31: 2000000 bytes received, 153911 usec used
+client fd 19: 2000000 bytes received, 154220 usec used
+client fd 28: 2000000 bytes received, 154466 usec used
+client fd 26: 2000000 bytes received, 154756 usec used
+client fd 39: 2000000 bytes received, 157779 usec used
+client fd 42: 2000000 bytes received, 158193 usec used
+client fd 45: 2000000 bytes received, 158475 usec used
+client fd 37: 2000000 bytes received, 159660 usec used
+^C
+47.10%
+
+48 flows:
+client fd 5: 2000000 bytes received, 25335 usec used
+client fd 8: 2000000 bytes received, 31128 usec used
+client fd 9: 2000000 bytes received, 35445 usec used
+client fd 4: 2000000 bytes received, 41547 usec used
+client fd 7: 2000000 bytes received, 65912 usec used
+client fd 11: 2000000 bytes received, 80333 usec used
+client fd 10: 2000000 bytes received, 83663 usec used
+client fd 17: 2000000 bytes received, 92408 usec used
+client fd 46: 2000000 bytes received, 110334 usec used
+client fd 6: 2000000 bytes received, 111030 usec used
+client fd 44: 2000000 bytes received, 113410 usec used
+client fd 30: 2000000 bytes received, 113880 usec used
+client fd 36: 2000000 bytes received, 116615 usec used
+client fd 34: 2000000 bytes received, 117518 usec used
+client fd 47: 2000000 bytes received, 122233 usec used
+client fd 16: 2000000 bytes received, 123178 usec used
+client fd 51: 2000000 bytes received, 125036 usec used
+client fd 42: 2000000 bytes received, 126305 usec used
+client fd 21: 2000000 bytes received, 128513 usec used
+client fd 48: 2000000 bytes received, 128902 usec used
+client fd 50: 2000000 bytes received, 129313 usec used
+client fd 37: 2000000 bytes received, 130862 usec used
+client fd 12: 2000000 bytes received, 134248 usec used
+client fd 29: 2000000 bytes received, 136208 usec used
+client fd 25: 2000000 bytes received, 136285 usec used
+client fd 18: 2000000 bytes received, 137370 usec used
+client fd 40: 2000000 bytes received, 140485 usec used
+client fd 32: 2000000 bytes received, 141104 usec used
+client fd 45: 2000000 bytes received, 143101 usec used
+client fd 14: 2000000 bytes received, 145298 usec used
+client fd 15: 2000000 bytes received, 147070 usec used
+client fd 23: 2000000 bytes received, 147480 usec used
+client fd 49: 2000000 bytes received, 148726 usec used
+client fd 24: 2000000 bytes received, 149263 usec used
+client fd 13: 2000000 bytes received, 153424 usec used
+client fd 22: 2000000 bytes received, 153717 usec used
+client fd 28: 2000000 bytes received, 153994 usec used
+client fd 35: 2000000 bytes received, 155145 usec used
+client fd 39: 2000000 bytes received, 155408 usec used
+client fd 43: 2000000 bytes received, 157721 usec used
+client fd 26: 2000000 bytes received, 157912 usec used
+client fd 41: 2000000 bytes received, 158718 usec used
+client fd 38: 2000000 bytes received, 159748 usec used
+client fd 20: 2000000 bytes received, 160496 usec used
+client fd 33: 2000000 bytes received, 160652 usec used
+client fd 31: 2000000 bytes received, 160963 usec used
+client fd 19: 2000000 bytes received, 162423 usec used
+client fd 27: 2000000 bytes received, 164055 usec used
+^C
+46.81%
+
+49 flows:
+client fd 4: 2000000 bytes received, 29839 usec used
+client fd 9: 2000000 bytes received, 34769 usec used
+client fd 6: 2000000 bytes received, 35649 usec used
+client fd 5: 2000000 bytes received, 42325 usec used
+client fd 7: 2000000 bytes received, 50776 usec used
+client fd 8: 2000000 bytes received, 51397 usec used
+client fd 19: 2000000 bytes received, 59236 usec used
+client fd 16: 2000000 bytes received, 70470 usec used
+client fd 10: 2000000 bytes received, 84745 usec used
+client fd 45: 2000000 bytes received, 103612 usec used
+client fd 30: 2000000 bytes received, 111151 usec used
+client fd 41: 2000000 bytes received, 114053 usec used
+client fd 15: 2000000 bytes received, 120771 usec used
+client fd 51: 2000000 bytes received, 122362 usec used
+client fd 13: 2000000 bytes received, 122984 usec used
+client fd 12: 2000000 bytes received, 123736 usec used
+client fd 21: 2000000 bytes received, 126773 usec used
+client fd 42: 2000000 bytes received, 129176 usec used
+client fd 40: 2000000 bytes received, 129347 usec used
+client fd 29: 2000000 bytes received, 132933 usec used
+client fd 49: 2000000 bytes received, 133599 usec used
+client fd 48: 2000000 bytes received, 135658 usec used
+client fd 24: 2000000 bytes received, 137049 usec used
+client fd 33: 2000000 bytes received, 137318 usec used
+client fd 18: 2000000 bytes received, 138756 usec used
+client fd 26: 2000000 bytes received, 143304 usec used
+client fd 23: 2000000 bytes received, 147042 usec used
+client fd 52: 2000000 bytes received, 147786 usec used
+client fd 22: 2000000 bytes received, 148448 usec used
+client fd 35: 2000000 bytes received, 148506 usec used
+client fd 14: 2000000 bytes received, 148765 usec used
+client fd 11: 2000000 bytes received, 149200 usec used
+client fd 34: 2000000 bytes received, 149949 usec used
+client fd 38: 2000000 bytes received, 150121 usec used
+client fd 46: 2000000 bytes received, 150453 usec used
+client fd 28: 2000000 bytes received, 151488 usec used
+client fd 37: 2000000 bytes received, 151822 usec used
+client fd 17: 2000000 bytes received, 153900 usec used
+client fd 20: 2000000 bytes received, 154792 usec used
+client fd 32: 2000000 bytes received, 154801 usec used
+client fd 27: 2000000 bytes received, 155701 usec used
+client fd 43: 2000000 bytes received, 158524 usec used
+client fd 44: 2000000 bytes received, 158841 usec used
+client fd 50: 2000000 bytes received, 158916 usec used
+client fd 36: 2000000 bytes received, 159528 usec used
+client fd 25: 2000000 bytes received, 160194 usec used
+client fd 39: 2000000 bytes received, 165017 usec used
+client fd 47: 2000000 bytes received, 165770 usec used
+client fd 31: 2000000 bytes received, 166630 usec used
+^C
+47.05%
+
+50 flows:
+client fd 7: 2000000 bytes received, 33930 usec used
+client fd 4: 2000000 bytes received, 41391 usec used
+client fd 8: 2000000 bytes received, 54288 usec used
+client fd 19: 2000000 bytes received, 73379 usec used
+client fd 34: 2000000 bytes received, 81595 usec used
+client fd 33: 2000000 bytes received, 84138 usec used
+client fd 10: 2000000 bytes received, 88015 usec used
+client fd 11: 2000000 bytes received, 90670 usec used
+client fd 9: 2000000 bytes received, 97601 usec used
+client fd 6: 2000000 bytes received, 98676 usec used
+client fd 5: 2000000 bytes received, 100667 usec used
+client fd 15: 2000000 bytes received, 106728 usec used
+client fd 16: 2000000 bytes received, 108007 usec used
+client fd 40: 2000000 bytes received, 111590 usec used
+client fd 17: 2000000 bytes received, 112849 usec used
+client fd 20: 2000000 bytes received, 115103 usec used
+client fd 50: 2000000 bytes received, 122779 usec used
+client fd 43: 2000000 bytes received, 125314 usec used
+client fd 25: 2000000 bytes received, 130552 usec used
+client fd 52: 2000000 bytes received, 134858 usec used
+client fd 13: 2000000 bytes received, 134963 usec used
+client fd 22: 2000000 bytes received, 137919 usec used
+client fd 53: 2000000 bytes received, 139947 usec used
+client fd 12: 2000000 bytes received, 143691 usec used
+client fd 26: 2000000 bytes received, 143948 usec used
+client fd 41: 2000000 bytes received, 144032 usec used
+client fd 30: 2000000 bytes received, 144879 usec used
+client fd 32: 2000000 bytes received, 145349 usec used
+client fd 42: 2000000 bytes received, 147116 usec used
+client fd 23: 2000000 bytes received, 147827 usec used
+client fd 21: 2000000 bytes received, 150682 usec used
+client fd 31: 2000000 bytes received, 153468 usec used
+client fd 18: 2000000 bytes received, 155396 usec used
+client fd 39: 2000000 bytes received, 156076 usec used
+client fd 24: 2000000 bytes received, 156502 usec used
+client fd 36: 2000000 bytes received, 156539 usec used
+client fd 49: 2000000 bytes received, 157298 usec used
+client fd 47: 2000000 bytes received, 157528 usec used
+client fd 48: 2000000 bytes received, 158551 usec used
+client fd 51: 2000000 bytes received, 159419 usec used
+client fd 29: 2000000 bytes received, 161530 usec used
+client fd 45: 2000000 bytes received, 162571 usec used
+client fd 37: 2000000 bytes received, 162652 usec used
+client fd 35: 2000000 bytes received, 164576 usec used
+client fd 28: 2000000 bytes received, 166909 usec used
+client fd 46: 2000000 bytes received, 167887 usec used
+client fd 14: 2000000 bytes received, 169588 usec used
+client fd 38: 2000000 bytes received, 170141 usec used
+client fd 27: 2000000 bytes received, 171453 usec used
+client fd 44: 2000000 bytes received, 171825 usec used
+^C
+46.56%
+
+51 flows:
+client fd 5: 2000000 bytes received, 37038 usec used
+client fd 6: 2000000 bytes received, 39163 usec used
+client fd 10: 2000000 bytes received, 40111 usec used
+client fd 9: 2000000 bytes received, 40944 usec used
+client fd 8: 2000000 bytes received, 58786 usec used
+client fd 19: 2000000 bytes received, 69751 usec used
+client fd 7: 2000000 bytes received, 73064 usec used
+client fd 39: 2000000 bytes received, 102868 usec used
+client fd 52: 2000000 bytes received, 106274 usec used
+client fd 33: 2000000 bytes received, 109700 usec used
+client fd 46: 2000000 bytes received, 115592 usec used
+client fd 53: 2000000 bytes received, 118556 usec used
+client fd 27: 2000000 bytes received, 120095 usec used
+client fd 11: 2000000 bytes received, 121990 usec used
+client fd 50: 2000000 bytes received, 122348 usec used
+client fd 37: 2000000 bytes received, 129125 usec used
+client fd 54: 2000000 bytes received, 130094 usec used
+client fd 4: 2000000 bytes received, 132746 usec used
+client fd 48: 2000000 bytes received, 133775 usec used
+client fd 16: 2000000 bytes received, 133777 usec used
+client fd 41: 2000000 bytes received, 139993 usec used
+client fd 14: 2000000 bytes received, 142941 usec used
+client fd 12: 2000000 bytes received, 149315 usec used
+client fd 18: 2000000 bytes received, 149434 usec used
+client fd 17: 2000000 bytes received, 151179 usec used
+client fd 26: 2000000 bytes received, 151909 usec used
+client fd 35: 2000000 bytes received, 152409 usec used
+client fd 23: 2000000 bytes received, 153453 usec used
+client fd 32: 2000000 bytes received, 157222 usec used
+client fd 44: 2000000 bytes received, 158535 usec used
+client fd 28: 2000000 bytes received, 159648 usec used
+client fd 15: 2000000 bytes received, 160137 usec used
+client fd 51: 2000000 bytes received, 160812 usec used
+client fd 43: 2000000 bytes received, 161510 usec used
+client fd 34: 2000000 bytes received, 162060 usec used
+client fd 25: 2000000 bytes received, 162323 usec used
+client fd 47: 2000000 bytes received, 162561 usec used
+client fd 42: 2000000 bytes received, 163116 usec used
+client fd 13: 2000000 bytes received, 163315 usec used
+client fd 40: 2000000 bytes received, 165206 usec used
+client fd 22: 2000000 bytes received, 168183 usec used
+client fd 24: 2000000 bytes received, 168603 usec used
+client fd 36: 2000000 bytes received, 168636 usec used
+client fd 38: 2000000 bytes received, 169149 usec used
+client fd 49: 2000000 bytes received, 169449 usec used
+client fd 30: 2000000 bytes received, 170390 usec used
+client fd 21: 2000000 bytes received, 170687 usec used
+client fd 20: 2000000 bytes received, 170890 usec used
+client fd 31: 2000000 bytes received, 170935 usec used
+client fd 45: 2000000 bytes received, 171130 usec used
+client fd 29: 2000000 bytes received, 171859 usec used
+^C
+47.48%
+
+52 flows:
+client fd 6: 2000000 bytes received, 31532 usec used
+client fd 5: 2000000 bytes received, 31633 usec used
+client fd 4: 2000000 bytes received, 34032 usec used
+client fd 8: 2000000 bytes received, 38523 usec used
+client fd 7: 2000000 bytes received, 62976 usec used
+client fd 9: 2000000 bytes received, 94676 usec used
+client fd 45: 2000000 bytes received, 105967 usec used
+client fd 47: 2000000 bytes received, 109279 usec used
+client fd 53: 2000000 bytes received, 110733 usec used
+client fd 38: 2000000 bytes received, 112281 usec used
+client fd 13: 2000000 bytes received, 113828 usec used
+client fd 51: 2000000 bytes received, 115691 usec used
+client fd 17: 2000000 bytes received, 118374 usec used
+client fd 55: 2000000 bytes received, 120110 usec used
+client fd 11: 2000000 bytes received, 122592 usec used
+client fd 12: 2000000 bytes received, 124294 usec used
+client fd 28: 2000000 bytes received, 127034 usec used
+client fd 18: 2000000 bytes received, 129877 usec used
+client fd 41: 2000000 bytes received, 131266 usec used
+client fd 40: 2000000 bytes received, 136504 usec used
+client fd 44: 2000000 bytes received, 142294 usec used
+client fd 14: 2000000 bytes received, 149154 usec used
+client fd 10: 2000000 bytes received, 155614 usec used
+client fd 26: 2000000 bytes received, 157057 usec used
+client fd 24: 2000000 bytes received, 157252 usec used
+client fd 49: 2000000 bytes received, 157352 usec used
+client fd 16: 2000000 bytes received, 157918 usec used
+client fd 27: 2000000 bytes received, 157937 usec used
+client fd 48: 2000000 bytes received, 158697 usec used
+client fd 25: 2000000 bytes received, 159253 usec used
+client fd 30: 2000000 bytes received, 159779 usec used
+client fd 34: 2000000 bytes received, 161279 usec used
+client fd 33: 2000000 bytes received, 161439 usec used
+client fd 37: 2000000 bytes received, 162148 usec used
+client fd 39: 2000000 bytes received, 162634 usec used
+client fd 22: 2000000 bytes received, 163685 usec used
+client fd 21: 2000000 bytes received, 164424 usec used
+client fd 19: 2000000 bytes received, 164437 usec used
+client fd 50: 2000000 bytes received, 165032 usec used
+client fd 43: 2000000 bytes received, 165244 usec used
+client fd 54: 2000000 bytes received, 166058 usec used
+client fd 42: 2000000 bytes received, 167430 usec used
+client fd 46: 2000000 bytes received, 168265 usec used
+client fd 32: 2000000 bytes received, 168464 usec used
+client fd 29: 2000000 bytes received, 169173 usec used
+client fd 23: 2000000 bytes received, 170020 usec used
+client fd 15: 2000000 bytes received, 170284 usec used
+client fd 31: 2000000 bytes received, 171555 usec used
+client fd 20: 2000000 bytes received, 171734 usec used
+client fd 36: 2000000 bytes received, 172877 usec used
+client fd 35: 2000000 bytes received, 173623 usec used
+client fd 52: 2000000 bytes received, 174497 usec used
+^C
+47.68%
+
+53 flows:
+client fd 43: 2000000 bytes received, 53549 usec used
+client fd 42: 2000000 bytes received, 92267 usec used
+client fd 9: 2000000 bytes received, 107992 usec used
+client fd 27: 2000000 bytes received, 112736 usec used
+client fd 21: 2000000 bytes received, 113236 usec used
+client fd 26: 2000000 bytes received, 114361 usec used
+client fd 48: 2000000 bytes received, 117658 usec used
+client fd 53: 2000000 bytes received, 123296 usec used
+client fd 36: 2000000 bytes received, 123629 usec used
+client fd 17: 2000000 bytes received, 124600 usec used
+client fd 11: 2000000 bytes received, 125137 usec used
+client fd 54: 2000000 bytes received, 127031 usec used
+client fd 33: 2000000 bytes received, 127591 usec used
+client fd 50: 2000000 bytes received, 132514 usec used
+client fd 39: 2000000 bytes received, 136815 usec used
+client fd 35: 2000000 bytes received, 137775 usec used
+client fd 49: 2000000 bytes received, 138167 usec used
+client fd 28: 2000000 bytes received, 140000 usec used
+client fd 25: 2000000 bytes received, 145295 usec used
+client fd 30: 2000000 bytes received, 145687 usec used
+client fd 10: 2000000 bytes received, 151396 usec used
+client fd 18: 2000000 bytes received, 151850 usec used
+client fd 51: 2000000 bytes received, 153131 usec used
+client fd 29: 2000000 bytes received, 153555 usec used
+client fd 31: 2000000 bytes received, 153749 usec used
+client fd 19: 2000000 bytes received, 153765 usec used
+client fd 12: 2000000 bytes received, 154869 usec used
+client fd 34: 2000000 bytes received, 156109 usec used
+client fd 32: 2000000 bytes received, 157775 usec used
+client fd 52: 2000000 bytes received, 158609 usec used
+client fd 41: 2000000 bytes received, 160084 usec used
+client fd 45: 2000000 bytes received, 161620 usec used
+client fd 44: 2000000 bytes received, 161710 usec used
+client fd 20: 2000000 bytes received, 165457 usec used
+client fd 46: 2000000 bytes received, 169552 usec used
+client fd 37: 2000000 bytes received, 170391 usec used
+client fd 47: 2000000 bytes received, 170924 usec used
+client fd 16: 2000000 bytes received, 171415 usec used
+client fd 13: 2000000 bytes received, 171729 usec used
+client fd 14: 2000000 bytes received, 172258 usec used
+client fd 22: 2000000 bytes received, 172608 usec used
+client fd 40: 2000000 bytes received, 173371 usec used
+client fd 55: 2000000 bytes received, 173858 usec used
+client fd 56: 2000000 bytes received, 175530 usec used
+client fd 15: 2000000 bytes received, 176579 usec used
+client fd 24: 2000000 bytes received, 178126 usec used
+client fd 23: 2000000 bytes received, 180057 usec used
+client fd 38: 2000000 bytes received, 181594 usec used
+^C
+46.70%
+
+54 flows:
+client fd 4: 2000000 bytes received, 33298 usec used
+client fd 9: 2000000 bytes received, 36992 usec used
+client fd 5: 2000000 bytes received, 51394 usec used
+client fd 56: 2000000 bytes received, 74310 usec used
+client fd 11: 2000000 bytes received, 74846 usec used
+client fd 10: 2000000 bytes received, 76377 usec used
+client fd 40: 2000000 bytes received, 92069 usec used
+client fd 6: 2000000 bytes received, 96218 usec used
+client fd 21: 2000000 bytes received, 97379 usec used
+client fd 30: 2000000 bytes received, 100682 usec used
+client fd 49: 2000000 bytes received, 101201 usec used
+client fd 20: 2000000 bytes received, 102782 usec used
+client fd 18: 2000000 bytes received, 105061 usec used
+client fd 31: 2000000 bytes received, 105644 usec used
+client fd 8: 2000000 bytes received, 105763 usec used
+client fd 41: 2000000 bytes received, 107416 usec used
+client fd 28: 2000000 bytes received, 112410 usec used
+client fd 42: 2000000 bytes received, 123347 usec used
+client fd 7: 2000000 bytes received, 124450 usec used
+client fd 16: 2000000 bytes received, 125793 usec used
+client fd 19: 2000000 bytes received, 126216 usec used
+client fd 23: 2000000 bytes received, 127889 usec used
+client fd 24: 2000000 bytes received, 127951 usec used
+client fd 47: 2000000 bytes received, 132337 usec used
+client fd 15: 2000000 bytes received, 137957 usec used
+client fd 53: 2000000 bytes received, 138132 usec used
+client fd 13: 2000000 bytes received, 145288 usec used
+client fd 54: 2000000 bytes received, 155543 usec used
+client fd 25: 2000000 bytes received, 156557 usec used
+client fd 17: 2000000 bytes received, 158066 usec used
+client fd 38: 2000000 bytes received, 160775 usec used
+client fd 14: 2000000 bytes received, 161516 usec used
+client fd 29: 2000000 bytes received, 162968 usec used
+client fd 32: 2000000 bytes received, 163673 usec used
+client fd 22: 2000000 bytes received, 166586 usec used
+client fd 50: 2000000 bytes received, 171334 usec used
+client fd 33: 2000000 bytes received, 172371 usec used
+client fd 27: 2000000 bytes received, 172484 usec used
+client fd 26: 2000000 bytes received, 172845 usec used
+client fd 43: 2000000 bytes received, 173522 usec used
+client fd 34: 2000000 bytes received, 173970 usec used
+client fd 39: 2000000 bytes received, 174930 usec used
+client fd 37: 2000000 bytes received, 175386 usec used
+client fd 44: 2000000 bytes received, 177620 usec used
+client fd 57: 2000000 bytes received, 177787 usec used
+client fd 55: 2000000 bytes received, 178071 usec used
+client fd 36: 2000000 bytes received, 178376 usec used
+client fd 35: 2000000 bytes received, 178746 usec used
+client fd 46: 2000000 bytes received, 178836 usec used
+client fd 45: 2000000 bytes received, 179144 usec used
+client fd 48: 2000000 bytes received, 179163 usec used
+client fd 12: 2000000 bytes received, 179255 usec used
+client fd 51: 2000000 bytes received, 179531 usec used
+client fd 52: 2000000 bytes received, 181794 usec used
+^C
+47.53%
+
+55 flows:
+client fd 9: 2000000 bytes received, 24621 usec used
+client fd 10: 2000000 bytes received, 34219 usec used
+client fd 7: 2000000 bytes received, 38234 usec used
+client fd 4: 2000000 bytes received, 38499 usec used
+client fd 5: 2000000 bytes received, 51790 usec used
+client fd 11: 2000000 bytes received, 57304 usec used
+client fd 6: 2000000 bytes received, 111652 usec used
+client fd 15: 2000000 bytes received, 118276 usec used
+client fd 13: 2000000 bytes received, 119886 usec used
+client fd 8: 2000000 bytes received, 120830 usec used
+client fd 42: 2000000 bytes received, 121303 usec used
+client fd 43: 2000000 bytes received, 122432 usec used
+client fd 44: 2000000 bytes received, 128090 usec used
+client fd 56: 2000000 bytes received, 131878 usec used
+client fd 57: 2000000 bytes received, 133834 usec used
+client fd 47: 2000000 bytes received, 136254 usec used
+client fd 51: 2000000 bytes received, 139222 usec used
+client fd 52: 2000000 bytes received, 140747 usec used
+client fd 45: 2000000 bytes received, 143376 usec used
+client fd 41: 2000000 bytes received, 143513 usec used
+client fd 50: 2000000 bytes received, 145626 usec used
+client fd 19: 2000000 bytes received, 145634 usec used
+client fd 40: 2000000 bytes received, 147430 usec used
+client fd 53: 2000000 bytes received, 148254 usec used
+client fd 16: 2000000 bytes received, 150452 usec used
+client fd 54: 2000000 bytes received, 151219 usec used
+client fd 20: 2000000 bytes received, 151579 usec used
+client fd 58: 2000000 bytes received, 151685 usec used
+client fd 29: 2000000 bytes received, 154376 usec used
+client fd 12: 2000000 bytes received, 155361 usec used
+client fd 55: 2000000 bytes received, 160633 usec used
+client fd 39: 2000000 bytes received, 161111 usec used
+client fd 28: 2000000 bytes received, 162450 usec used
+client fd 37: 2000000 bytes received, 163398 usec used
+client fd 27: 2000000 bytes received, 163509 usec used
+client fd 30: 2000000 bytes received, 165758 usec used
+client fd 49: 2000000 bytes received, 166535 usec used
+client fd 48: 2000000 bytes received, 167747 usec used
+client fd 35: 2000000 bytes received, 169480 usec used
+client fd 46: 2000000 bytes received, 169995 usec used
+client fd 14: 2000000 bytes received, 170384 usec used
+client fd 25: 2000000 bytes received, 170816 usec used
+client fd 36: 2000000 bytes received, 171290 usec used
+client fd 24: 2000000 bytes received, 172728 usec used
+client fd 17: 2000000 bytes received, 172861 usec used
+client fd 26: 2000000 bytes received, 173454 usec used
+client fd 33: 2000000 bytes received, 174621 usec used
+client fd 32: 2000000 bytes received, 174765 usec used
+client fd 18: 2000000 bytes received, 174819 usec used
+client fd 22: 2000000 bytes received, 175001 usec used
+client fd 23: 2000000 bytes received, 175870 usec used
+client fd 38: 2000000 bytes received, 178515 usec used
+client fd 21: 2000000 bytes received, 178523 usec used
+client fd 31: 2000000 bytes received, 179404 usec used
+client fd 34: 2000000 bytes received, 179436 usec used
+^C
+49.04%
+
+56 flows:
+client fd 5: 2000000 bytes received, 32283 usec used
+client fd 6: 2000000 bytes received, 46608 usec used
+client fd 10: 2000000 bytes received, 76395 usec used
+client fd 20: 2000000 bytes received, 76541 usec used
+client fd 52: 2000000 bytes received, 78546 usec used
+client fd 8: 2000000 bytes received, 87423 usec used
+client fd 15: 2000000 bytes received, 94598 usec used
+client fd 22: 2000000 bytes received, 100035 usec used
+client fd 9: 2000000 bytes received, 102092 usec used
+client fd 18: 2000000 bytes received, 102606 usec used
+client fd 17: 2000000 bytes received, 114001 usec used
+client fd 37: 2000000 bytes received, 116278 usec used
+client fd 35: 2000000 bytes received, 117840 usec used
+client fd 24: 2000000 bytes received, 119422 usec used
+client fd 7: 2000000 bytes received, 122808 usec used
+client fd 14: 2000000 bytes received, 130075 usec used
+client fd 19: 2000000 bytes received, 137174 usec used
+client fd 21: 2000000 bytes received, 137780 usec used
+client fd 55: 2000000 bytes received, 140940 usec used
+client fd 4: 2000000 bytes received, 142933 usec used
+client fd 11: 2000000 bytes received, 146132 usec used
+client fd 57: 2000000 bytes received, 147099 usec used
+client fd 54: 2000000 bytes received, 148719 usec used
+client fd 41: 2000000 bytes received, 149701 usec used
+client fd 31: 2000000 bytes received, 153714 usec used
+client fd 40: 2000000 bytes received, 155154 usec used
+client fd 26: 2000000 bytes received, 156295 usec used
+client fd 29: 2000000 bytes received, 157740 usec used
+client fd 36: 2000000 bytes received, 159959 usec used
+client fd 30: 2000000 bytes received, 162815 usec used
+client fd 12: 2000000 bytes received, 162918 usec used
+client fd 13: 2000000 bytes received, 168528 usec used
+client fd 49: 2000000 bytes received, 170554 usec used
+client fd 38: 2000000 bytes received, 171831 usec used
+client fd 28: 2000000 bytes received, 173825 usec used
+client fd 45: 2000000 bytes received, 174837 usec used
+client fd 27: 2000000 bytes received, 175175 usec used
+client fd 42: 2000000 bytes received, 176107 usec used
+client fd 32: 2000000 bytes received, 176635 usec used
+client fd 23: 2000000 bytes received, 177004 usec used
+client fd 53: 2000000 bytes received, 177011 usec used
+client fd 43: 2000000 bytes received, 177448 usec used
+client fd 47: 2000000 bytes received, 177516 usec used
+client fd 39: 2000000 bytes received, 178075 usec used
+client fd 33: 2000000 bytes received, 179127 usec used
+client fd 44: 2000000 bytes received, 179847 usec used
+client fd 16: 2000000 bytes received, 179973 usec used
+client fd 48: 2000000 bytes received, 181214 usec used
+client fd 56: 2000000 bytes received, 183492 usec used
+client fd 50: 2000000 bytes received, 184087 usec used
+client fd 59: 2000000 bytes received, 184985 usec used
+client fd 34: 2000000 bytes received, 185001 usec used
+client fd 51: 2000000 bytes received, 185912 usec used
+client fd 58: 2000000 bytes received, 186722 usec used
+client fd 25: 2000000 bytes received, 187236 usec used
+client fd 46: 2000000 bytes received, 188872 usec used
+^C
+47.44%
+
+57 flows:
+client fd 6: 2000000 bytes received, 44863 usec used
+client fd 8: 2000000 bytes received, 48579 usec used
+client fd 5: 2000000 bytes received, 56959 usec used
+client fd 10: 2000000 bytes received, 60392 usec used
+client fd 11: 2000000 bytes received, 63793 usec used
+client fd 7: 2000000 bytes received, 64569 usec used
+client fd 9: 2000000 bytes received, 80641 usec used
+client fd 4: 2000000 bytes received, 102926 usec used
+client fd 20: 2000000 bytes received, 105304 usec used
+client fd 46: 2000000 bytes received, 114910 usec used
+client fd 24: 2000000 bytes received, 118175 usec used
+client fd 57: 2000000 bytes received, 119791 usec used
+client fd 47: 2000000 bytes received, 122409 usec used
+client fd 52: 2000000 bytes received, 128965 usec used
+client fd 26: 2000000 bytes received, 132207 usec used
+client fd 55: 2000000 bytes received, 133478 usec used
+client fd 48: 2000000 bytes received, 134954 usec used
+client fd 59: 2000000 bytes received, 137900 usec used
+client fd 23: 2000000 bytes received, 138071 usec used
+client fd 60: 2000000 bytes received, 138831 usec used
+client fd 51: 2000000 bytes received, 144564 usec used
+client fd 54: 2000000 bytes received, 147726 usec used
+client fd 50: 2000000 bytes received, 148372 usec used
+client fd 35: 2000000 bytes received, 150632 usec used
+client fd 19: 2000000 bytes received, 151502 usec used
+client fd 21: 2000000 bytes received, 151558 usec used
+client fd 16: 2000000 bytes received, 153066 usec used
+client fd 44: 2000000 bytes received, 155529 usec used
+client fd 40: 2000000 bytes received, 157226 usec used
+client fd 53: 2000000 bytes received, 157845 usec used
+client fd 31: 2000000 bytes received, 158354 usec used
+client fd 22: 2000000 bytes received, 158529 usec used
+client fd 15: 2000000 bytes received, 162413 usec used
+client fd 32: 2000000 bytes received, 162716 usec used
+client fd 14: 2000000 bytes received, 163759 usec used
+client fd 34: 2000000 bytes received, 165884 usec used
+client fd 18: 2000000 bytes received, 169558 usec used
+client fd 12: 2000000 bytes received, 170089 usec used
+client fd 27: 2000000 bytes received, 170441 usec used
+client fd 17: 2000000 bytes received, 172156 usec used
+client fd 29: 2000000 bytes received, 173932 usec used
+client fd 38: 2000000 bytes received, 174698 usec used
+client fd 39: 2000000 bytes received, 174841 usec used
+client fd 33: 2000000 bytes received, 175822 usec used
+client fd 43: 2000000 bytes received, 176357 usec used
+client fd 41: 2000000 bytes received, 176480 usec used
+client fd 58: 2000000 bytes received, 176815 usec used
+client fd 13: 2000000 bytes received, 176932 usec used
+client fd 30: 2000000 bytes received, 177144 usec used
+client fd 42: 2000000 bytes received, 177772 usec used
+client fd 25: 2000000 bytes received, 178389 usec used
+client fd 56: 2000000 bytes received, 180858 usec used
+client fd 49: 2000000 bytes received, 181584 usec used
+client fd 28: 2000000 bytes received, 183018 usec used
+client fd 36: 2000000 bytes received, 184003 usec used
+client fd 37: 2000000 bytes received, 184945 usec used
+client fd 45: 2000000 bytes received, 185810 usec used
+^C
+49.08%
+
+58 flows:
+client fd 11: 2000000 bytes received, 44654 usec used
+client fd 13: 2000000 bytes received, 52371 usec used
+client fd 9: 2000000 bytes received, 59936 usec used
+client fd 8: 2000000 bytes received, 65011 usec used
+client fd 7: 2000000 bytes received, 66001 usec used
+client fd 6: 2000000 bytes received, 77128 usec used
+client fd 10: 2000000 bytes received, 78174 usec used
+client fd 5: 2000000 bytes received, 92111 usec used
+client fd 4: 2000000 bytes received, 92601 usec used
+client fd 15: 2000000 bytes received, 106115 usec used
+client fd 12: 2000000 bytes received, 111351 usec used
+client fd 55: 2000000 bytes received, 127296 usec used
+client fd 54: 2000000 bytes received, 130536 usec used
+client fd 52: 2000000 bytes received, 131921 usec used
+client fd 45: 2000000 bytes received, 132730 usec used
+client fd 21: 2000000 bytes received, 136733 usec used
+client fd 47: 2000000 bytes received, 136740 usec used
+client fd 31: 2000000 bytes received, 141421 usec used
+client fd 46: 2000000 bytes received, 142239 usec used
+client fd 49: 2000000 bytes received, 145972 usec used
+client fd 57: 2000000 bytes received, 146778 usec used
+client fd 51: 2000000 bytes received, 150817 usec used
+client fd 17: 2000000 bytes received, 151228 usec used
+client fd 43: 2000000 bytes received, 154874 usec used
+client fd 34: 2000000 bytes received, 158440 usec used
+client fd 48: 2000000 bytes received, 159946 usec used
+client fd 19: 2000000 bytes received, 161570 usec used
+client fd 22: 2000000 bytes received, 164343 usec used
+client fd 61: 2000000 bytes received, 164620 usec used
+client fd 58: 2000000 bytes received, 165709 usec used
+client fd 56: 2000000 bytes received, 165921 usec used
+client fd 14: 2000000 bytes received, 166505 usec used
+client fd 37: 2000000 bytes received, 167045 usec used
+client fd 20: 2000000 bytes received, 168149 usec used
+client fd 32: 2000000 bytes received, 169958 usec used
+client fd 33: 2000000 bytes received, 170663 usec used
+client fd 59: 2000000 bytes received, 171221 usec used
+client fd 25: 2000000 bytes received, 171260 usec used
+client fd 16: 2000000 bytes received, 173960 usec used
+client fd 24: 2000000 bytes received, 174309 usec used
+client fd 39: 2000000 bytes received, 178038 usec used
+client fd 38: 2000000 bytes received, 178714 usec used
+client fd 30: 2000000 bytes received, 181488 usec used
+client fd 60: 2000000 bytes received, 181528 usec used
+client fd 40: 2000000 bytes received, 181744 usec used
+client fd 23: 2000000 bytes received, 182019 usec used
+client fd 41: 2000000 bytes received, 182400 usec used
+client fd 36: 2000000 bytes received, 182567 usec used
+client fd 18: 2000000 bytes received, 182808 usec used
+client fd 28: 2000000 bytes received, 183210 usec used
+client fd 26: 2000000 bytes received, 183819 usec used
+client fd 35: 2000000 bytes received, 184446 usec used
+client fd 27: 2000000 bytes received, 184924 usec used
+client fd 42: 2000000 bytes received, 186070 usec used
+client fd 29: 2000000 bytes received, 186325 usec used
+client fd 44: 2000000 bytes received, 188064 usec used
+client fd 50: 2000000 bytes received, 189097 usec used
+client fd 53: 2000000 bytes received, 189944 usec used
+^C
+48.86%
+
+59 flows:
+client fd 8: 2000000 bytes received, 32345 usec used
+client fd 5: 2000000 bytes received, 34061 usec used
+client fd 9: 2000000 bytes received, 35126 usec used
+client fd 4: 2000000 bytes received, 38629 usec used
+client fd 7: 2000000 bytes received, 61091 usec used
+client fd 6: 2000000 bytes received, 70820 usec used
+client fd 11: 2000000 bytes received, 89866 usec used
+client fd 10: 2000000 bytes received, 98795 usec used
+client fd 41: 2000000 bytes received, 100228 usec used
+client fd 40: 2000000 bytes received, 110300 usec used
+client fd 51: 2000000 bytes received, 124909 usec used
+client fd 43: 2000000 bytes received, 126099 usec used
+client fd 62: 2000000 bytes received, 128754 usec used
+client fd 18: 2000000 bytes received, 131019 usec used
+client fd 17: 2000000 bytes received, 133259 usec used
+client fd 44: 2000000 bytes received, 133791 usec used
+client fd 52: 2000000 bytes received, 136867 usec used
+client fd 34: 2000000 bytes received, 139081 usec used
+client fd 53: 2000000 bytes received, 140419 usec used
+client fd 33: 2000000 bytes received, 142374 usec used
+client fd 45: 2000000 bytes received, 143207 usec used
+client fd 29: 2000000 bytes received, 143754 usec used
+client fd 60: 2000000 bytes received, 144855 usec used
+client fd 47: 2000000 bytes received, 146798 usec used
+client fd 57: 2000000 bytes received, 153391 usec used
+client fd 16: 2000000 bytes received, 155405 usec used
+client fd 59: 2000000 bytes received, 158183 usec used
+client fd 24: 2000000 bytes received, 158925 usec used
+client fd 27: 2000000 bytes received, 161717 usec used
+client fd 48: 2000000 bytes received, 163156 usec used
+client fd 19: 2000000 bytes received, 163727 usec used
+client fd 35: 2000000 bytes received, 165034 usec used
+client fd 39: 2000000 bytes received, 165216 usec used
+client fd 46: 2000000 bytes received, 166048 usec used
+client fd 31: 2000000 bytes received, 168045 usec used
+client fd 42: 2000000 bytes received, 168669 usec used
+client fd 32: 2000000 bytes received, 171822 usec used
+client fd 49: 2000000 bytes received, 171836 usec used
+client fd 26: 2000000 bytes received, 172685 usec used
+client fd 50: 2000000 bytes received, 174556 usec used
+client fd 56: 2000000 bytes received, 174820 usec used
+client fd 25: 2000000 bytes received, 175181 usec used
+client fd 55: 2000000 bytes received, 175187 usec used
+client fd 15: 2000000 bytes received, 175571 usec used
+client fd 58: 2000000 bytes received, 175830 usec used
+client fd 36: 2000000 bytes received, 176035 usec used
+client fd 37: 2000000 bytes received, 176094 usec used
+client fd 12: 2000000 bytes received, 180533 usec used
+client fd 21: 2000000 bytes received, 180943 usec used
+client fd 38: 2000000 bytes received, 182425 usec used
+client fd 14: 2000000 bytes received, 182850 usec used
+client fd 13: 2000000 bytes received, 185394 usec used
+client fd 20: 2000000 bytes received, 185655 usec used
+client fd 28: 2000000 bytes received, 187574 usec used
+client fd 23: 2000000 bytes received, 188012 usec used
+client fd 22: 2000000 bytes received, 190395 usec used
+client fd 30: 2000000 bytes received, 192356 usec used
+client fd 54: 2000000 bytes received, 195502 usec used
+client fd 61: 2000000 bytes received, 196320 usec used
+^C
+48.08%
+
+60 flows:
+client fd 6: 2000000 bytes received, 41470 usec used
+client fd 10: 2000000 bytes received, 46359 usec used
+client fd 8: 2000000 bytes received, 56601 usec used
+client fd 4: 2000000 bytes received, 56869 usec used
+client fd 9: 2000000 bytes received, 57987 usec used
+client fd 7: 2000000 bytes received, 87920 usec used
+client fd 14: 2000000 bytes received, 110036 usec used
+client fd 28: 2000000 bytes received, 112744 usec used
+client fd 5: 2000000 bytes received, 122768 usec used
+client fd 42: 2000000 bytes received, 126827 usec used
+client fd 17: 2000000 bytes received, 127170 usec used
+client fd 59: 2000000 bytes received, 130861 usec used
+client fd 24: 2000000 bytes received, 136828 usec used
+client fd 33: 2000000 bytes received, 138312 usec used
+client fd 58: 2000000 bytes received, 144942 usec used
+client fd 47: 2000000 bytes received, 145290 usec used
+client fd 49: 2000000 bytes received, 145787 usec used
+client fd 57: 2000000 bytes received, 146731 usec used
+client fd 45: 2000000 bytes received, 148969 usec used
+client fd 50: 2000000 bytes received, 149103 usec used
+client fd 11: 2000000 bytes received, 149225 usec used
+client fd 56: 2000000 bytes received, 155498 usec used
+client fd 38: 2000000 bytes received, 158799 usec used
+client fd 40: 2000000 bytes received, 162832 usec used
+client fd 15: 2000000 bytes received, 164254 usec used
+client fd 63: 2000000 bytes received, 165698 usec used
+client fd 16: 2000000 bytes received, 166397 usec used
+client fd 41: 2000000 bytes received, 166789 usec used
+client fd 54: 2000000 bytes received, 167634 usec used
+client fd 26: 2000000 bytes received, 167688 usec used
+client fd 32: 2000000 bytes received, 169128 usec used
+client fd 52: 2000000 bytes received, 173029 usec used
+client fd 53: 2000000 bytes received, 173115 usec used
+client fd 30: 2000000 bytes received, 173128 usec used
+client fd 62: 2000000 bytes received, 174459 usec used
+client fd 25: 2000000 bytes received, 177211 usec used
+client fd 22: 2000000 bytes received, 177559 usec used
+client fd 48: 2000000 bytes received, 178168 usec used
+client fd 36: 2000000 bytes received, 178176 usec used
+client fd 34: 2000000 bytes received, 178364 usec used
+client fd 12: 2000000 bytes received, 178564 usec used
+client fd 46: 2000000 bytes received, 180487 usec used
+client fd 21: 2000000 bytes received, 181103 usec used
+client fd 61: 2000000 bytes received, 182803 usec used
+client fd 23: 2000000 bytes received, 183387 usec used
+client fd 60: 2000000 bytes received, 183739 usec used
+client fd 35: 2000000 bytes received, 185143 usec used
+client fd 43: 2000000 bytes received, 186252 usec used
+client fd 37: 2000000 bytes received, 186757 usec used
+client fd 39: 2000000 bytes received, 187027 usec used
+client fd 51: 2000000 bytes received, 188228 usec used
+client fd 19: 2000000 bytes received, 188654 usec used
+client fd 31: 2000000 bytes received, 189116 usec used
+client fd 27: 2000000 bytes received, 190950 usec used
+client fd 55: 2000000 bytes received, 192778 usec used
+client fd 18: 2000000 bytes received, 193608 usec used
+client fd 29: 2000000 bytes received, 196967 usec used
+client fd 44: 2000000 bytes received, 199234 usec used
+client fd 13: 2000000 bytes received, 203243 usec used
+client fd 20: 2000000 bytes received, 203976 usec used
+^C
+47.06%
+
+61 flows:
+client fd 11: 2000000 bytes received, 35534 usec used
+client fd 6: 2000000 bytes received, 46947 usec used
+client fd 8: 2000000 bytes received, 48104 usec used
+client fd 12: 2000000 bytes received, 74214 usec used
+client fd 7: 2000000 bytes received, 82642 usec used
+client fd 9: 2000000 bytes received, 84781 usec used
+client fd 4: 2000000 bytes received, 88725 usec used
+client fd 10: 2000000 bytes received, 96016 usec used
+client fd 36: 2000000 bytes received, 106768 usec used
+client fd 29: 2000000 bytes received, 106956 usec used
+client fd 5: 2000000 bytes received, 110011 usec used
+client fd 25: 2000000 bytes received, 122580 usec used
+client fd 54: 2000000 bytes received, 128803 usec used
+client fd 19: 2000000 bytes received, 131976 usec used
+client fd 58: 2000000 bytes received, 140782 usec used
+client fd 31: 2000000 bytes received, 147185 usec used
+client fd 59: 2000000 bytes received, 149150 usec used
+client fd 45: 2000000 bytes received, 151702 usec used
+client fd 35: 2000000 bytes received, 152165 usec used
+client fd 33: 2000000 bytes received, 154728 usec used
+client fd 60: 2000000 bytes received, 155987 usec used
+client fd 50: 2000000 bytes received, 157396 usec used
+client fd 42: 2000000 bytes received, 158922 usec used
+client fd 51: 2000000 bytes received, 161057 usec used
+client fd 14: 2000000 bytes received, 161700 usec used
+client fd 15: 2000000 bytes received, 162025 usec used
+client fd 21: 2000000 bytes received, 166218 usec used
+client fd 18: 2000000 bytes received, 169218 usec used
+client fd 27: 2000000 bytes received, 170121 usec used
+client fd 34: 2000000 bytes received, 171369 usec used
+client fd 53: 2000000 bytes received, 172710 usec used
+client fd 13: 2000000 bytes received, 173038 usec used
+client fd 64: 2000000 bytes received, 174097 usec used
+client fd 26: 2000000 bytes received, 175767 usec used
+client fd 43: 2000000 bytes received, 177262 usec used
+client fd 57: 2000000 bytes received, 177959 usec used
+client fd 30: 2000000 bytes received, 178772 usec used
+client fd 44: 2000000 bytes received, 180638 usec used
+client fd 47: 2000000 bytes received, 181315 usec used
+client fd 20: 2000000 bytes received, 181544 usec used
+client fd 61: 2000000 bytes received, 181687 usec used
+client fd 40: 2000000 bytes received, 185081 usec used
+client fd 37: 2000000 bytes received, 186005 usec used
+client fd 17: 2000000 bytes received, 187969 usec used
+client fd 41: 2000000 bytes received, 188438 usec used
+client fd 46: 2000000 bytes received, 188883 usec used
+client fd 63: 2000000 bytes received, 189299 usec used
+client fd 49: 2000000 bytes received, 190204 usec used
+client fd 16: 2000000 bytes received, 190501 usec used
+client fd 52: 2000000 bytes received, 190680 usec used
+client fd 28: 2000000 bytes received, 191369 usec used
+client fd 32: 2000000 bytes received, 191644 usec used
+client fd 23: 2000000 bytes received, 193125 usec used
+client fd 22: 2000000 bytes received, 194384 usec used
+client fd 38: 2000000 bytes received, 196179 usec used
+client fd 55: 2000000 bytes received, 196742 usec used
+client fd 56: 2000000 bytes received, 196941 usec used
+client fd 62: 2000000 bytes received, 197212 usec used
+client fd 48: 2000000 bytes received, 198822 usec used
+client fd 39: 2000000 bytes received, 199002 usec used
+client fd 24: 2000000 bytes received, 199773 usec used
+^C
+48.86%
+
+62 flows:
+client fd 9: 2000000 bytes received, 51510 usec used
+client fd 11: 2000000 bytes received, 61821 usec used
+client fd 8: 2000000 bytes received, 64171 usec used
+client fd 5: 2000000 bytes received, 66404 usec used
+client fd 15: 2000000 bytes received, 84181 usec used
+client fd 63: 2000000 bytes received, 88001 usec used
+client fd 48: 2000000 bytes received, 89060 usec used
+client fd 10: 2000000 bytes received, 96468 usec used
+client fd 49: 2000000 bytes received, 101716 usec used
+client fd 47: 2000000 bytes received, 107582 usec used
+client fd 7: 2000000 bytes received, 114993 usec used
+client fd 46: 2000000 bytes received, 115063 usec used
+client fd 54: 2000000 bytes received, 123193 usec used
+client fd 37: 2000000 bytes received, 123212 usec used
+client fd 6: 2000000 bytes received, 124897 usec used
+client fd 24: 2000000 bytes received, 125881 usec used
+client fd 35: 2000000 bytes received, 127757 usec used
+client fd 57: 2000000 bytes received, 128179 usec used
+client fd 4: 2000000 bytes received, 138060 usec used
+client fd 32: 2000000 bytes received, 139663 usec used
+client fd 65: 2000000 bytes received, 144007 usec used
+client fd 30: 2000000 bytes received, 144717 usec used
+client fd 62: 2000000 bytes received, 148478 usec used
+client fd 33: 2000000 bytes received, 148683 usec used
+client fd 12: 2000000 bytes received, 148833 usec used
+client fd 64: 2000000 bytes received, 156420 usec used
+client fd 14: 2000000 bytes received, 158039 usec used
+client fd 13: 2000000 bytes received, 158346 usec used
+client fd 18: 2000000 bytes received, 170995 usec used
+client fd 19: 2000000 bytes received, 174888 usec used
+client fd 16: 2000000 bytes received, 175282 usec used
+client fd 60: 2000000 bytes received, 175539 usec used
+client fd 44: 2000000 bytes received, 175815 usec used
+client fd 50: 2000000 bytes received, 177416 usec used
+client fd 17: 2000000 bytes received, 178803 usec used
+client fd 59: 2000000 bytes received, 182614 usec used
+client fd 53: 2000000 bytes received, 184968 usec used
+client fd 23: 2000000 bytes received, 186498 usec used
+client fd 28: 2000000 bytes received, 187037 usec used
+client fd 41: 2000000 bytes received, 187526 usec used
+client fd 25: 2000000 bytes received, 190408 usec used
+client fd 51: 2000000 bytes received, 191004 usec used
+client fd 20: 2000000 bytes received, 192388 usec used
+client fd 22: 2000000 bytes received, 192428 usec used
+client fd 39: 2000000 bytes received, 193096 usec used
+client fd 43: 2000000 bytes received, 193592 usec used
+client fd 21: 2000000 bytes received, 193878 usec used
+client fd 42: 2000000 bytes received, 195842 usec used
+client fd 58: 2000000 bytes received, 196110 usec used
+client fd 55: 2000000 bytes received, 196507 usec used
+client fd 56: 2000000 bytes received, 196991 usec used
+client fd 34: 2000000 bytes received, 197469 usec used
+client fd 26: 2000000 bytes received, 197866 usec used
+client fd 40: 2000000 bytes received, 199006 usec used
+client fd 27: 2000000 bytes received, 200808 usec used
+client fd 52: 2000000 bytes received, 201146 usec used
+client fd 31: 2000000 bytes received, 201648 usec used
+client fd 29: 2000000 bytes received, 203712 usec used
+client fd 61: 2000000 bytes received, 204195 usec used
+client fd 36: 2000000 bytes received, 204290 usec used
+client fd 45: 2000000 bytes received, 205415 usec used
+client fd 38: 2000000 bytes received, 207023 usec used
+^C
+47.87%
+
+63 flows:
+client fd 12: 2000000 bytes received, 48703 usec used
+client fd 6: 2000000 bytes received, 49280 usec used
+client fd 11: 2000000 bytes received, 55768 usec used
+client fd 10: 2000000 bytes received, 56970 usec used
+client fd 7: 2000000 bytes received, 59693 usec used
+client fd 5: 2000000 bytes received, 76027 usec used
+client fd 8: 2000000 bytes received, 78660 usec used
+client fd 9: 2000000 bytes received, 107816 usec used
+client fd 59: 2000000 bytes received, 125665 usec used
+client fd 63: 2000000 bytes received, 128905 usec used
+client fd 13: 2000000 bytes received, 129655 usec used
+client fd 61: 2000000 bytes received, 140736 usec used
+client fd 14: 2000000 bytes received, 141017 usec used
+client fd 58: 2000000 bytes received, 142184 usec used
+client fd 19: 2000000 bytes received, 146712 usec used
+client fd 42: 2000000 bytes received, 147440 usec used
+client fd 66: 2000000 bytes received, 150128 usec used
+client fd 45: 2000000 bytes received, 153421 usec used
+client fd 57: 2000000 bytes received, 154349 usec used
+client fd 62: 2000000 bytes received, 154976 usec used
+client fd 4: 2000000 bytes received, 157988 usec used
+client fd 54: 2000000 bytes received, 161273 usec used
+client fd 55: 2000000 bytes received, 161722 usec used
+client fd 20: 2000000 bytes received, 163458 usec used
+client fd 32: 2000000 bytes received, 165454 usec used
+client fd 35: 2000000 bytes received, 165704 usec used
+client fd 52: 2000000 bytes received, 167727 usec used
+client fd 28: 2000000 bytes received, 167736 usec used
+client fd 46: 2000000 bytes received, 171629 usec used
+client fd 39: 2000000 bytes received, 174211 usec used
+client fd 15: 2000000 bytes received, 179634 usec used
+client fd 43: 2000000 bytes received, 179876 usec used
+client fd 24: 2000000 bytes received, 180014 usec used
+client fd 17: 2000000 bytes received, 181777 usec used
+client fd 44: 2000000 bytes received, 183221 usec used
+client fd 27: 2000000 bytes received, 183715 usec used
+client fd 38: 2000000 bytes received, 185496 usec used
+client fd 18: 2000000 bytes received, 185944 usec used
+client fd 34: 2000000 bytes received, 188046 usec used
+client fd 51: 2000000 bytes received, 188888 usec used
+client fd 36: 2000000 bytes received, 190689 usec used
+client fd 53: 2000000 bytes received, 190839 usec used
+client fd 60: 2000000 bytes received, 191263 usec used
+client fd 25: 2000000 bytes received, 191529 usec used
+client fd 47: 2000000 bytes received, 194225 usec used
+client fd 41: 2000000 bytes received, 195905 usec used
+client fd 29: 2000000 bytes received, 196140 usec used
+client fd 26: 2000000 bytes received, 196235 usec used
+client fd 56: 2000000 bytes received, 196269 usec used
+client fd 21: 2000000 bytes received, 197215 usec used
+client fd 30: 2000000 bytes received, 197287 usec used
+client fd 65: 2000000 bytes received, 197626 usec used
+client fd 37: 2000000 bytes received, 198278 usec used
+client fd 50: 2000000 bytes received, 199217 usec used
+client fd 33: 2000000 bytes received, 199563 usec used
+client fd 40: 2000000 bytes received, 200851 usec used
+client fd 22: 2000000 bytes received, 201115 usec used
+client fd 49: 2000000 bytes received, 202103 usec used
+client fd 23: 2000000 bytes received, 202956 usec used
+client fd 16: 2000000 bytes received, 204209 usec used
+client fd 48: 2000000 bytes received, 205083 usec used
+client fd 31: 2000000 bytes received, 208282 usec used
+client fd 64: 2000000 bytes received, 209098 usec used
+^C
+48.21%
+
+64 flows:
+client fd 7: 2000000 bytes received, 45839 usec used
+client fd 8: 2000000 bytes received, 53468 usec used
+client fd 5: 2000000 bytes received, 54781 usec used
+client fd 46: 2000000 bytes received, 91039 usec used
+client fd 15: 2000000 bytes received, 100787 usec used
+client fd 21: 2000000 bytes received, 101929 usec used
+client fd 37: 2000000 bytes received, 104964 usec used
+client fd 49: 2000000 bytes received, 106879 usec used
+client fd 6: 2000000 bytes received, 106905 usec used
+client fd 51: 2000000 bytes received, 108193 usec used
+client fd 66: 2000000 bytes received, 118590 usec used
+client fd 4: 2000000 bytes received, 119169 usec used
+client fd 63: 2000000 bytes received, 123733 usec used
+client fd 41: 2000000 bytes received, 124147 usec used
+client fd 48: 2000000 bytes received, 130578 usec used
+client fd 54: 2000000 bytes received, 136508 usec used
+client fd 50: 2000000 bytes received, 138822 usec used
+client fd 11: 2000000 bytes received, 140362 usec used
+client fd 25: 2000000 bytes received, 140917 usec used
+client fd 56: 2000000 bytes received, 141745 usec used
+client fd 59: 2000000 bytes received, 142135 usec used
+client fd 40: 2000000 bytes received, 145194 usec used
+client fd 39: 2000000 bytes received, 153905 usec used
+client fd 36: 2000000 bytes received, 154215 usec used
+client fd 29: 2000000 bytes received, 156150 usec used
+client fd 34: 2000000 bytes received, 165314 usec used
+client fd 24: 2000000 bytes received, 170743 usec used
+client fd 28: 2000000 bytes received, 172323 usec used
+client fd 10: 2000000 bytes received, 173489 usec used
+client fd 43: 2000000 bytes received, 173897 usec used
+client fd 20: 2000000 bytes received, 174343 usec used
+client fd 12: 2000000 bytes received, 176270 usec used
+client fd 44: 2000000 bytes received, 177268 usec used
+client fd 16: 2000000 bytes received, 179752 usec used
+client fd 58: 2000000 bytes received, 179870 usec used
+client fd 65: 2000000 bytes received, 180233 usec used
+client fd 38: 2000000 bytes received, 181581 usec used
+client fd 13: 2000000 bytes received, 182632 usec used
+client fd 32: 2000000 bytes received, 184110 usec used
+client fd 57: 2000000 bytes received, 186946 usec used
+client fd 17: 2000000 bytes received, 189558 usec used
+client fd 30: 2000000 bytes received, 192416 usec used
+client fd 14: 2000000 bytes received, 192718 usec used
+client fd 53: 2000000 bytes received, 193586 usec used
+client fd 64: 2000000 bytes received, 196158 usec used
+client fd 55: 2000000 bytes received, 197258 usec used
+client fd 52: 2000000 bytes received, 197613 usec used
+client fd 60: 2000000 bytes received, 198000 usec used
+client fd 22: 2000000 bytes received, 198334 usec used
+client fd 47: 2000000 bytes received, 199087 usec used
+client fd 19: 2000000 bytes received, 200464 usec used
+client fd 18: 2000000 bytes received, 200678 usec used
+client fd 9: 2000000 bytes received, 201140 usec used
+client fd 33: 2000000 bytes received, 202072 usec used
+client fd 45: 2000000 bytes received, 202562 usec used
+client fd 61: 2000000 bytes received, 204305 usec used
+client fd 31: 2000000 bytes received, 204423 usec used
+client fd 67: 2000000 bytes received, 204568 usec used
+client fd 35: 2000000 bytes received, 204905 usec used
+client fd 27: 2000000 bytes received, 206276 usec used
+client fd 62: 2000000 bytes received, 206869 usec used
+client fd 23: 2000000 bytes received, 206936 usec used
+client fd 42: 2000000 bytes received, 209486 usec used
+client fd 26: 2000000 bytes received, 210392 usec used
+^C
+48.67%

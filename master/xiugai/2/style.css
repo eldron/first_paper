@@ -1,0 +1,22 @@
+.loading-indicator {
+    font-size:9pt; 
+    background-image:url(images/loading.gif);
+    background-repeat: no-repeat;  
+    background-position:center left; 
+	height:30px;
+	text-align:center;
+	line-height:30px;
+}
+ 
+#loading{
+	position:absolute;
+	left:35%;
+	top:40%;
+	border:1px solid #0033FF;
+	background:white url(images/block-bg.gif) repeat-x;
+	padding:10px;
+	font:bold 14px verdana,tahoma,helvetica; 
+	color:#003366;
+	width:300px;
+	z-index:40000;
+}

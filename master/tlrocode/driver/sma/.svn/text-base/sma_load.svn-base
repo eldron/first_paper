@@ -1,0 +1,40 @@
+#!/bin/sh
+module="sma"
+device="sma"
+mode="664"
+
+declare -i major=$1
+declare -i devs=$2
+
+if [ $devs -le 0 ]; then
+    devs=1
+elif [ $devs -ge 4 ]; then
+    devs=4
+fi 
+
+# Group: since distributions do it differently, look for wheel or use staff
+if grep -q '^staff:' /etc/group; then
+    group="staff"
+else
+    group="wheel"
+fi
+
+# invoke insmod with all arguments we got
+# and use a pathname, as insmod doesn't look in . by default
+/sbin/insmod ./$module.ko sma_major=$major  sma_nr_devs=$devs || exit 1
+
+# retrieve major number
+major=$(awk "\$2==\"$module\" {print \$1}" /proc/devices)
+
+# Remove stale nodes and replace them, then give gid and perms
+# Usually the script is shorter, it's scull that has several devices in it.
+
+rm -f /dev/${device}[0-3]
+for (( i=0; i<$devs; i=i+1 ))
+do
+    mknod /dev/${device}$i c $major $i
+done
+ln -sf ${device}0 /dev/${device}
+chgrp $group /dev/${device}[0-$devs] 
+chmod $mode  /dev/${device}[0-$devs]
+

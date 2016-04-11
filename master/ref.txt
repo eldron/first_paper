@@ -1,0 +1,45 @@
+1 42 Chase, Gallatin, Yocum, End system optimizations for high speed tcp
+2 66 Borman, Partridge, computing the internet checksum. rfc 1071
+3 67 Mallory, Kullberg, incremental uhpdating of the internet checkusm.
+4 68 Rijsinghani, computation of the internet checksum via incremental update.
+5 69 Kleinpaste, Steenkiste, Zill Software support for outboard buffering and checksuming
+6 71 Henriksson, Persson, Liu VLSIimplementation of internet checksum calculation for 10 gigabit ethernet
+7 47 Jerry Chu, zero-copy tcp in Solaris. 
+8 80 Dalton, Watson, Banks Afterburner
+9 81 Druschel, Peterson, Fbufs: a high bandwidth cross domain transfer facility.
+10 Buzzard, Jacobson, Mackey an implementation of the Hamlyn sender-managed interface architecture.
+11 82 Rodrigues, Anderson, Culler, high performance local area communication with fast sockets
+12 83 Culley, Garcia, Hilland, An RDMA protocol specification.
+13 97 Mogul. TCP offload is a dumb idea whose time has come.
+14 98 Romanow, Bailey. An overview of RDMA over IP.
+15 99 Erdogan, Patel. design and implementation of RDMA as a best efforts service and providing reliability over it.
+16 85 Juan M. UDP, TCP and IP fragmentation analysis and importance in TOE devices.
+17 84 Rangarajan, Bohra, Banerjee, TCP services: offloading tcp processing in internet services, design, implementation and performance
+18 72 Write, Stevens, TCP/IP illustrated, volume 2: the implementation
+19 86 Mosberger, Peterson, Bridges, Analysis of techniques to improve protocol processing latency
+20 87 Yocum, Anderson, Chase, Balancing DMA latency and bandwidth in a high speed network adapter
+21 88 Matthias Kaiserswerth. The parallel protocol engine.
+22 89 Nordqvist, Liu, A comparative study of protocol processors.
+23 46 Addressing tcp/ip processing challenges using the IA and IXP processors
+24 90 Mapp, Pope. The design and implementation of a high speed user space transport protocol
+25 91 Thekkath, Nguyen, Moyt. Implementing network protocols at user level
+26 92 Edwards, Muir. Experiences implementing a high performance TCP in user space.
+27 93 Shivam, Wyckoff, Panda. EMP: zerocopy osbypass NICdriven gigabit ethernet message passing
+
+29 50 Yeh, Chao, Mannem, Gervais, introduction to TCP/IP offload engine.
+20 94 Altman, Avrachenkov, Barakat, tcp in presence of burstly losses.
+31 95 Henrikson, Nordqvist, Liu, embedded protocol processor for fast and efficient packert reception.
+32 96 an evaluation of an attempt at offloading ...
+33 120 Shah, Madukkarumukumana,High performance sockets and rpc over virtual interface architecture
+34 121 Kim, Kim, Jung. SOVIA: a user level sockets layer over virtual interface architecture.
+35 122 Feng, Balaji, Baron, Performance characterization of a 10gigabit ethernet toe.
+36 123 advatages of a tcp ip offload asic
+37 Ethernet storage whitepapers[EB/OL].[2015-06-10]. http://www.snia.org/forums/esf/resources/whitepapers.
+38 Chelsio Accelerates Adoption of Unified Wire Networking with 10GbE iSCSI Initiator Adapter and 10G iSCSI-FC Gateway[EB/OL].[2015-06-10]. http://www.chelsio.com/chelsio-accelerates-adoption-of-unified-wire-networking-with-10gbe-iscsi-initiator-adapter-and-10g-iscsi-fc-gateway/.
+39 Hardware documentation[EB/OL].[2015-06-10]. http://www.alacritech.com/support/legacy-accelerator/hardware-documentation/.
+40 Kim H, Rixner S. TCP offload through connection handoff[C]//ACM SIGOPS Operating Systems Review. ACM, 2006, 40(4): 279-290.
+41 TSO 
+42 linux napi
+43 Grossman L. Large receive offload implementation in neterion 10GbE Ethernet driver[C]//Linux Symposium. 2005: 195.
+44 Theman J B. lro: Generic Large Receive Offload for TCP traffic[J]. 2007.
+45 Hatori T, Oi H. Implementation and analysis of large receive offload in a virtualized system[J]. Proceedings of the Virtualization Performance: Analysis, Characterization, and Tools (VPACT¡¯08), 2008.

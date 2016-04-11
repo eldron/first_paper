@@ -1,0 +1,1 @@
+cmd_/opt/lijie/tjp_sma20/fenghuo-sma20/driver/sma/sma.ko.unsigned := ld -r -m elf_x86_64 -T /usr/src/kernels/2.6.32-358.el6.x86_64/scripts/module-common.lds --build-id -o /opt/lijie/tjp_sma20/fenghuo-sma20/driver/sma/sma.ko.unsigned /opt/lijie/tjp_sma20/fenghuo-sma20/driver/sma/sma.o /opt/lijie/tjp_sma20/fenghuo-sma20/driver/sma/sma.mod.o 

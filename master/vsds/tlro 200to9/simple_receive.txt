@@ -1,0 +1,17 @@
+1 flow:
+client fd 4: 2000000 bytes received, 27043 usec used
+^C
+
+2 flows:
+client fd 5: 2000000 bytes received, 39683 usec used
+client fd 4: 2000000 bytes received, 42023 usec used
+^C
+
+3 flows:
+client fd 5: 2000000 bytes received, 48070 usec used
+client fd 6: 2000000 bytes received, 51290 usec used
+client fd 4: 2000000 bytes received, 52375 usec used
+^C
+9.16%
+
+4 flows:

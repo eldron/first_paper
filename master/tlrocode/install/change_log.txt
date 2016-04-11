@@ -1,0 +1,7 @@
+﻿2015-01-05
+1.驱动程序支持反复加载
+2.废弃了sma_open_net_iface和sma_close_net_iface接口,支持异常关闭后通道复位功能
+
+2015-01-23
+1.修改了字节序为主机序
+2.修复了session timeout 不准确的问题

@@ -1,0 +1,214 @@
+#ifndef __FFWD_H__
+#define __FFWD_H__
+
+#include "sma_table.h"
+#include "sma.h"
+#include "ffwd_debug.h"
+#include "stlc_list.h"
+
+#define OK (0)
+#define ERROR (-1)
+
+
+/* th_flags */
+#define	TH_FIN	0x01
+#define	TH_SYN	0x02
+#define	TH_RST	0x04
+#define	TH_PUSH	0x08
+#define	TH_ACK	0x10
+#define	TH_URG	0x20
+
+#define	IP_DF 0x4000			/* dont fragment flag */
+#define	IP_MF 0x2000			/* more fragments flag */
+#define	IP_OFFMASK 0x1fff		/* mask for fragmenting bits */
+
+
+#define	ETHERTYPE_IP		0x0800	/* IP protocol */
+#define	ETHERTYPE_8021Q	    0x8100	/*802.1Q protocol*/
+
+#define IPPROTO_UDP     17
+#define IPPROTO_TCP     6
+
+
+struct ip
+{
+    uint32_t	ip_v : 4,			/* version */
+                ip_hl : 4,		/* header length */
+                ip_tos : 8,		/* type of service */
+                ip_len : 16;		/* total length */
+    uint16_t	ip_id;			/* identification */
+    uint16_t	ip_off;			/* fragment offset field */
+    uint8_t	    ip_ttl;			/* time to live */
+    uint8_t	    ip_p;			/* protocol */
+    uint16_t	ip_sum;			/* checksum */
+    uint32_t    ip_src;
+    uint32_t    ip_dst;	/* source and dest address */
+};
+
+struct tcphdr
+{
+    uint16_t th_sport;		/* source port */
+    uint16_t th_dport;		/* destination port */
+    uint32_t th_seq;			/* sequence number */
+    uint32_t th_ack;			/* acknowledgement number */
+    uint32_t th_off : 4,		/* data offset */
+    th_x2 : 4,		/* (unused) */
+    th_flags : 8,
+    th_win : 16;		/* window */
+    uint16_t th_sum;			/* checksum */
+    uint16_t th_urp;			/* urgent pointer */
+} __attribute__((aligned(1)));
+
+struct udphdr
+{
+    uint16_t uh_sport;       /* source port */
+    uint16_t uh_dport;       /* destination port */
+    uint16_t uh_ulen;      /* udp length */
+    uint16_t uh_sum;         /* udp checksum */
+} __attribute__((aligned(1)));
+
+struct	ether_header
+{
+    uint8_t ether_dhost[6];
+    uint8_t ether_shost[6];
+    uint16_t ether_type;
+};
+
+typedef struct session_key_s
+{
+	u32 sip;
+	u32 dip;
+	u16 sport;
+	u16 dport;
+}session_key_t;
+
+//xls_packet_t 数据结构必须填充64字节否则出错
+typedef struct xls_packet_s
+{
+	u8* data;
+	u16 pkt_len;    //报文总长度
+	u16 data_len;   //报文数据部分长度
+	session_key_t key;
+	u16 protocol;
+	u8  direction;
+	u8  th_flags;
+	u16 hash; //28 最大为65536
+	uint16_t de_num;
+    uint32_t teid;
+	u32 seq;//udp=0
+	u32 nseq;//= seq + data_len 用于seq与ack都相等时比较报文的先后
+	u32 ack;//udp=0
+	struct xls_packet_s *next_pkt;	
+
+	u64 smac;//本报文的实际smac
+	u64 dmac;//本报文的实际dmac 
+	u8 pkt_data[0];//指向以太帧头前预留的64字节
+}xls_packet_t;
+
+#define IP_HLEN	sizeof(struct ip)
+
+#define REQ_DIRECT 0
+#define RSP_DIRECT 1
+#define PKT_RESERVE_SIZE 64 //预留以填充dma描述
+
+typedef struct session_node_s
+{
+	session_key_t key;
+	uint16_t protocol; //这里改变了，由8变为16
+	uint16_t stop_sec;//会话结束时置1，否则为0，这里位置移到这里了
+	uint16_t pkt_num;// 这里也由8变成16
+	uint16_t total_paylen;
+	uint32_t hash;//
+    uint32_t teid;
+	int pid;
+	xls_packet_t *pkt;//合并上下行后首个报文描述符地址
+	xls_packet_t *req_pkt_head;//首个上行报文描述符地址
+	xls_packet_t *rsp_pkt_head;//首个下行报文描述符地址
+	
+	xls_packet_t *req_pkt_tail;//最后一个上行报文描述符地址
+	xls_packet_t *rsp_pkt_tail;//最后一个下行报文描述符地址
+	xls_packet_t *pkt_tail;//最后一个报文描述符地址
+
+	xls_packet_t *req_drop_head;//需丢弃的上行报文描述符地址
+	xls_packet_t *rsp_drop_head;//需丢弃的下行报文描述符地址
+	xls_packet_t *req_drop_tail;//需丢弃的上行报文描述符地址
+	xls_packet_t *rsp_drop_tail;//需丢弃的下行报文描述符地址
+  
+	u8 c_fin;//上行结束标志(fin 或者rst标志)
+	u8 s_fin;//下行结束标志(如果上下行都结束了，认为这个会话完成)
+    u8 rst;
+
+	u8 timeout;
+	//uint32_t cip_hash;//客户端ip 分流hash
+	u64 timer_tick;//插入到流表的时间点s
+	
+	u32 dma_base;//dma pkt 提交基地址
+	u32 dma_in;//dma通道写索引值 
+	entry_state_desc_t * rx_desc;
+	xls_packet_t *dma_pkt;//当前正在提交的pkt
+	u32 dma_total_paylen;//当前提交的数据长度
+
+	struct stlc_list_head nd_list;//提交链接下一个会话节点 
+	struct stlc_hlist_node nd_hlist;//流表节点 
+	struct session_node_s *next;//链接下一个会话节点
+}__attribute__ ((aligned (256)))  session_desc_t;
+
+
+typedef struct mac_packet_s
+{
+	struct stlc_list_head list;//提交链接下一个节点 
+    uint32_t len;
+    uint8_t pad[20];
+	uint8_t data[0];
+	
+}mac_packet_t;
+
+
+#define CPU_SPEED	800000000ULL
+#define MAXNUM_VCPU 16
+#define MASK_2K_ALIGN 0xfffff800
+
+extern int core_id;
+extern int thread_id;
+extern int process_id;
+
+extern ffwd_dma_queue_t * ffwd_dma_queue ;
+extern ffwd_device_info_t * ffwd_device_info ;
+extern entry_state_desc_t * ffwd_session_state_base ;
+extern entry_state_desc_t * ffwd_udp_state_base ;
+extern ffwd_counter_info_t * ffwd_counter_info;
+
+extern ffwd_mac_entry_desc_t * ffwd_mac_entry_desc_rx;
+extern ffwd_mac_entry_desc_t * ffwd_mac_entry_desc_tx;
+extern ffwd_mac_device_info_t * ffwd_mac_device_info;
+extern ffwd_mac_counter_t * ffwd_mac_counter;
+extern struct stlc_list_head mac_pkt_pool;
+
+
+extern struct stlc_hlist_head *session_bkt;
+extern session_desc_t *session_desc_head;
+
+extern spinlock_t   ffwd_init_lock    __shared_memory__;
+extern volatile int ffwd_init_done  __shared_memory__;
+extern spinlock_t session_channel_lock[MAX_NUM_RX_CHANNELS] __shared_memory__;
+extern u32 channel_offset[MAX_NUM_RX_CHANNELS] __shared_memory__;
+
+extern u8 igrid_to_bucket[];
+extern u64 time_out __shared_memory__;
+extern u64 now __shared_memory__;
+
+extern struct stlc_list_head dma_list;
+
+
+#define SESSION_BKT_BASE 0x10000000
+#define MAXNUM_FLOW_BUCKET 65536
+#define SESSION_BKT_SIZE (MAXNUM_FLOW_BUCKET * sizeof(struct stlc_hlist_head) *MAXNUM_VCPU)
+#define SESSION_DESC_SIZE 256
+#define MAXNUM_SESSION_DESC_TH ((256*1024*1024 - SESSION_BKT_SIZE)/SESSION_DESC_SIZE/MAXNUM_VCPU) //会话描述符总大小为256M
+
+#define SMA_COUNTER_INC(what) ffwd_counter_info[process_id].what++
+#define SMA_COUNTER_DEC(what) ffwd_counter_info[process_id].what--
+#define SMA_COUNTER_COUNT(what, len) ffwd_counter_info[process_id].what += len
+
+
+#endif

@@ -1,0 +1,368 @@
+.dynamic-tab-pane-control.tab-pane {
+	position:	relative;
+	width:		100%;		/* width needed weird IE bug */
+	margin-right:	-2px;	/* to make room for the shadow */
+}
+
+.dynamic-tab-pane-control .tab-row .tab {
+
+	width:				70px;
+	height:				16px;
+	background-image:	url(images/tab.png);
+	
+	position:		relative;
+	top:			0;
+	display:		inline;
+	float:			left;
+	overflow:		hidden;
+	
+	cursor:			Default;
+
+	margin:			1px -1px 1px 2px;
+	padding:		2px 0px 0px 0px;
+	border:			0;
+
+	z-index:		1;
+	font:			11px Tahoma;
+	white-space:	nowrap;
+	text-align:		center;
+}
+
+.dynamic-tab-pane-control .tab-row .tab.selected {
+	width:				74px;
+	height:				18px;
+	background-image:	url(images/tab.active.png) !important;
+	background-repaet:	no-repeat;
+
+	border-bottom-width:	0;
+	z-index:		3;
+	padding:		2px 0 0px 0;
+	margin:			1px -3px -3px 0px;
+	top:			-2px;
+	font:				11px Tahoma;
+}
+
+.dynamic-tab-pane-control .tab-row .tab a {
+	font:				11px Tahoma;
+	color:				Black;
+	text-decoration:	none;
+	cursor:				default;
+}
+
+.dynamic-tab-pane-control .tab-row .tab.hover {
+	font:				11px Tahoma;
+	width:				70px;
+	height:				16px;
+	background-image:	url(images/tab.hover.png);
+	background-repaet:	no-repeat;
+}
+
+
+.dynamic-tab-pane-control .tab-page {
+	clear:			both;
+	border:			1px solid rgb( 145, 155, 156 );
+	background:		rgb( 252, 252, 254 );
+	z-index:		2;
+	position:		relative;
+	top:			-2px;
+
+	font:				11px Tahoma;
+	color:				Black;
+
+	filter:			progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#fffcfcfe, EndColorStr=#fff4f3ee, GradientType=0)
+					progid:DXImageTransform.Microsoft.Shadow(Color=#ff919899, Strength=2, Direction=135);
+	
+	/*244, 243, 238*/
+	/* 145, 155, 156*/
+	
+	padding:		1px;
+	
+}
+
+.dynamic-tab-pane-control .tab-row {
+	z-index:		1;
+	white-space:	nowrap;
+}
+
+/****yuzm***/
+
+  /***注册表***/
+.blockHeader{/****注册表头****/
+	border-right       : #dddddd 1px solid; 
+	padding-right      : 0px; 
+	border-top         : #dddddd 1px solid; 
+	padding-left       : 5px; 
+	background         : url("../images/header_0.gif") #dddcdd repeat-x 50% bottom; 
+	padding-bottom     : 0px; 
+	border-left        : #dddddd 1px solid;
+	color              : #000000; 
+	padding-top        : 0px; 
+	border-bottom      : #dddddd 1px solid;
+    font-size          : 14px;
+    color              : green;
+    font-weight        : bold;
+    height             : 35px;
+}
+
+.blackHeader_2{/***二级表头修正***/
+    color:blue;font-size:13;height:30
+}
+.blockHeader_21{/***二级表头修正***/
+    background: #E6E6E6; 
+    color:blue;font-size:13;height:25;
+}
+
+.dfcellLabel{ /****字段标签****/
+	border-right   : #dedede 1px solid; 
+	padding-right  : 10px; 
+	padding-left   : 10px; 
+	padding-top    : 4px;
+	padding-bottom : 4px;
+	background     : #f7f7f7 repeat-y right center; 
+	border-left    : #dedede 1px solid; 
+	color          : #545454; 
+	border-bottom  : #dedede 1px solid;
+    color          : #555555;
+    word-break     : break-all;
+    vertical-align : top;
+    font-weight    : bold;
+}
+
+.correct_width{/***width修正***/
+    width          : 1%;
+}
+.correct_width_1{/***width修正***/
+    width          : 200px;
+}
+
+.nCellLabela{/***灰色说明***/
+    color  : #555555;
+}
+
+.dtsm{/***页面顶头说明***/
+    border-right       : #ffffff 1px solid; 
+	padding-right      : 0px; 
+	border-top         : #ffffff 1px solid; 
+	padding-left       : 10px; 
+	background         : url("../images/header_0.gif") #dddcdd repeat-x 50% bottom; 
+	padding-bottom     : 0px; 
+	border-left        : #ffffff 1px solid;
+	padding-top        : 0px; 
+	border-bottom      : #ffffff 1px solid;
+    
+    color              : #709471;
+    height             : 40px;
+}
+
+.dtsm_color{/***页面顶头说明颜色***/
+    color              : #608960;
+}
+
+.efCellCtrl{/***字段值标签***/
+	border-right   : #dedede 1px solid; 
+	padding-right  : 10px; 
+	padding-left   : 1px; 
+	padding-top    : 4px;
+	padding-bottom : 4px;
+	border-left    : #dedede 1px solid; 
+	border-bottom  : #dedede 1px solid;
+	vertical-align : top;
+	
+}
+
+.padding_0{/***上下内间距置0***/
+  padding-top    : 0px;
+  padding-bottom : 0px;
+}
+
+.Lpadding_10{
+    padding-left   : 15px;
+}
+  /***注册表-end***/
+  
+  /***列表***/
+table.tlist
+{
+width:100%;
+border-collapse:collapse;
+}
+
+.listcellLabel{ /****字段标签****/
+	border-right   : #dedede 1px solid; 
+	padding-right  : 5px; 
+	padding-left   : 5px; 
+	padding-top    : 2px;
+	padding-bottom : 2px;
+	background     : #f7f7f7 repeat-y right center; 
+	border-left    : #dedede 1px solid;  
+	border-bottom  : #dedede 1px solid;
+	border-bottom  : #dedede 1px solid;
+    word-break     : break-all;
+    font-weight    : bold;
+    color          : black;
+}
+
+.be_selectedLabel{/****字段标签(被选定时)****/
+    border-right   : #dedede 1px solid; 
+	padding-right  : 5px; 
+	padding-left   : 5px; 
+	padding-top    : 2px;
+	padding-bottom : 2px;
+	background     : #95B5F7 repeat-y right center; 
+	border-left    : #dedede 1px solid;  
+	border-bottom  : #dedede 1px solid;
+	border-bottom  : #dedede 1px solid;
+    word-break     : break-all;
+    font-weight    : bold;
+    color          : black;
+}
+
+.listCellCtrl{/***字段值标签***/
+	border-right   : #dedede 1px solid; 
+	padding-right  : 1px; 
+	padding-left   : 1px; 
+	padding-top    : 2px;
+	padding-bottom : 2px;
+	border-left    : #dedede 1px solid; 
+	border-bottom  : #dedede 1px solid;
+	border-bottom  : #dedede 1px solid;
+}
+  /***列表-end***/
+  
+  /***多条件查询样式***/
+.querycellLabel{/***字段***/
+    border-top     : #ffffff 5px solid; 
+	padding-right  : 0px;
+	padding-left   : 5px; 
+	padding-top    : 2px;
+	padding-bottom : 2px;
+	background     : #dedede repeat-y right center; 
+	border-left    : #ffffff 5px solid;  
+	border-bottom  : #ffffff 5px solid;
+    word-break     : break-all;
+    font-weight    : bold;
+    vertical-align : top;
+    color          : #555555;
+}
+.queryCellCtrl{/***值***/
+    border-top     : #ffffff 5px solid; 
+	padding-right  : 5px; 
+	padding-top    : 2px;
+	padding-left   : 5px;
+	padding-bottom : 2px;
+	background     : #dedede repeat-y right center; 
+	border-right   : #ffffff 5px solid;  
+	border-bottom  : #ffffff 5px solid;
+    word-break     : break-all;
+    font-weight    : bold;
+    vertical-align : top;
+}
+.vmiddle{
+    vertical-align : middle;
+}
+  /***多条件查询样式-end***/
+  
+  /***选项卡样式1***/
+.tabBackground{/****背景****/
+	border-right       : #dddddd 1px solid; 
+	border-top         : #dddddd 1px solid; 
+	background         : url("../images/header_0.gif") #dddcdd repeat-x 50% bottom; 
+	border-left        : #dddddd 1px solid;
+    font-size          : 14px;
+    color              : green;
+    font-weight        : bold;
+    vertical-align     : bottom;
+    height             : 35px;
+}
+.tabTable{
+    height             : 25px;
+    margin-top         : 5px;
+    width              : 100%;
+}
+.tabSelected{
+	font-size          : 14px;
+    color              : green;
+    font-weight        : bold;
+    padding            : 5px;
+    background         : #ffffff;
+    border-top         : 1px solid gray;
+    border-right       : 1px solid gray;
+    border-left        : 1px solid gray;
+}
+.tabDisselected{
+    font-size          : 14px;
+    color              : green;
+    font-weight        : bold;
+    padding            : 5px;
+    border-bottom      : 1px solid gray;
+}
+  /***选项卡样式1-end***/
+  /***选项卡样式2***/
+.tabBackground_2{/****背景****/
+	border-right       : #dddddd 1px solid; 
+	border-top         : #dddddd 1px solid; 
+	background         : url("../images/header_0.gif") #dddcdd repeat-x 50% bottom; 
+	border-left        : #dddddd 1px solid;
+    color              : green;
+    font-weight        : bold;
+    vertical-align     : bottom;
+    height             : 25px;
+}
+.tabTable_2{
+    margin-top         : 5px;
+    width              : 100%;
+    height             : 20px;
+}
+.tabSelected_2{
+    color              : green;
+    font-weight        : bold;
+    padding            : 5px;
+    padding-left       : 10px;
+    padding-right      : 10px;
+    background         : #ffffff;
+    border-top         : 1px solid gray;
+    border-right       : 1px solid gray;
+    border-left        : 1px solid gray;
+}
+.tabDisselected_2{
+    color              : green;
+    font-weight        : bold;
+    padding            : 5px;
+    padding-left       : 10px;
+    padding-right      : 10px;
+    border-bottom      : 1px solid gray;
+}
+.tab_content_div{padding-top:5px;margin-left:1px;margin-right:1px;width:100%;border:1px solid gray;border-top-width:0px;}
+  /***选项卡样式2-end***/
+
+.info_label{font-weight:bold;color:#555555;border:1px solid gray;background-color:#f0f0f0;padding:1px;padding-right:10px;}
+.info_value{border:1px solid gray;padding-left:2px;}
+
+.operation_tr{
+    border-right   : #dedede 1px solid; 
+	padding-right  : 10px; 
+	padding-left   : 1px; 
+	padding-top    : 4px;
+	padding-bottom : 4px;
+	border-left    : #dedede 1px solid; 
+	border-bottom  : #dedede 1px solid;
+	background-color: #CECFD4;
+}
+
+.border_top{/****上边框修饰****/ 
+    border-right       : #dddddd 1px solid; 
+	border-top         : #dddddd 1px solid; 
+	background         : url("../images/header_0.gif") #dddcdd repeat-x 50% bottom; 
+	border-left        : #dddddd 1px solid;
+	padding-top        : 0px; 
+	border-bottom      : #dddddd 1px solid;
+    height             : 15px;
+}
+
+table{
+  border-collapse:collapse;
+}
+
+.bgcolor_p{background-color:#E6EDF8;}
+/****yuzm-end***/
+

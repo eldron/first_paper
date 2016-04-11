@@ -1,0 +1,86 @@
+#ifndef __FFWD_DBG_H__
+#define __FFWD_DBG_H__
+
+#include <printk.h>
+#include "mips-exts.h"
+
+extern int ffwd_dbg_level;
+extern spinlock_t ffwd_init_lock    __shared_memory__;
+
+static inline void print_pkt(u8* data, u32 len)
+{
+	u32 i;
+	spin_lock (&ffwd_init_lock);
+	printk("pid %02d  addr %p len %u \n", processor_id(), data, len);
+	for (i=0; i<len; i++) {
+		if ((i%4) == 0 && i !=0)
+			printk(" ");
+		if ((i%32) == 0 && i != 0)
+			printk("\n");
+		printk("%02x", data[i]);
+
+	}
+	printk("\n");
+	spin_unlock (&ffwd_init_lock);
+}
+
+#ifdef DEF_FFWD_DBG
+static inline void dump_mem_info(u8* msg, u32 len)
+{
+	u32 i;
+	if (ffwd_dbg_level >= 4) {
+		spin_lock (&ffwd_init_lock);
+		printk("pid %02d addr %p len %u \n", processor_id(), msg, len);
+		for (i=0; i<len; i++)
+		{
+			if ((i%4) == 0 && i !=0)
+				printk(" ");
+			if ((i%32) == 0 && i != 0)
+				printk("  %d\n", i/32-1);
+			printk("%02x", msg[i]);
+
+		}
+		printk("\n");
+		spin_unlock (&ffwd_init_lock);
+	}
+}
+#else
+static void dump_mem_info(u8* msg, u32 len) {};
+
+#endif
+
+#ifdef DEF_FFWD_DBG 
+#define ASSERT(X) \
+	do {	\
+		if ( ! (X) ) { \
+			printk("T%d ASSERT: file %s line %d: %s\r\n", processor_id(), __FILE__, __LINE__, #X);	\
+			while (1);	\
+		} \
+	} while (0)
+#else
+#define ASSERT(x) ((void)0)
+#endif
+
+//#ifdef DEF_FFWD_DBG
+// modify here to turn on | off debug printing
+#if 0
+#define FFWD_DBG_ERR	1	/* error condition */
+#define FFWD_DBG_INFO	2	/* infomation */
+#define FFWD_DBG_DEBUG	3	/* debug-level message */
+#define FFWD_DBG_ALL    4
+/*if (process_id == 9) {\*/
+#define FFWD_DBG(level, fmt, msg...) \
+do { \
+		if (ffwd_dbg_level >= level) {\
+			printk("pid %02d %15s %20s %3d : ", processor_id(), __FILE__,__FUNCTION__, __LINE__);\
+			printk(fmt, ##msg); \
+		}\
+} while(0)
+
+#else
+
+#define FFWD_DBG(level, fmt, msg...) do {} while(0)
+
+#endif
+ 
+#endif

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sma2/!svn/ver/240/branches/fenghuo/driver/gen
+END
+rmi_pcix_gen_host.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sma2/!svn/ver/240/branches/fenghuo/driver/gen/rmi_pcix_gen_host.c
+END
+rmi_pcix_gen_host.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sma2/!svn/ver/240/branches/fenghuo/driver/gen/rmi_pcix_gen_host.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sma2/!svn/ver/240/branches/fenghuo/driver/gen/Makefile
+END

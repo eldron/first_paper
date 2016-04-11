@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sma2/!svn/ver/256/branches/fenghuo/driver/sma
+END
+sma_load
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sma2/!svn/ver/240/branches/fenghuo/driver/sma/sma_load
+END
+sma_pciedev.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sma2/!svn/ver/244/branches/fenghuo/driver/sma/sma_pciedev.c
+END
+sma_driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sma2/!svn/ver/244/branches/fenghuo/driver/sma/sma_driver.h
+END
+sma_cdev.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sma2/!svn/ver/244/branches/fenghuo/driver/sma/sma_cdev.c
+END
+sma_unload
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sma2/!svn/ver/240/branches/fenghuo/driver/sma/sma_unload
+END
+sma_netdev.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sma2/!svn/ver/256/branches/fenghuo/driver/sma/sma_netdev.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sma2/!svn/ver/242/branches/fenghuo/driver/sma/Makefile
+END

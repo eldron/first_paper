@@ -1,0 +1,40 @@
+#!/bin/bash
+#
+# Description: if this is a final shutdown/reboot, remove sma modules 
+### END INIT INFO
+
+
+# source function library
+. /etc/rc.d/init.d/functions
+
+RETVAL=0
+
+start() {
+	action $"starting sma..............................................."
+        echo
+	touch /var/lock/subsys/sma
+}
+
+stop() {
+	action $"stop sma........................................................: "
+	rmmod -f sma.ko
+}
+
+restart() {
+	stop
+	start
+}
+
+case "$1" in
+  start)
+	start
+	;;
+  stop) 
+	stop
+	;;
+  *)
+	echo $"Usage: $0 {start|stop|status|restart|reload|force-reload|condrestart}"
+	exit 1
+esac
+
+exit $RETVAL

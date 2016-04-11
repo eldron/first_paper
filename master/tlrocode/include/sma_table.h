@@ -1,0 +1,167 @@
+#ifndef __SMA_TABLE_H__   
+#define __SMA_TABLE_H__
+
+
+#define ntohll(a) (( ((uint64_t)ntohl( a ))<< 32 ) | ntohl( ((uint64_t)( a )) >> 32 ))
+#define htonll(a) (( ((uint64_t)htonl( a ))<< 32 ) | htonl( ((uint64_t)( a )) >> 32 ))
+
+#define MAXNUM_IFACE    2
+#define MAXNUM_VCPUS 16
+
+#define MAXNUM_SESSION_ENTRY (RX_FIFO_SIZE/PKT_SESSION_SIZE) /*每个FIFO存放会话最大数 1024*/
+
+#define MAXNUM_SESSION_ENTRY_MASK (MAXNUM_SESSION_ENTRY-1) /*entry 为2的幂*/
+#define MAXNUM_UDP_ENTRY_MASK (MAXNUM_UDP_ENTRY-1)
+ 
+//! TCP 会话接收队列状态描述符数量
+#define MAXNUM_SESSION_ENTRY (RX_FIFO_SIZE/PKT_SESSION_SIZE) /*每个FIFO存放会话最大数 1024*/
+//! UDP 接收队列状态描述符数量
+#define MAXNUM_UDP_ENTRY (RX_FIFO_SIZE/PKT_UDP_SIZE) 
+//! 单个接收通道内存大小
+#define RX_FIFO_SIZE (64 * 1024 *1024)
+//! TCP 数据块长度
+#define PKT_SESSION_SIZE (8 * 1024)
+//! UDP 报文长度
+#define PKT_UDP_SIZE    2048
+//! 收报通道数
+#define MAX_NUM_RX_CHANNELS             9
+//! TCP 会话通道数
+#define MAX_NUM_SESSION_CHANNELS        8
+//! PCIE 共享内存大小
+#define SMA_PCI_MEM_LEN (32*1024*1024 )
+
+#define MAX_SESSION_PKT 128
+
+#define MAC_PKT_BASE 0x8000000 
+#define MAC_PKT_MEM_SIZE (128 * 1024 * 1024)
+#define MAC_PKT_SIZE    2048
+
+//#define MAC_ENTRY_DESC_NUM      256
+#define MAC_ENTRY_DESC_NUM 2048
+
+#define CMD_STATE_NEW       0x1
+#define CMD_STATE_DONE      0x2
+
+#define CMD_XAUI_OPEN       0x01
+#define CMD_XAUI_CLOSE      0x02
+#define CMD_CARD_STOP       0x03
+
+typedef struct
+{
+    volatile uint8_t    timeout_value;
+    volatile uint8_t    version;
+    volatile uint8_t    xaui_open_flag;
+    volatile uint8_t    device_link_state[2];               //!< 接口状态    
+    volatile uint8_t    pde_reset;
+    volatile uint8_t    pde_mask;                           //!< 接收队列分发掩码,每一位代表一个通道   
+    volatile uint8_t    cmd_type;
+    volatile uint8_t    cmd_state;
+} __attribute__ ((aligned (32))) ffwd_device_info_t ;
+
+typedef struct
+{
+    volatile uint8_t         rx_enable;
+    volatile uint8_t         rx_reset; 
+    uint32_t                 rx_dma_base;
+}__attribute__ ((aligned (32))) ffwd_dma_queue_t;
+
+typedef struct
+{
+    uint8_t     state;
+    uint8_t     pad;
+    uint16_t    len;
+    uint32_t    address;
+}ffwd_mac_entry_desc_t;
+
+typedef struct
+{
+    uint8_t mac_addr[6];
+    uint8_t promisc;
+    uint8_t link;
+    volatile uint8_t msi_enable;
+}ffwd_mac_device_info_t;
+
+typedef struct entry_state_desc_s
+{
+	uint8_t state; 
+}entry_state_desc_t;
+
+typedef struct 
+{	
+    uint64_t    gmac0_rx_packets;
+	uint64_t    gmac0_rx_dropped_packets;
+	uint64_t    gmac0_tx_packets;
+	uint64_t    gmac0_tx_dropped_packets;
+	
+	uint64_t	gmac1_rx_packets; 	    //!< 网卡接收报文数
+	uint64_t	gmac1_rx_bytes; 	        //!< 网卡接收字节数
+    uint64_t    gmac1_free_packets;      //!< 网卡释放报文数
+    uint64_t    gmac1_free_bytes;        //!< 网卡释放字节数
+    uint64_t    gmac1_dropped_packets;   //!< 网卡丢弃异常报文数
+    uint64_t    gmac1_dropped_bytes;     //!< 网卡丢弃异常报文字节数
+	uint64_t    gmac1_dma_session;         //!< 已提交会话个数
+	uint64_t    gmac1_dma_udp;             //!< DMA 队列接收UDP 报文数
+	uint64_t    gmac1_dma_dropped_session;    //!< DMA 队列丢弃TCP 数据块数
+	uint64_t    gmac1_dma_dropped_udp;        //!< DMA 队列丢弃UDP 报文数
+
+	uint64_t    gmac1_tcp_packets;	        //!< 网卡接收tcp报文数
+	uint64_t    gmac1_tcp_bytes;		        //!< 网卡接收tcp报文字节数
+	uint64_t    gmac1_udp_packets;	        //!< 网卡接收udp报文数
+	uint64_t    gmac1_udp_bytes;		        //!< 网卡接收udp报文字节数
+	
+    uint64_t    gmac1_session_dis_packets;    //!< 无需还原的数据包、畸形包、ack等
+	uint64_t    gmac1_active_sessions;	    //!< 当前活跃会话数 
+
+	uint64_t	gmac1_bps;               //!< 网卡当前bps
+	uint64_t	gmac1_pps;               //!< 网卡当前pps
+	uint64_t	gmac1_last_bytes;
+	uint64_t	gmac1_last_packets;
+	float		gmac1_count_time;
+
+}ffwd_counter_info_t;
+
+typedef struct ffwd_mac_counter_s
+{
+	unsigned long	rx_packets;		/* total packets received	*/
+	unsigned long	tx_packets;		/* total packets transmitted	*/
+	unsigned long	rx_bytes;		/* total bytes received 	*/
+	unsigned long	tx_bytes;		/* total bytes transmitted	*/
+	unsigned long	rx_errors;		/* bad packets received		*/
+	unsigned long	tx_errors;		/* packet transmit problems	*/
+	unsigned long	rx_dropped;		/* no space in linux buffers	*/
+	unsigned long	tx_dropped;		/* no space available in linux	*/
+	unsigned long	multicast;		/* multicast packets received	*/
+	unsigned long	collisions;
+
+	/* detailed rx_errors: */
+	unsigned long	rx_length_errors;
+	unsigned long	rx_over_errors;		/* receiver ring buff overflow	*/
+	unsigned long	rx_crc_errors;		/* recved pkt with crc error	*/
+	unsigned long	rx_frame_errors;	/* recv'd frame alignment error */
+	unsigned long	rx_fifo_errors;		/* recv'r fifo overrun		*/
+	unsigned long	rx_missed_errors;	/* receiver missed packet	*/
+
+	/* detailed tx_errors */
+	unsigned long	tx_aborted_errors;
+	unsigned long	tx_carrier_errors;
+	unsigned long	tx_fifo_errors;
+	unsigned long	tx_heartbeat_errors;
+	unsigned long	tx_window_errors;
+	
+	/* for cslip etc */
+	unsigned long	rx_compressed;
+	unsigned long	tx_compressed;
+}ffwd_mac_counter_t;
+
+
+enum 
+{
+	FIFO_WRITABLE,
+	FIFO_READABLE,
+	FIFO_DONE
+};
+
+#define TLRO_RX_RING_COUNT 12
+#define FIRST_SESSION_THREAD 4
+#endif
+
