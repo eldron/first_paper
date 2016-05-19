@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  11 APR 2016 21:04
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  19 MAY 2016 17:40
 entering extended mode
 **C:/Users/Li*Jie/Desktop/first_paper/bare_conf.tex
 ("C:/Users/Li Jie/Desktop/first_paper/bare_conf.tex"
@@ -74,4 +74,311 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Fo
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) (C:\CTEX\UserData\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(C:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count94
+))
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+(C:\CTEX\UserData\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+(C:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@ALC@unique=\count95
+\c@ALC@line=\count96
+\c@ALC@rem=\count97
+\c@ALC@depth=\count98
+\ALC@tlm=\skip44
+\algorithmicindent=\skip45
+)
+(C:\CTEX\UserData\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(C:\CTEX\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count99
+\float@exts=\toks16
+\float@box=\box28
+\@float@everytoks=\toks17
+\@floatcapt=\box29
+)
+\@float@every@algorithm=\toks18
+\c@algorithm=\count100
+)
+(C:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("C:\Users\Li Jie\Desktop\first_paper\bare_conf.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+
+-- Lines per column: 56 (exact).
+(C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen128
+\scratchbox=\box30
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen129
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks20
+) [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+
+]
+<./pics/nic_driver_with_lro.pdf, id=8, 603.75563pt x 848.4197pt>
+File: ./pics/nic_driver_with_lro.pdf Graphic file (type pdf)
+
+<use ./pics/nic_driver_with_lro.pdf>
+Package pdftex.def Info: ./pics/nic_driver_with_lro.pdf used on input line 436.
+
+(pdftex.def)             Requested size: 108.405pt x 152.33353pt.
+
+<./pics/nic_with_lro.pdf, id=9, 612.78937pt x 798.73407pt>
+File: ./pics/nic_with_lro.pdf Graphic file (type pdf)
+
+<use ./pics/nic_with_lro.pdf>
+Package pdftex.def Info: ./pics/nic_with_lro.pdf used on input line 453.
+(pdftex.def)             Requested size: 108.405pt x 141.29182pt.
+
+<./pics/system_framework.pdf, id=10, 414.04688pt x 313.9228pt>
+File: ./pics/system_framework.pdf Graphic file (type pdf)
+
+<use ./pics/system_framework.pdf>
+Package pdftex.def Info: ./pics/system_framework.pdf used on input line 462.
+(pdftex.def)             Requested size: 252.94499pt x 191.78482pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 462--466
+ [][] 
+ []
+
+
+<./pics/packet_receiving_process_sequence.pdf, id=11, 471.26062pt x 310.15875pt
+>
+File: ./pics/packet_receiving_process_sequence.pdf Graphic file (type pdf)
+ <use ./pics/packet_receiving_process_sequence.pdf>
+Package pdftex.def Info: ./pics/packet_receiving_process_sequence.pdf used on i
+nput line 477.
+(pdftex.def)             Requested size: 252.94499pt x 166.47517pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 477--481
+ [][] 
+ []
+
+[2 <C:/Users/Li Jie/Desktop/first_paper/pics/nic_driver_with_lro.pdf> <C:/Users
+/Li Jie/Desktop/first_paper/pics/nic_with_lro.pdf>]
+Underfull \hbox (badness 2393) in paragraph at lines 490--491
+\OT1/ptm/m/n/10 con-nec-tion, it con-tain-s in-for-ma-tion in-clud-ing: the fou
+r-
+ []
+
+<./pics/connection_table.pdf, id=74, 663.98062pt x 454.69875pt>
+File: ./pics/connection_table.pdf Graphic file (type pdf)
+
+<use ./pics/connection_table.pdf>
+Package pdftex.def Info: ./pics/connection_table.pdf used on input line 495.
+(pdftex.def)             Requested size: 252.94499pt x 173.21748pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 495--499
+ [][] 
+ []
+
+[3 <C:/Users/Li Jie/Desktop/first_paper/pics/system_framework.pdf> <C:/Users/Li
+ Jie/Desktop/first_paper/pics/packet_receiving_process_sequence.pdf> <C:/Users/
+Li Jie/Desktop/first_paper/pics/connection_table.pdf>]
+<./pics/filter_packets.pdf, id=223, 393.72093pt x 627.09282pt>
+File: ./pics/filter_packets.pdf Graphic file (type pdf)
+
+<use ./pics/filter_packets.pdf>
+Package pdftex.def Info: ./pics/filter_packets.pdf used on input line 512.
+(pdftex.def)             Requested size: 216.81pt x 345.31357pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 526.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 526.
+ [4 <C:/Users/Li Jie/Desktop/first_paper/pics/filter_packets.pdf>]
+<./pics/tcp_packets_processing.pdf, id=267, 386.94562pt x 463.7325pt>
+File: ./pics/tcp_packets_processing.pdf Graphic file (type pdf)
+
+<use ./pics/tcp_packets_processing.pdf>
+Package pdftex.def Info: ./pics/tcp_packets_processing.pdf used on input line 5
+79.
+(pdftex.def)             Requested size: 216.81pt x 259.83702pt.
+
+<./pics/packet_descriptor.pdf, id=268, 441.14813pt x 341.77687pt>
+File: ./pics/packet_descriptor.pdf Graphic file (type pdf)
+
+<use ./pics/packet_descriptor.pdf>
+Package pdftex.def Info: ./pics/packet_descriptor.pdf used on input line 596.
+(pdftex.def)             Requested size: 216.81pt x 167.97278pt.
+
+<./pics/dma_msg_seq.pdf, id=269, 424.58624pt x 349.305pt>
+File: ./pics/dma_msg_seq.pdf Graphic file (type pdf)
+
+<use ./pics/dma_msg_seq.pdf>
+Package pdftex.def Info: ./pics/dma_msg_seq.pdf used on input line 604.
+(pdftex.def)             Requested size: 216.81pt x 178.36703pt.
+ [5 <C:/Users/Li Jie/Desktop/first_paper/pics/tcp_packets_processing.pdf>]
+<./pics/dma_balance_seq.pdf, id=298, 424.58624pt x 350.81062pt>
+File: ./pics/dma_balance_seq.pdf Graphic file (type pdf)
+
+<use ./pics/dma_balance_seq.pdf>
+Package pdftex.def Info: ./pics/dma_balance_seq.pdf used on input line 614.
+(pdftex.def)             Requested size: 216.81pt x 179.13586pt.
+ [6 <C:/Users/Li Jie/Desktop/first_paper/pics/packet_descriptor.pdf> <C:/Users/
+Li Jie/Desktop/first_paper/pics/dma_msg_seq.pdf> <C:/Users/Li Jie/Desktop/first
+_paper/pics/dma_balance_seq.pdf>]
+<./pics/xls416.pdf, id=387, 775.39688pt x 657.2053pt>
+File: ./pics/xls416.pdf Graphic file (type pdf)
+ <use ./pics/xls416.pdf>
+Package pdftex.def Info: ./pics/xls416.pdf used on input line 628.
+(pdftex.def)             Requested size: 252.94499pt x 214.38141pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 628--629
+ [][] 
+ []
+
+<./pics/test_topology.pdf, id=388, 392.96812pt x 193.47281pt>
+File: ./pics/test_topology.pdf Graphic file (type pdf)
+
+<use ./pics/test_topology.pdf>
+Package pdftex.def Info: ./pics/test_topology.pdf used on input line 642.
+(pdftex.def)             Requested size: 180.67499pt x 88.95428pt.
+
+<./pics/result.pdf, id=389, 611.28375pt x 495.8525pt>
+File: ./pics/result.pdf Graphic file (type pdf)
+ <use ./pics/result.pdf>
+Package pdftex.def Info: ./pics/result.pdf used on input line 652.
+(pdftex.def)             Requested size: 216.81pt x 175.8662pt.
+
+[7 <C:/Users/Li Jie/Desktop/first_paper/pics/xls416.pdf> <C:/Users/Li Jie/Deskt
+op/first_paper/pics/test_topology.pdf>]
+("C:\Users\Li Jie\Desktop\first_paper\bare_conf.bbl"
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
+Missing character: There is no â in font ptmri7t!
+Missing character: There is no € in font ptmri7t!
+Missing character: There is no ™ in font ptmri7t!
+)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[8 <C:/Users/Li Jie/Desktop/first_paper/pics/result.pdf>]
+("C:\Users\Li Jie\Desktop\first_paper\bare_conf.aux") ) 
+Here is how much of TeX's memory you used:
+ 2502 strings out of 495354
+ 39158 string characters out of 3183860
+ 98742 words of memory out of 3000000
+ 5662 multiletter control sequences out of 15000+200000
+ 37073 words of font info for 70 fonts, out of 3000000 for 9000
+ 17 hyphenation exceptions out of 8191
+ 27i,7n,21p,1511b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/CTEX/MiKTeX/fonts/en
+c/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/ut
+mb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/CTEX/MiKTeX/font
+s/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+
+Output written on bare_conf.pdf (8 pages, 1322065 bytes).
+PDF statistics:
+ 600 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+
