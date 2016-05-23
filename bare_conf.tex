@@ -338,13 +338,14 @@ Email: eldron@163.com}
 \IEEEauthorblockN{Chen Shuhui}
 \IEEEauthorblockA{School of Computer\\
 National University of\\Defense Technology\\
-Email: homer@thesimpsons.com}
+Changsha, China\\
+Email: csh999@263.net}
 \and
 \IEEEauthorblockN{Su Jinshu}
 \IEEEauthorblockA{School of Computer\\
 National University of\\Defense Technology\\
-Telephone: (800) 555--1212\\
-Fax: (888) 555--1212}}
+Changsha, China\\
+Email: sjs@nudt.edu.cn}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -383,7 +384,7 @@ Fax: (888) 555--1212}}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-Nowadays, the ethernet is developing much faster than memory and CPU technologies, protocol processing has become the bottleneck of TCP performance on end systems. Modern NICs usually support offload techniques such as checksum offload and TCP Segmentation Offload(TSO), allowing the end system to offload some processing work onto the NIC hardware. In this paper, we present an implementation of Large Receive Offload(LRO) on a multi-core NPU platform, particularly, we employ a so called active ACK mechanism to make very large packets(64KB) aggregation possible. Experiment results demonstrate that we achieved \% performance gain compared to the Linux kernel implementation of LRO.
+Nowadays, the ethernet is developing much faster than memory and CPU technologies, protocol processing has become the bottleneck of TCP performance on end systems. Modern NICs usually support offload techniques such as checksum offload and TCP Segmentation Offload(TSO), allowing the end system to offload some processing work onto the NIC hardware. In this paper, we propose an implementation of Large Receive Offload(LRO) on a multi-core NPU platform, particularly, we employ a so called active ACK mechanism to make very large packets(64KB) aggregation possible. We present experiment results to demonstrate the effectiveness of our proposal.
 \end{abstract}
 
 % no keywords
@@ -649,18 +650,19 @@ During the test, we set the number of TCP connections from 1 to 64 and calculate
 From Figure \ref{result} we can see that TCP data receiving throughput increases as the number of TCP connections increases when the latter is small, however, the growth slows down as the number of TCP connections becomes large and TCP data receiving throughput finally stabilizes around 4.75Gbps. The reason behind this phenomenon is the amount of packet receiving threads on XLS416 is fixed, when the number of TCP connections is small, XLS416 will dispatch packets to a subset of packet receiving threads and other threads are left free, XLS416's computing power is not fully utilized; the situations changes as the number of TCP connections increases, packets will be more evenly distributed to all threads and XLS416's computing power is exhausted, thus the maximum TCP data receiving throughput is achieved.
 \begin{figure}[!t]
 \centering
-\includegraphics[width=3.0in]{result}
+\includegraphics[width=3.0in]{oldresult}
 \caption{TCP Data Receiving Throughput}
 \label{result}
 \end{figure}
 
-As a comparison, we also implemented XLS416 as a normal NIC which does not aggregate TCP data packets and tested TCP data receiving throughput under the same hardware and software configurations, surprisingly, we found that TCP data receiving throughput is approximately 913.3Mbps and irrelevant to the number of TCP connections, as shown in Figure \ref{result}. The following factors lead to this huge performance gap:
+As a comparison, we also implemented XLS416 as a normal NIC which does not aggregate TCP data packets and tested TCP data receiving throughput under the same hardware and software configurations, surprisingly, we found that TCP data receiving throughput is approximately 913.3Mbps and irrelevant to the number of TCP connections. The following factors lead to this huge performance gap:
 \begin{enumerate}
-\item when implemented as a regular NIC without LRO functionaliry, XLS416's computing power and storage space are nearly not used at all, multiple connections' packets are distributed to different threads, the threads then compete for the sole DMA engine to transfer packets' data to the host memory, this leads to a serial style access of the DMA engine and the overall TCP data receiving throughput is no different from a single connection situation. What is even worse, DMA engine restarts each time a request arrives and only transfers a small block of data(1500 bytes maximum), which results in a very poor performance. However, when XLS416 is implemented with LRO, a packet receiving thread requests DMA engine access for TCP data packets only when one of three conditions which we stated in section IV is satisfied, most of the time, it buffers the packet, performs packets reordering job and waits for more packets, while the DMA engine can be used by another thread for data transmission. This leads to a pipelined style access of the DMA engine, thread synchronization overhead and DMA latency are hidden in the multiple packet receiving threads, DMA engine now transfers a large block of data(approximately 64KB) each time it is activated and results in a much better performance;
+\item when implemented as a regular NIC without LRO functionaliry, XLS416's computing power and storage space are nearly not used at all, multiple connections' packets are distributed to different threads, the threads then compete for the sole DMA engine to transfer packets' data to the host memory, this leads to a serial style access of the DMA engine and the overall TCP data receiving throughput is no different from a single connection situation. What is even worse, DMA engine restarts each time a request arrives and only transfers a small block of data(1500 bytes maximum), which results in a very poor performance. However, when XLS416 is implemented with LRO, a packet receiving thread requests DMA engine access for TCP data packets only when one of three conditions which we stated in section IV is satisfied, most of the time, it buffers the packet, performs packets reordering job and waits for more packets, meanwhile the DMA engine can be used by another thread for data transmission. This leads to a pipelined style access of the DMA engine, thread synchronization overhead and DMA latency are hidden in the multiple packet receiving threads, DMA engine now transfers a large block of data(approximately 64KB) each time it is activated and a much better performance is achieved;
 \item the number of packets processed by host CPU and interrupts generated by XLS416 become much more;
 \item notice that the client's data sending speed affects the server's data receiving speed, when implemented with LRO functionality, XLS416 automatically generates ACK packets and causes the client side to send data faster, which in turn increases the server's data receiving throughput.
 \end{enumerate}
 
+To minimize the number of packets and interrupts processed by the host CPU, we chose Linux kernel data structure skbuff's storage upper bound(64KB) as the data length threshold for packets aggregation. We utilized XLS416's network accelerator for hardware checksum verification of incoming packets, the packets reordering and reconstruction algorithms used in our system are designed to be simple and efficient, which do not involve any packet data copy operation, XLS416's memory bandwidth should not be our system's performance bottleneck. On the other hand, XLS416, is actually a low-end product, which connects to the host computer through a PCI-e1.1$\times$4 bus, we tested its performance and achieved only 6Gbps data transmission throughput, thus we draw the conclusion that XLS416's PCI-e bandwidth is the performance bottleneck of our system.
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
@@ -759,20 +761,17 @@ As a comparison, we also implemented XLS416 as a normal NIC which does not aggre
 
 
 \section{Conclusion}
-The conclusion goes here.
+In this paper we proposed the implementation of LRO on a multi-core NPU platform, by aggregating data packets, we reduce the number of packets and interrupts processed by the host CPU and optimize TCP performance on an end system. Particularly, our system automatically generates ACK packets, which enables us to reconstruct very large packets(64KB) and makes the data sending side to transmit data faster.
 
+We built test programs and chose TCP data receiving throughput as the performance criterion, we also implemented the multi-core NPU as a normal NIC for comparison, the experiment results demonstrate that our approach can significantly improve TCP data receiving performance.
 
-
-
+In the near future, we plan to implement our system on multi-core NPU platforms with different configurations, choose more evaluation criterions such as host CPU utilization ratio, and analyse the factors which can affect our system's performance in more detail.
 % conference papers do not normally have an appendix
 
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
-
-
-The authors would like to thank...
-
+This work has been supported by the National High-Tech Research and Development Plan of China under Grant No. 2011AA01A103.
 
 
 

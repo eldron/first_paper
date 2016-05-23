@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  20 MAY 2016 12:10
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  23 MAY 2016 11:35
 entering extended mode
 **C:/Users/Li*Jie/Desktop/first_paper/bare_conf.tex
 ("C:/Users/Li Jie/Desktop/first_paper/bare_conf.tex"
@@ -216,7 +216,7 @@ LaTeX Font Info:    ... okay on input line 318.
 File: ./pics/nic_driver_with_lro.pdf Graphic file (type pdf)
 
 <use ./pics/nic_driver_with_lro.pdf>
-Package pdftex.def Info: ./pics/nic_driver_with_lro.pdf used on input line 436.
+Package pdftex.def Info: ./pics/nic_driver_with_lro.pdf used on input line 437.
 
 (pdftex.def)             Requested size: 108.405pt x 152.33353pt.
 
@@ -224,92 +224,92 @@ Package pdftex.def Info: ./pics/nic_driver_with_lro.pdf used on input line 436.
 File: ./pics/nic_with_lro.pdf Graphic file (type pdf)
 
 <use ./pics/nic_with_lro.pdf>
-Package pdftex.def Info: ./pics/nic_with_lro.pdf used on input line 453.
+Package pdftex.def Info: ./pics/nic_with_lro.pdf used on input line 454.
 (pdftex.def)             Requested size: 108.405pt x 141.29182pt.
 
 <./pics/system_framework.pdf, id=10, 414.04688pt x 313.9228pt>
 File: ./pics/system_framework.pdf Graphic file (type pdf)
 
 <use ./pics/system_framework.pdf>
-Package pdftex.def Info: ./pics/system_framework.pdf used on input line 462.
+Package pdftex.def Info: ./pics/system_framework.pdf used on input line 463.
 (pdftex.def)             Requested size: 252.94499pt x 191.78482pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 462--466
- [][] 
- []
-
-
-<./pics/packet_receiving_process_sequence.pdf, id=11, 471.26062pt x 310.15875pt
->
-File: ./pics/packet_receiving_process_sequence.pdf Graphic file (type pdf)
- <use ./pics/packet_receiving_process_sequence.pdf>
-Package pdftex.def Info: ./pics/packet_receiving_process_sequence.pdf used on i
-nput line 477.
-(pdftex.def)             Requested size: 252.94499pt x 166.47517pt.
-
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 477--481
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 463--467
  [][] 
  []
 
 [2 <C:/Users/Li Jie/Desktop/first_paper/pics/nic_driver_with_lro.pdf> <C:/Users
-/Li Jie/Desktop/first_paper/pics/nic_with_lro.pdf>]
-Underfull \hbox (badness 2393) in paragraph at lines 490--491
+/Li Jie/Desktop/first_paper/pics/nic_with_lro.pdf> <C:/Users/Li Jie/Desktop/fir
+st_paper/pics/system_framework.pdf>]
+<./pics/packet_receiving_process_sequence.pdf, id=139, 471.26062pt x 310.15875p
+t>
+File: ./pics/packet_receiving_process_sequence.pdf Graphic file (type pdf)
+ <use ./pics/packet_receiving_process_sequence.pdf>
+Package pdftex.def Info: ./pics/packet_receiving_process_sequence.pdf used on i
+nput line 478.
+(pdftex.def)             Requested size: 252.94499pt x 166.47517pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 478--482
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 491--492
 \OT1/ptm/m/n/10 con-nec-tion, it con-tain-s in-for-ma-tion in-clud-ing: the fou
 r-
  []
 
-<./pics/connection_table.pdf, id=74, 663.98062pt x 454.69875pt>
+<./pics/connection_table.pdf, id=140, 663.98062pt x 454.69875pt>
 File: ./pics/connection_table.pdf Graphic file (type pdf)
 
 <use ./pics/connection_table.pdf>
-Package pdftex.def Info: ./pics/connection_table.pdf used on input line 495.
+Package pdftex.def Info: ./pics/connection_table.pdf used on input line 496.
 (pdftex.def)             Requested size: 252.94499pt x 173.21748pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 495--499
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 496--500
  [][] 
  []
 
-[3 <C:/Users/Li Jie/Desktop/first_paper/pics/system_framework.pdf> <C:/Users/Li
- Jie/Desktop/first_paper/pics/packet_receiving_process_sequence.pdf> <C:/Users/
-Li Jie/Desktop/first_paper/pics/connection_table.pdf>]
+[3 <C:/Users/Li Jie/Desktop/first_paper/pics/packet_receiving_process_sequence.
+pdf> <C:/Users/Li Jie/Desktop/first_paper/pics/connection_table.pdf>]
 <./pics/filter_packets.pdf, id=223, 393.72093pt x 627.09282pt>
 File: ./pics/filter_packets.pdf Graphic file (type pdf)
 
 <use ./pics/filter_packets.pdf>
-Package pdftex.def Info: ./pics/filter_packets.pdf used on input line 512.
+Package pdftex.def Info: ./pics/filter_packets.pdf used on input line 513.
 (pdftex.def)             Requested size: 216.81pt x 345.31357pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 526.
+(Font)              <7> on input line 527.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 526.
+(Font)              <5> on input line 527.
  [4 <C:/Users/Li Jie/Desktop/first_paper/pics/filter_packets.pdf>]
 <./pics/tcp_packets_processing.pdf, id=267, 386.94562pt x 463.7325pt>
 File: ./pics/tcp_packets_processing.pdf Graphic file (type pdf)
 
 <use ./pics/tcp_packets_processing.pdf>
 Package pdftex.def Info: ./pics/tcp_packets_processing.pdf used on input line 5
-79.
+80.
 (pdftex.def)             Requested size: 216.81pt x 259.83702pt.
 
 <./pics/packet_descriptor.pdf, id=268, 441.14813pt x 341.77687pt>
 File: ./pics/packet_descriptor.pdf Graphic file (type pdf)
 
 <use ./pics/packet_descriptor.pdf>
-Package pdftex.def Info: ./pics/packet_descriptor.pdf used on input line 596.
+Package pdftex.def Info: ./pics/packet_descriptor.pdf used on input line 597.
 (pdftex.def)             Requested size: 216.81pt x 167.97278pt.
 
 <./pics/dma_msg_seq.pdf, id=269, 424.58624pt x 349.305pt>
 File: ./pics/dma_msg_seq.pdf Graphic file (type pdf)
 
 <use ./pics/dma_msg_seq.pdf>
-Package pdftex.def Info: ./pics/dma_msg_seq.pdf used on input line 604.
+Package pdftex.def Info: ./pics/dma_msg_seq.pdf used on input line 605.
 (pdftex.def)             Requested size: 216.81pt x 178.36703pt.
  [5 <C:/Users/Li Jie/Desktop/first_paper/pics/tcp_packets_processing.pdf>]
 <./pics/dma_balance_seq.pdf, id=298, 424.58624pt x 350.81062pt>
 File: ./pics/dma_balance_seq.pdf Graphic file (type pdf)
 
 <use ./pics/dma_balance_seq.pdf>
-Package pdftex.def Info: ./pics/dma_balance_seq.pdf used on input line 614.
+Package pdftex.def Info: ./pics/dma_balance_seq.pdf used on input line 615.
 (pdftex.def)             Requested size: 216.81pt x 179.13586pt.
  [6 <C:/Users/Li Jie/Desktop/first_paper/pics/packet_descriptor.pdf> <C:/Users/
 Li Jie/Desktop/first_paper/pics/dma_msg_seq.pdf> <C:/Users/Li Jie/Desktop/first
@@ -317,10 +317,10 @@ _paper/pics/dma_balance_seq.pdf>]
 <./pics/xls416.pdf, id=387, 775.39688pt x 657.2053pt>
 File: ./pics/xls416.pdf Graphic file (type pdf)
  <use ./pics/xls416.pdf>
-Package pdftex.def Info: ./pics/xls416.pdf used on input line 628.
+Package pdftex.def Info: ./pics/xls416.pdf used on input line 629.
 (pdftex.def)             Requested size: 252.94499pt x 214.38141pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 628--629
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 629--630
  [][] 
  []
 
@@ -328,22 +328,23 @@ Overfull \hbox (0.94499pt too wide) in paragraph at lines 628--629
 File: ./pics/test_topology.pdf Graphic file (type pdf)
 
 <use ./pics/test_topology.pdf>
-Package pdftex.def Info: ./pics/test_topology.pdf used on input line 642.
+Package pdftex.def Info: ./pics/test_topology.pdf used on input line 643.
 (pdftex.def)             Requested size: 180.67499pt x 88.95428pt.
 
-<./pics/result.pdf, id=389, 611.28375pt x 495.8525pt>
-File: ./pics/result.pdf Graphic file (type pdf)
- <use ./pics/result.pdf>
-Package pdftex.def Info: ./pics/result.pdf used on input line 652.
-(pdftex.def)             Requested size: 216.81pt x 175.8662pt.
+<./pics/oldresult.pdf, id=389, 611.28375pt x 495.8525pt>
+File: ./pics/oldresult.pdf Graphic file (type pdf)
 
-[7 <C:/Users/Li Jie/Desktop/first_paper/pics/xls416.pdf> <C:/Users/Li Jie/Deskt
-op/first_paper/pics/test_topology.pdf>]
+<use ./pics/oldresult.pdf>
+Package pdftex.def Info: ./pics/oldresult.pdf used on input line 653.
+(pdftex.def)             Requested size: 216.81pt x 175.8662pt.
+ [7 <C:/Users/Li Jie/Desktop/first_paper/pics/xls416.pdf> <C:/Users/Li Jie/Desk
+top/first_paper/pics/test_topology.pdf>]
 ("C:\Users\Li Jie\Desktop\first_paper\bare_conf.bbl"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 28.
+ [8 <C:/Users/Li Jie/Desktop/first_paper/pics/oldresult.pdf>]
 Missing character: There is no â in font ptmri7t!
 Missing character: There is no € in font ptmri7t!
 Missing character: There is no ™ in font ptmri7t!
@@ -359,26 +360,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8 <C:/Users/Li Jie/Desktop/first_paper/pics/result.pdf>]
-("C:\Users\Li Jie\Desktop\first_paper\bare_conf.aux") ) 
+[9
+
+] ("C:\Users\Li Jie\Desktop\first_paper\bare_conf.aux") ) 
 Here is how much of TeX's memory you used:
  2502 strings out of 495354
- 39158 string characters out of 3183860
+ 39173 string characters out of 3183860
  98742 words of memory out of 3000000
  5662 multiletter control sequences out of 15000+200000
  37073 words of font info for 70 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
  27i,7n,21p,1511b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/CTEX/MiKTeX/fonts/en
-c/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/ut
-mb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/CTEX/MiKTeX/font
-s/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-
-Output written on bare_conf.pdf (8 pages, 1323415 bytes).
+{C:/CTEX/MiKTeX/fonts/
+enc/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/
+utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/CTEX/MiKTeX/fo
+nts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on bare_conf.pdf (9 pages, 1320115 bytes).
 PDF statistics:
- 600 PDF objects out of 1000 (max. 8388607)
+ 603 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
