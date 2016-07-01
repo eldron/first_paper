@@ -459,17 +459,17 @@ In our proposed scheme, we use multi-core NPU as NIC and implement LRO on it to 
 
 The multi-core NPU's numerous threads are divided into three categories: packet sending threads, packet receiving threads and a timeout checking thread(we will explain the reason of its existence in the next section).
 
-The packet sending process is quite similar to a regular NIC, the receiving process of an ethernet packet, however, is much more complex. The multi-core NPU needs to check if a packet is suitable for LRO, handle out-of-order packets, check packet receiving timeout for a TCP flow, and reconstruct accumulated TCP data packets(we will describe these functionalities in more detail later). The packet receiving process sequence is shown in Figure \ref{packet receiving process sequence}: it starts by checking timeout messages, these messages are sent by a particular timeout checking thread, a timeout message indicates which TCP flow has paused(stopped) receiving new packets, and causes the multi-core NPU to aggregate buffered data packets of this flow. Then, the multi-core NPU checks for a newly arrived packet and runs a series of tests to see if the packet fits LRO requirements. If the packet passed those tests, it is buffered according to the TCP flow it belongs and reordered by its sequence number for further packets reconstruction; if it failed LRO tests, it will be forwarded directly to the NIC driver program(e.g. a UDP packet) or simply discarded(e.g. incorrect checksum).
+The packet sending process is quite similar to a regular NIC, the receiving process of an ethernet packet, however, is much more complex. The multi-core NPU needs to check if a packet is suitable for LRO, handle out-of-order packets, check packet receiving timeout for a TCP flow, and reconstruct accumulated TCP data packets(we will describe these functionalities in more detail later). The packet receiving process sequence is shown in Figure \ref{packet receiving process sequence}: it starts by checking timeout messages, these messages are sent by a particular timeout checking thread, a timeout message indicates which TCP flow has paused receiving new packets, and causes the multi-core NPU to aggregate buffered data packets of this flow. Then, the multi-core NPU checks for a newly arrived packet and runs a series of tests to see if the packet fits LRO requirements. If the packet passed those tests, it is buffered according to the TCP flow it belongs and reordered by its sequence number for further packets reconstruction; if it failed LRO tests, it will be forwarded directly to the NIC driver program(e.g. a UDP packet) or simply discarded(e.g. incorrect checksum).
 \begin{figure}[!t]
 \centering
-\includegraphics[width=3.0in]{packet_receiving_process_sequence}
+\includegraphics[width=3.5in]{packet_receiving_process_sequence}
 % where an .eps filename suffix will be assumed under latex,
 % and a .pdf suffix will be assumed for pdflatex; or what has been declared
 % via \DeclareGraphicsExtensions.
 \caption{Packet Receiving Process Sequence}
 \label{packet receiving process sequence}
 \end{figure}
-Since the multi-core NPU has done nearly all the dirty work, the NIC driver program's job is rather simple and straight-forward, very like normal NIC driver programs except that: the driver program needs to pre-allocate consecutive pages for storing aggregated packet's data, and construct a correct skbuff data structure for it.
+Since the multi-core NPU has done nearly all the dirty work, the NIC driver program's job is rather simple and straight-forward, very like normal NIC driver programs except that: the driver program needs to pre-allocate consecutive memory pages for storing aggregated packet's data, and construct a correct skbuff data structure for it.
 \section{System Functionalities}
 \subsection{TCP Connection Management}
 Our system employed two data structures for TCP connection management: ConnectionDescriptor and ConnectionTable.
@@ -484,10 +484,10 @@ Our system also monitors FIN packets to see if a connection is being tared down.
 
 As with ConnectionTable, each packet receiving thread maintains its ConnectionDescriptors in an independant memory space to avoid thread synchronization operations.
 \subsection{Packets Filtering}
-Each packet receiving thread of the multi-core NPU runs a series of tests to see if a packet is appropriate for reordering and aggregation operations, packets which failed these tests are discarded or forwarded to the driver program, packets which passed these tests will be buffered on their corresponding ConnectionDescriptor for further processing. The detailed filter sequence is shown in Figure \ref{packets filtering}, note that we do not require packets' TCP sequence number to be consecutive.
+Each packet receiving thread of the multi-core NPU runs a series of tests to see if a packet is appropriate for reordering and aggregation operations, packets which failed these tests are discarded or forwarded to the driver program, packets which passed these tests will be buffered on their corresponding ConnectionDescriptors for further processing. The detailed filter sequence is shown in Figure \ref{packets filtering}, note that we do not require packets' TCP sequence numbers to be consecutive.
 \begin{figure}[!t]
 \centering
-\includegraphics[width=2.0in]{filter_packets}
+\includegraphics[width=2.5in]{filter_packets}
 % where an .eps filename suffix will be assumed under latex,
 % and a .pdf suffix will be assumed for pdflatex; or what has been declared
 % via \DeclareGraphicsExtensions.
@@ -495,7 +495,7 @@ Each packet receiving thread of the multi-core NPU runs a series of tests to see
 \label{packets filtering}
 \end{figure}
 \subsection{Packets Reordering}
-Each ConnectionDescriptor contains a list for buffering TCP data packets, multi-core NPU sorts packets by their TCP sequence number and stores them in increasing order. Pseudo code of our packets reordering algorithm is shown in Algorithm \ref{reorder_packet}.
+Each ConnectionDescriptor contains a list for buffering TCP data packets, multi-core NPU sorts packets by their TCP sequence numbers and stores them in an increasing order. Pseudo code of our packets reordering algorithm is shown in Algorithm \ref{reorder_packet}.
 \begin{algorithm}
 \caption{ReorderPacket(pkt)}
 \label{reorder_packet}
@@ -512,7 +512,7 @@ Each ConnectionDescriptor contains a list for buffering TCP data packets, multi-
 \ENDIF
 \end{algorithmic}
 \end{algorithm}
-The $Insert$ function adds a packet to its corresponding ConnectionDescriptor's packets list according to the TCP sequence number, or discards the packet if it has been transmitted before, as shown in Algorithm \ref{insert}.
+The $Insert$ function adds a packet to its corresponding ConnectionDescriptor's packets list according to the TCP sequence number, or discards the packet if it has been received before, as shown in Algorithm \ref{insert}.
 \begin{algorithm}
 \caption{Insert(pkt, desc)}
 \label{insert}
@@ -529,19 +529,19 @@ The $Insert$ function adds a packet to its corresponding ConnectionDescriptor's 
 \ENDFOR
 \end{algorithmic}
 \end{algorithm}
-Variable $nextseq$ records the maximum consecutive sequence number of buffered packets and infers consecutive data length of those packets. Time complexity of our packets reordering algorithm is $O(n)$, $n$ is number of buffered packets in a connection descriptor.
+Variable $nextseq$ records the maximum consecutive sequence number of buffered packets and infers the consecutive data length of those packets.
 \subsection{Packets Reconstruction}
-A packet receiving thread reconstructs buffered TCP data packets if one of the following three conditions holds:
+A packet receiving thread reconstructs buffered TCP data packets if one of the following three conditions is satisfied:
 \begin{enumerate}
 \item consecutive payload length of the buffered packets has reached a predefined threshold
 \item a FIN packet is received
-\item one of its ConnectionDescriptors timed out for receiving packets
+\item a certain connection timed out for receiving packets
 \end{enumerate}
 
 The detailed processing sequence is shown in Figure \ref{tcp packets processing}.
 \begin{figure}[!t]
 \centering
-\includegraphics[width=2.0in]{tcp_packets_processing}
+\includegraphics[width=2.5in]{tcp_packets_processing}
 \caption{TCP Packets Processing}
 \label{tcp packets processing}
 \end{figure}
@@ -549,9 +549,13 @@ Packets reconstruction is done in two steps: (1) multi-core NPU modifies IP and 
 \subsection{Timeout Check for Packet Receiving}
 A TCP connection can remain valid without any packet interactions for hours, the following situation explains the necessity of timeout check for packet receiving: multi-core NPU sets the threshold of buffered packets' data length to be 64KB, while the sending side only transmitted 8KB data and paused. Since the threshold is not reached and no FIN packet is received, the received data packets will be buffed in the multi-core NPU's memory permanently and will never reach to the data receiving host.
 
-To solve this problem, each ConnectionDescriptor maintains two more variables for packet receiving timeout check: (1) $average\_interval$, which represents the average time interval of two adjacent packets; (2) $last\_arrival$, which records the last time ConnectionDescriptor received a packet. When a packet arrives, the packet receiving thread reads system time $current\_time$ and updates $average\_interval$ by the following formula: $average\_interval = (average\_interval + current\_time - last\_arrival) / 2$, $last\_arrival$ is updated by $current\_time$.
+To solve this problem, each ConnectionDescriptor maintains two more variables for packet receiving timeout check: (1) $average$, which represents the average time interval of two adjacent packets; (2) $last$, which records the last time ConnectionDescriptor received a packet. When a packet arrives, the packet receiving thread reads system time $current$ and updates $average$ by the following formula:
+\begin{equation}
+average = (average + current - last) / 2
+\end{equation}
+$last$ is updated by $current$.
 
-We used a specific thread of the multi-core NPU to execute the timeout checking task for every ConnectionDescriptor in our system, and named this thread as timeout checking thread. The timeout checking thread works in an infinite loop, it reads system's $current\_time$, a ConnectionDescriptor's $last\_arrival$ and calculates their difference, if the difference is larger than a hundred times of the ConnectionDescriptor's $average\_interval$, the corresponding TCP connection is considered as timed out. The timeout checking thread then sends a timeout message to the corresponding packet receiving thread, which performs packets reconstruction when received this message.
+We used a specific thread of the multi-core NPU to execute the timeout checking task for every ConnectionDescriptor in our system, and named this thread as timeout checking thread. The timeout checking thread works in an infinite loop, it reads system's $current$, a ConnectionDescriptor's $last$ and calculates their difference, if the difference is larger than a hundred times of the ConnectionDescriptor's $average$, the corresponding TCP connection is considered timed out. The timeout checking thread then sends a timeout message to the corresponding packet receiving thread, which performs packets reconstruction when received this message.
 \section{Critical Improvement Techniques}
 In this section, we will describe the critical techniques we employed to improve our system's performance.
 \subsection{DMA Load Balance}
@@ -559,24 +563,24 @@ The multi-core NPU has an independent DMA engine which cooperates with hardware 
 
 A problem occurred when testing our system: we make the client test program to initiate multiple TCP connections to the server test program simultaneously and start data transmission after the connections are established, but we found that only a few connections can conduct data transmission normally while the rest connections' establishment failed due to timeout. The reason behind this phenomenon is that multi-core NPU's DMA engine buffers DMA request messages in a stack, when a few connections are established, they start data transmission immediately and overwhelm the DMA engine with request messages, other connections' SYN packets can not reach to the host kernel network stack and thus timed out.
 
-To solve this problem, we utilized the timeout checking thread to add a DMA load balance functionality for the packet receiving threads: it maintains an individual DMA request message queue for each packet receiving thread, packet receiving threads now send DMA request messages to the timeout checking thread instead of the DMA engine, the timeout checking thread buffers these messages in their corresponding queues and chooses one message at a time in a Round-Robin fashion between the queues, the chosen message is then sent to the DMA engine. When the requested operation is done, DMA engine informs the corresponding packet receiving thread of the operation result by sending a message to it. Our DMA load balance mechanism only adds one more message exchange and two queue operations for each DMA request, it is highly efficient and simple for implementation.
+To solve this problem, we utilized the timeout checking thread to add a DMA load balance functionality for the packet receiving threads: it maintains an individual DMA request message queue for each packet receiving thread, packet receiving threads now send DMA request messages to the timeout checking thread instead of the DMA engine, the timeout checking thread buffers these messages in their corresponding queues and chooses one message at a time in a Round-Robin fashion between the queues, the chosen message is then sent to the DMA engine. When the requested operation is done, DMA engine informs the corresponding packet receiving thread of the operation result by sending a message to it. Our DMA load balance mechanism only adds one more message transmission and two additional queue operations for each DMA request, it is highly efficient and simple for implementation.
 
 \subsection{Active ACK Mechanism}
-TCP sets a retransmission timer after sending data, if no corresponding ACK packet is received after the timer timed out, it retransmits data and performs congestion control by setting the data sending window size to 1 MSS(Maximum Segmentation Size). Consider the following situation: multi-core NPU sets data length threshold for packet aggregation larger than the amount of data the sending side can transmit before retransmission timer times out, it buffers received packets and waits for more to come, kernel network stack will not receive these packets thus no ACK is sent out, which eventually leads to data retransmission. What is worse, the retransmitted packets will be considered as redundant and discarded by the packet receiving threads, this makes data transmission unpracticable and violates our original purpose of TCP acceleration.
+TCP sets a retransmission timer after sending data, if no corresponding ACK packet is received after the timer timed out, it retransmits data and performs congestion control by setting the data sending window size to 1 MSS(Maximum Segmentation Size). Consider the following situation: multi-core NPU sets data length threshold for packet aggregation larger than the amount of data the sending side can transmit before retransmission timer times out, it buffers received packets and waits for more to come, kernel network stack will not receive these packets thus no ACK is sent out, which eventually leads to data retransmission. What is worse, the retransmitted packets will be considered as redundant and discarded by the packet receiving threads, this makes data transmission unpracticable and violates our original goal for TCP acceleration.
 
- An intuitive strategy for solving the afore-mentioned problem is to decrease multi-core NPU's data length threshold for packet aggregation and avoid retransmission timer timeout on the data sending side. But the underlying network and timeout value of the data sending side are constantly changing, which makes it difficult for the multi-core NPU to choose appropriate threshold values for each TCP connection. Decreasing threshold value also means more interrupts and more packet headers for the host kernel network stack to process, consequently the system performance suffers.
+ An intuitive strategy for solving the afore-mentioned problem is to decrease multi-core NPU's data length threshold for packet aggregation, but the underlying network and timeout value of the data sending side are constantly changing, which makes it difficult for the multi-core NPU to choose appropriate threshold values for each TCP connection. Decreasing threshold value also means more interrupts and more packet headers for the host kernel network stack to process, consequently the system performance suffers.
 
  TCP specifications tell us that duplicate ACKs are harmless, this fact leads to an alternative solution of our problem, we let the multi-core NPU mimic TCP's consecutive ACK mechanism: when a packet receiving thread receives a new packet, it performs packets reordering by inserting the packet to its corresponding ConnectionDescriptor's packets list, then it generates an ACK packet according to the ConnectionDescriptor's $nextseq$ value and sends the ACK to the data sending side. Particularly, we set the data receive window size to be 0xFFFF, which makes the sending side to transmit data faster.
 \section{Implementation and Performance Evaluation}
-We implemented our system using XLS416 produced by RMI, it has 16MB PCIe shared memory and 4GB DDR2 DRAM, the PCIe shared memory can be read/writen directly by host computer and XLS416, thus we used it for information sharing and store data structures such as packet descriptors, device state variables and miscellaneous counters. The 4GB DRAM is used by network interfaces for packet buffering and by hardware threads to maintain data structures such as ConnectionDescriptors and ConnectionTables.
+We implemented our system using XLS416 produced by RMI, it has 16MB PCIe shared memory and 4GB DDR2 DRAM. The PCIe shared memory can be read/writen directly by host computer and XLS416, thus we used it for information sharing and store data structures such as packet descriptors, device state variables and miscellaneous counters. The 4GB DRAM is used by network interfaces for packet buffering and by hardware threads to maintain data structures such as ConnectionDescriptors and ConnectionTables.
 
 XLS416's 16 hardware based threads are allocated as follows: 1 packet sending thread, 1 timeout checking thread, 13 packet receiving threads and the last one is reserved for system shell program. Our system optimizes TCP's data receiving path, thus only one thread is used for sending packets and as many as possible threads are used for receiving packets.
 
-Most multi-core NPUs produced by RMI and other manufacturers are also equipped with XLS416's key hardware features, and only differentiates in specific configurations such as processing core frequency, DRAM and PCIe bandwidth. Data structures and algorithms we employed in our system can be easily implemented on other multi-core NPU platforms, resource allocation can also be done in a similar way, thus we conclude that our system design is highly compatible.
+Most multi-core NPUs produced by RMI and other manufacturers are also equipped with XLS416's key hardware features, and only differs in specific configurations such as processing core frequency, DRAM and PCIe bandwidth. Data structures and algorithms we employed in our system can be easily implemented on other multi-core NPU platforms, resource allocation can also be done in a similar way, thus we conclude that our system design is highly compatible.
 
 Our system focuses on optimizing TCP processing on the data receiving path, thus we chose TCP data receiving throughput as the performance evaluation criterion. We built two simple test programs including server side and client side: the client side first requests multiple TCP connections with the server, and starts data transmission after all the connections are established; server side records the time interval between connections' establishment and data transmission's completion, then calculates the data receiving throughput. Since our system buffers TCP data packets on the multi-core NPU, it is not suitable for delay-sensitive applications such as online games, instead, it is particularly suitable for applications with large blocks of data transmission such as ftp and samba servers. The client host is equipped with Intel Core i3 530 2.93GHz CPU, 4GB main memory and Intel 82599 NIC, the server host has the same hardware equipments except that it uses XLS416 as NIC, both hosts run Red Hat Enterprise Linux 6.4, a 10Gbps optical fiber is used to connect them back-to-back.
 
-During the test, we set the number of TCP connections from 1 to 64 and calculate data receiving throughput respectively, the results are shown in Figure \ref{result}.
+During the test, we set the number of TCP connections from 1 to 64 and calculated data receiving throughput respectively, the results are shown in Figure \ref{result}.
 
 From Figure \ref{result} we can see that TCP data receiving throughput increases as the number of TCP connections increases when the latter is small, however, the growth slows down as the number of TCP connections becomes large and TCP data receiving throughput finally stabilizes around 4.75Gbps. The reason caused this phenomenon is the amount of packet receiving threads on XLS416 is fixed, when the number of TCP connections is small, XLS416 will dispatch packets to a subset of packet receiving threads and other threads are left idle, XLS416's computing power is not fully utilized; the situation changes as the number of TCP connections increases, packets will be evenly distributed to all threads and XLS416's computing power is exhausted, thus the maximum TCP data receiving throughput is achieved.
 \begin{figure}[!t]
@@ -593,7 +597,7 @@ As a comparison, we also implemented XLS416 as a normal NIC which does not aggre
 \item notice that the client's data sending speed affects the server's data receiving speed, when implemented with LRO functionality, XLS416 automatically generates ACK packets and causes the client side to send data faster, which in turn increases the server's data receiving throughput.
 \end{enumerate}
 
-To minimize the number of packets and interrupts processed by the host CPU, we chose Linux kernel data structure skbuff's storage upper bound(64KB) as the data length threshold for packets aggregation. We utilized XLS416's network accelerator for hardware checksum verification of incoming packets, the packets reordering and reconstruction algorithms used in our system are designed to be simple and efficient, which do not involve any packet data copy operation, XLS416's memory bandwidth should not be our system's performance bottleneck. On the other hand, XLS416, is actually a low-end product, which connects to the host computer through a PCI-e1.1$\times$4 bus, we tested its performance and achieved only 6Gbps data transmission throughput, thus we draw the conclusion that XLS416's PCI-e bandwidth is the performance bottleneck of our system.
+To minimize the number of packets and interrupts processed by the host CPU, we chose Linux kernel data structure skbuff's storage upper bound(64KB) as the data length threshold for packets aggregation. We utilized XLS416's network accelerator for hardware checksum verification of incoming packets, the packets reordering and reconstruction algorithms used in our system are designed to be simple and efficient, which do not involve any packet data copy operations, XLS416's memory bandwidth should not be our system's performance bottleneck. On the other hand, XLS416, is actually a low-end product, which connects to the host computer through a PCI-e1.1$\times$4 bus, we tested its performance and achieved only 6Gbps data transmission throughput, thus we draw the conclusion that XLS416's PCI-e bandwidth is the performance bottleneck of our system.
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
